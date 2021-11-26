@@ -9,8 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List(0 ..< 5) { item in
+                Text("Hello, world!")
+                    
+            }
+        }
     }
 }
 
