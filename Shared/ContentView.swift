@@ -45,7 +45,7 @@ struct ContentView: View {
                 .headerProminence(.increased)
             }
             .padding(.vertical, -10)
-            .listStyle(.automatic)
+            .listStyle(.insetGrouped)
             .navigationBarTitle("Pastpaper", displayMode: .large)
             .searchable(text: $searchText, placement: .navigationBarDrawer)
 //          .searchable(text: $searchText, placement: .navigationBarDrawer)
@@ -57,7 +57,8 @@ struct ContentView: View {
         if searchText.isEmpty {
             return qualifications
         } else {
-            return qualifications.filter { $0.contains(searchText) }
+            return qualifications.filter {
+                $0.localizedCaseInsensitiveContains(searchText)}
             
         }
     }
@@ -66,7 +67,7 @@ struct ContentView: View {
         if searchText.isEmpty {
             return bureaus
         } else {
-            return bureaus.filter { $0.contains(searchText) }
+            return bureaus.filter { $0.localizedCaseInsensitiveContains(searchText)}
             
         }
     }
@@ -75,7 +76,7 @@ struct ContentView: View {
         if searchText.isEmpty {
             return extraTests
         } else {
-            return extraTests.filter { $0.contains(searchText) }
+            return extraTests.filter { $0.localizedCaseInsensitiveContains(searchText.lowercased()) }
             
         }
     }
