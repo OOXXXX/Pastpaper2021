@@ -11,20 +11,31 @@ struct ContentView: View {
     let qualifications = ["IGCSE", "Advanced Level", "International Advanced Level", "OLevel", "IBDP"]
     let bureaus = ["CAIE", "Edexcel", "AQA"]
     let extraTests = ["Oxford admissions", "Cambridge admissions", "MAA AMC", "UKMT"]
+    let websites = ["Oxford", "Cambridge", "Imperial London", "London School of Economics", "University College London"]
     @State private var searchText = ""
 
     var body: some View {
         NavigationView {
             List {
-                Section(header: Text("Qualifications")) {
-                    ForEach(searchResults1, id: \.self) { qualification in
-                        NavigationLink(destination: Text(qualification)) {
-                            Text(qualification)
-                        }
+                ForEach(searchResults1, id: \.self) { qualification in
+                    NavigationLink(destination: Text(qualification)) {
+                        Text(qualification)
+                        
                     }
                     
                 }
-                .headerProminence(.increased)
+//                Section(header: Text("Qualifications")) {
+//                    ForEach(searchResults1, id: \.self) { qualification in
+//                        NavigationLink(destination: Text(qualification)) {
+//                            Text(qualification)
+//
+//                        }
+//
+//                    }
+//
+//                }
+//                .listSectionSeparator(.visible)
+//                .headerProminence(.increased)
                 Section(header: Text("Examination Bureau")) {
                     ForEach(searchResults2, id: \.self) { bureau in
                         NavigationLink(destination: Text(bureau)) {
@@ -33,6 +44,7 @@ struct ContentView: View {
                     }
                     
                 }
+                .listSectionSeparator(.visible)
                 .headerProminence(.increased)
                 Section(header: Text("Contest/Extra Tests")) {
                     ForEach(searchResults3, id: \.self) { extraTest in
@@ -42,15 +54,29 @@ struct ContentView: View {
                     }
                     
                 }
+                .listSectionSeparator(.visible)
+                .headerProminence(.increased)
+                Section(header: Text("Official Websites")) {
+                    ForEach(searchResults4, id: \.self) { website in
+                        NavigationLink(destination: Text(website)) {
+                            Text(website)
+                        }
+                    }
+                    
+                }
+                .listSectionSeparator(.visible)
                 .headerProminence(.increased)
             }
-            .padding(.vertical, -10)
+            //.listRowInsets(EdgeInsets())
+            //.padding(.vertical, -10)
             .listStyle(.insetGrouped)
             .navigationBarTitle("Pastpaper", displayMode: .large)
+            //.navigationBarHidden(false)
             .searchable(text: $searchText, placement: .navigationBarDrawer)
 //          .searchable(text: $searchText, placement: .navigationBarDrawer)
             
         }
+        
         
     }
     var searchResults1: [String] {
@@ -77,6 +103,15 @@ struct ContentView: View {
             return extraTests
         } else {
             return extraTests.filter { $0.localizedCaseInsensitiveContains(searchText.lowercased()) }
+            
+        }
+    }
+    
+    var searchResults4: [String] {
+        if searchText.isEmpty {
+            return websites
+        } else {
+            return websites.filter { $0.localizedCaseInsensitiveContains(searchText.lowercased()) }
             
         }
     }
