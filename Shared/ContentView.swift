@@ -24,18 +24,7 @@ struct ContentView: View {
                     }
                     
                 }
-//                Section(header: Text("Qualifications")) {
-//                    ForEach(searchResults1, id: \.self) { qualification in
-//                        NavigationLink(destination: Text(qualification)) {
-//                            Text(qualification)
-//
-//                        }
-//
-//                    }
-//
-//                }
-//                .listSectionSeparator(.visible)
-//                .headerProminence(.increased)
+
                 Section(header: Text("Examination Bureau")) {
                     ForEach(searchResults2, id: \.self) { bureau in
                         NavigationLink(destination: Text(bureau)) {
