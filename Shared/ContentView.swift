@@ -13,6 +13,18 @@ struct Quali {
   let color: Color
 }
 
+struct Exam {
+  let image: String
+  let name: String
+  let color: Color
+}
+
+struct Contest {
+  let image: String
+  let name: String
+  let color: Color
+}
+
 struct ContentView: View {
     
     var qualiList = [
@@ -22,6 +34,19 @@ struct ContentView: View {
       Quali(image: "o.square.fill", name: "OLevel", color: .purple),
       Quali(image: "i.square.fill", name: "IBDP", color: .yellow),
     ]
+    
+    var examList = [
+      Exam(image: "c.square.fill", name: "CAIE", color: .brown),
+      Exam(image: "e.square.fill", name: "Edexcel", color: .mint),
+      Exam(image: "a.square.fill", name: "AQA", color: .red),
+      ]
+    
+    var contestList = [
+      Contest(image: "c.square.fill", name: "Oxford admissions", color: .gray),
+      Contest(image: "e.square.fill", name: "Cambridge admissions", color: .orange),
+      Contest(image: "a.square.fill", name: "MAA AMC", color: .cyan),
+      Contest(image: "a.square.fill", name: "UKMT", color: .black),
+        ]
     
     let qualifications = ["IGCSE", "Advanced Level", "International Advanced Level", "OLevel", "IBDP"]
     let bureaus = ["CAIE", "Edexcel", "AQA"]
@@ -44,23 +69,39 @@ struct ContentView: View {
                         .offset(x: -12)
                     }
                     
-                    }
+                }
                 
                 Section(header: Text("Examination Bureau")) {
-                    ForEach(searchResults2, id: \.self) { bureau in
-                        NavigationLink(destination: Text(bureau)) {
-                            Text(bureau)
+                    ForEach(examList, id: \.name) { exam in
+                        NavigationLink(destination: Text("quali")) {
+                            HStack {
+                                Image(systemName: exam.image)
+                                     .font(Font.system(.title))
+                                     .foregroundColor(exam.color)
+                                Text(exam.name)
+                               
+                              }
+                            .offset(x: -12)
                         }
+                        
                     }
                     
                 }
                 .listSectionSeparator(.visible)
                 .headerProminence(.increased)
                 Section(header: Text("Contest/Extra Tests")) {
-                    ForEach(searchResults3, id: \.self) { extraTest in
-                        NavigationLink(destination: Text(extraTest)) {
-                            Text(extraTest)
+                    ForEach(contestList, id: \.name) { contest in
+                        NavigationLink(destination: Text("quali")) {
+                            HStack {
+                                Image(systemName: contest.image)
+                                     .font(Font.system(.title))
+                                     .foregroundColor(contest.color)
+                                Text(contest.name)
+                               
+                              }
+                            .offset(x: -12)
                         }
+                        
                     }
                     
                 }
@@ -71,6 +112,7 @@ struct ContentView: View {
                         NavigationLink(destination: Text(website)) {
                             Text(website)
                         }
+                        
                     }
                     
                 }
@@ -82,8 +124,7 @@ struct ContentView: View {
             .listStyle(.insetGrouped)
             .navigationBarTitle("Pastpaper", displayMode: .large)
             //.navigationBarHidden(false)
-            .searchable(text: $searchText, placement: .navigationBarDrawer)
-//          .searchable(text: $searchText, placement: .navigationBarDrawer)
+            //.searchable(text: $searchText, placement: .navigationBarDrawer)
             
         }
         
