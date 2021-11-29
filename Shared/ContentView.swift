@@ -33,14 +33,16 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(qualiList, id: \.name) { quali in
-                      HStack {
-                        Image(systemName: quali.image)
-                             .font(Font.system(.title))
-                             .foregroundColor(quali.color)
-                        Text(quali.name)
-                       
-                      }
-                      .offset(x: -12)
+                    NavigationLink(destination: Text("quali")) {
+                        HStack {
+                            Image(systemName: quali.image)
+                                 .font(Font.system(.title))
+                                 .foregroundColor(quali.color)
+                            Text(quali.name)
+                           
+                          }
+                        .offset(x: -12)
+                    }
                     
                     }
                 
