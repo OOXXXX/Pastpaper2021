@@ -29,7 +29,7 @@ struct ContentView: View {
     
     var qualiList = [
       Quali(image: "i.square.fill", name: "IGCSE", color: .blue),
-      Quali(image: "a.square.fill", name: "Advanced Level", color: .purple),
+      Quali(image: "a.square.fill", name: "Advanced Level", color: .green),
       Quali(image: "i.square.fill", name: "International Advanced Level", color: .indigo),
       Quali(image: "o.square.fill", name: "OLevel", color: .purple),
       Quali(image: "i.square.fill", name: "IBDP", color: .yellow),
@@ -42,10 +42,10 @@ struct ContentView: View {
       ]
     
     var contestList = [
-      Contest(image: "c.square.fill", name: "Oxford admissions", color: .gray),
-      Contest(image: "e.square.fill", name: "Cambridge admissions", color: .orange),
-      Contest(image: "a.square.fill", name: "MAA AMC", color: .cyan),
-      Contest(image: "a.square.fill", name: "UKMT", color: .black),
+      Contest(image: "o.square.fill", name: "Oxford admissions", color: .gray),
+      Contest(image: "c.square.fill", name: "Cambridge admissions", color: .orange),
+      Contest(image: "m.square.fill", name: "MAA AMC", color: .cyan),
+      Contest(image: "u.square.fill", name: "UKMT", color: .black),
         ]
     
     let qualifications = ["IGCSE", "Advanced Level", "International Advanced Level", "OLevel", "IBDP"]
@@ -124,7 +124,7 @@ struct ContentView: View {
             .listStyle(.insetGrouped)
             .navigationBarTitle("Pastpaper", displayMode: .large)
             //.navigationBarHidden(false)
-            //.searchable(text: $searchText, placement: .navigationBarDrawer)
+            .searchable(text: $searchText, placement: .navigationBarDrawer)
             
         }
         
