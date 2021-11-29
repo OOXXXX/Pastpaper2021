@@ -13,8 +13,6 @@
 		4BC9678F2750B71D007DE392 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9677D2750B71C007DE392 /* ContentView.swift */; };
 		4BC967902750B71D007DE392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC9677E2750B71D007DE392 /* Assets.xcassets */; };
 		4BC967912750B71D007DE392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC9677E2750B71D007DE392 /* Assets.xcassets */; };
-		4BC9679B2750C181007DE392 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9679A2750C181007DE392 /* Decoder.swift */; };
-		4BC9679C2750C181007DE392 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9679A2750C181007DE392 /* Decoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +22,6 @@
 		4BC967832750B71D007DE392 /* Pastpaper2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pastpaper2021.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC967892750B71D007DE392 /* Pastpaper2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pastpaper2021.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC9678B2750B71D007DE392 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		4BC9679A2750C181007DE392 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +56,6 @@
 			children = (
 				4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */,
 				4BC9677D2750B71C007DE392 /* ContentView.swift */,
-				4BC9679A2750C181007DE392 /* Decoder.swift */,
 				4BC9677E2750B71D007DE392 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -181,7 +177,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BC9678E2750B71D007DE392 /* ContentView.swift in Sources */,
-				4BC9679B2750C181007DE392 /* Decoder.swift in Sources */,
 				4BC9678C2750B71D007DE392 /* Pastpaper2021App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,7 +186,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BC9678F2750B71D007DE392 /* ContentView.swift in Sources */,
-				4BC9679C2750C181007DE392 /* Decoder.swift in Sources */,
 				4BC9678D2750B71D007DE392 /* Pastpaper2021App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

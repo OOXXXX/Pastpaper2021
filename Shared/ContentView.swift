@@ -7,7 +7,22 @@
 
 import SwiftUI
 
+struct Quali {
+  let image: String
+  let name: String
+  let color: Color
+}
+
 struct ContentView: View {
+    
+    var qualiList = [
+      Quali(image: "i.square.fill", name: "IGCSE", color: .blue),
+      Quali(image: "a.square.fill", name: "Advanced Level", color: .purple),
+      Quali(image: "i.square.fill", name: "International Advanced Level", color: .indigo),
+      Quali(image: "o.square.fill", name: "OLevel", color: .purple),
+      Quali(image: "i.square.fill", name: "IBDP", color: .yellow),
+    ]
+    
     let qualifications = ["IGCSE", "Advanced Level", "International Advanced Level", "OLevel", "IBDP"]
     let bureaus = ["CAIE", "Edexcel", "AQA"]
     let extraTests = ["Oxford admissions", "Cambridge admissions", "MAA AMC", "UKMT"]
@@ -17,25 +32,18 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(searchResults1, id: \.self) { qualification in
-                    NavigationLink(destination: Text(qualification)) {
-                        Text(qualification)
-                        
-                    }
+                ForEach(qualiList, id: \.name) { quali in
+                      HStack {
+                        Image(systemName: quali.image)
+                             .font(Font.system(.title))
+                             .foregroundColor(quali.color)
+                        Text(quali.name)
+                       
+                      }
+                      .offset(x: -12)
                     
-                }
-//                Section(header: Text("Qualifications")) {
-//                    ForEach(searchResults1, id: \.self) { qualification in
-//                        NavigationLink(destination: Text(qualification)) {
-//                            Text(qualification)
-//
-//                        }
-//
-//                    }
-//
-//                }
-//                .listSectionSeparator(.visible)
-//                .headerProminence(.increased)
+                    }
+                
                 Section(header: Text("Examination Bureau")) {
                     ForEach(searchResults2, id: \.self) { bureau in
                         NavigationLink(destination: Text(bureau)) {
