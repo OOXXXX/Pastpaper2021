@@ -70,7 +70,9 @@ struct ContentView: View {
                     }
                     
                 }
+
                 
+
                 Section(header: Text("Examination Bureau")) {
                     ForEach(examList, id: \.name) { exam in
                         NavigationLink(destination: Text("quali")) {
