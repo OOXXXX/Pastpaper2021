@@ -66,7 +66,7 @@ struct ContentView: View {
                             Text(quali.name)
                            
                           }
-                        .offset(x: -12)
+                        .offset(x: -8)
                     }
                     
                 }
@@ -81,7 +81,7 @@ struct ContentView: View {
                                 Text(exam.name)
                                
                               }
-                            .offset(x: -12)
+                            .offset(x: -8)
                         }
                         
                     }
@@ -99,7 +99,7 @@ struct ContentView: View {
                                 Text(contest.name)
                                
                               }
-                            .offset(x: -12)
+                            .offset(x: -8)
                         }
                         
                     }
