@@ -129,7 +129,7 @@ struct ContentView: View {
         }
         
         
-    }
+}
     var searchResults1: [String] {
         if searchText.isEmpty {
             return qualifications
