@@ -124,7 +124,7 @@ struct ContentView: View {
             .listStyle(.insetGrouped)
             .navigationBarTitle("Pastpaper", displayMode: .large)
             //.navigationBarHidden(false)
-            .searchable(text: $searchText, placement: .navigationBarDrawer)
+            .searchable(text: $searchText)
             
         }
         
