@@ -13,6 +13,8 @@
 		4B5D43722758C2E30092865C /* IalEdxMathsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5D43702758C2E30092865C /* IalEdxMathsView.swift */; };
 		4B5D43742758CF240092865C /* IalEdxMathsInnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5D43732758CF240092865C /* IalEdxMathsInnerView.swift */; };
 		4B5D43752758CF240092865C /* IalEdxMathsInnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5D43732758CF240092865C /* IalEdxMathsInnerView.swift */; };
+		4B5D4377275927440092865C /* WebViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5D4376275927440092865C /* WebViewModifier.swift */; };
+		4B5D4378275927440092865C /* WebViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5D4376275927440092865C /* WebViewModifier.swift */; };
 		4BC9678C2750B71D007DE392 /* Pastpaper2021App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */; };
 		4BC9678D2750B71D007DE392 /* Pastpaper2021App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */; };
 		4BC9678E2750B71D007DE392 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9677D2750B71C007DE392 /* ContentView.swift */; };
@@ -25,6 +27,7 @@
 		4B5D436D2758A1A30092865C /* IALView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IALView.swift; sourceTree = "<group>"; };
 		4B5D43702758C2E30092865C /* IalEdxMathsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMathsView.swift; sourceTree = "<group>"; };
 		4B5D43732758CF240092865C /* IalEdxMathsInnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMathsInnerView.swift; sourceTree = "<group>"; };
+		4B5D4376275927440092865C /* WebViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModifier.swift; sourceTree = "<group>"; };
 		4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pastpaper2021App.swift; sourceTree = "<group>"; };
 		4BC9677D2750B71C007DE392 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4BC9677E2750B71D007DE392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 				4B5D436D2758A1A30092865C /* IALView.swift */,
 				4B5D43702758C2E30092865C /* IalEdxMathsView.swift */,
 				4B5D43732758CF240092865C /* IalEdxMathsInnerView.swift */,
+				4B5D4376275927440092865C /* WebViewModifier.swift */,
 				4BC9677E2750B71D007DE392 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -192,6 +196,7 @@
 				4B5D43742758CF240092865C /* IalEdxMathsInnerView.swift in Sources */,
 				4BC9678C2750B71D007DE392 /* Pastpaper2021App.swift in Sources */,
 				4B5D436E2758A1A30092865C /* IALView.swift in Sources */,
+				4B5D4377275927440092865C /* WebViewModifier.swift in Sources */,
 				4B5D43712758C2E30092865C /* IalEdxMathsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +209,7 @@
 				4B5D43752758CF240092865C /* IalEdxMathsInnerView.swift in Sources */,
 				4BC9678D2750B71D007DE392 /* Pastpaper2021App.swift in Sources */,
 				4B5D436F2758A1A30092865C /* IALView.swift in Sources */,
+				4B5D4378275927440092865C /* WebViewModifier.swift in Sources */,
 				4B5D43722758C2E30092865C /* IalEdxMathsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
