@@ -63,7 +63,7 @@ struct ContentView: View {
                         Image(systemName: "i.square.fill")
                              .font(Font.system(.title))
                              .foregroundColor(.blue)
-                        Text("Accounting")
+                        Text("IGCSE")
                     }
                     .offset(x: -8)
                 }
