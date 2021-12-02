@@ -57,18 +57,51 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(qualiList, id: \.name) { quali in
-                    NavigationLink(destination: Text("quali")) {
-                        HStack {
-                            Image(systemName: quali.image)
-                                 .font(Font.system(.title))
-                                 .foregroundColor(quali.color)
-                            Text(quali.name)
-                           
-                          }
-                        .offset(x: -8)
+                
+                NavigationLink(destination: Text("quali")) {
+                    HStack {
+                        Image(systemName: "i.square.fill")
+                             .font(Font.system(.title))
+                             .foregroundColor(.blue)
+                        Text("Accounting")
                     }
-                    
+                    .offset(x: -8)
+                }
+                NavigationLink(destination: Text("quali")) {
+                    HStack {
+                        Image(systemName: "a.square.fill")
+                             .font(Font.system(.title))
+                             .foregroundColor(.green)
+                        Text("Advanced Level")
+                    }
+                    .offset(x: -8)
+                }
+                NavigationLink(destination: IALView()) {
+                    HStack {
+                        Image(systemName: "i.square.fill")
+                             .font(Font.system(.title))
+                             .foregroundColor(.indigo)
+                        Text("International Advanced Level")
+                    }
+                    .offset(x: -8)
+                }
+                NavigationLink(destination: Text("quali")) {
+                    HStack {
+                        Image(systemName: "o.square.fill")
+                             .font(Font.system(.title))
+                             .foregroundColor(.purple)
+                        Text("OLevel")
+                    }
+                    .offset(x: -8)
+                }
+                NavigationLink(destination: Text("quali")) {
+                    HStack {
+                        Image(systemName: "i.square.fill")
+                             .font(Font.system(.title))
+                             .foregroundColor(.yellow)
+                        Text("IBDP")
+                    }
+                    .offset(x: -8)
                 }
 
                 
@@ -120,6 +153,7 @@ struct ContentView: View {
                 }
                 .listSectionSeparator(.visible)
                 .headerProminence(.increased)
+                
             }
             //.listRowInsets(EdgeInsets())
             //.padding(.vertical, -10)
@@ -127,6 +161,7 @@ struct ContentView: View {
             .navigationBarTitle("Pastpaper", displayMode: .large)
             //.navigationBarHidden(false)
             .searchable(text: $searchText)
+            
             
         }
         
