@@ -42,7 +42,6 @@ struct IalEdxMathsInnerWebView: View {
             .edgesIgnoringSafeArea(.all)
             .navigationBarTitle("WMA11/01", displayMode: .inline)
             .navigationBarItems(trailing: shareButton)
-            .popover(isPresented: $isActivityPopoverPresented, attachmentAnchor: .point(.topTrailing), arrowEdge: .top, content: activityView)
             .sheet(isPresented: $isActivitySheetPresented, content: activityView)
     }
     private var shareButton: some View {
@@ -58,10 +57,11 @@ struct IalEdxMathsInnerWebView: View {
         }, label: {
             Image(systemName: "square.and.arrow.up")
                 .font(.system(size: 17))
-             .frame(width: 30, height: 30)
-             //.hoverEffect(.highlight)
-             //.padding(.trailing, -5)
-             //.padding(.bottom, 5)
+                .frame(width: 30, height: 30)
+                .popover(isPresented: $isActivityPopoverPresented) {
+                    activityView()
+                }
+                
         })
     }
     
@@ -80,7 +80,7 @@ struct IalEdxMathsInnerWebView: View {
         let activityView = ActivityView(activityItems: [itemURL], applicationActivities: nil)
         return Group {
         if self.horizontalSizeClass == .regular && self.verticalSizeClass == .regular {
-            activityView.frame(width: 300, height: 480)
+            activityView.frame(width: 330, height: 480)
         } else {
             activityView
             .edgesIgnoringSafeArea(.all)
