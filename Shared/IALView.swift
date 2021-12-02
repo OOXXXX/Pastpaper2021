@@ -35,7 +35,7 @@ struct IALView: View {
                     NavigationLink(destination: Text("quali")) {
                         Text("History")
                     }
-                    NavigationLink(destination: Text("quali")) {
+                    NavigationLink(destination: IalEdxMathsView()) {
                         Text("Mathematics")
                     }
                     NavigationLink(destination: Text("quali")) {
