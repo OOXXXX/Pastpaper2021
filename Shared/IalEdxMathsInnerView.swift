@@ -42,6 +42,8 @@ struct IalEdxMathsInnerWebView: View {
             .edgesIgnoringSafeArea(.all)
             .navigationBarTitle("WMA11/01", displayMode: .inline)
             .navigationBarItems(trailing: shareButton)
+            .popover(isPresented: $isActivityPopoverPresented, attachmentAnchor: .point(.topTrailing), arrowEdge: .top, content: activityView)
+            .sheet(isPresented: $isActivitySheetPresented, content: activityView)
     }
     private var shareButton: some View {
         Button(action: {
@@ -61,6 +63,29 @@ struct IalEdxMathsInnerWebView: View {
              //.padding(.trailing, -5)
              //.padding(.bottom, 5)
         })
+    }
+    
+    private func activityView() -> some View {
+        let url = URL(string: "https://cdn.savemyexams.co.uk/wp-content/uploads/2020/12/WMA11_01_que_20190109.pdf")!
+        let filename = url.pathComponents.last!
+        let fileManager = FileManager.default
+        let itemURL = fileManager.temporaryDirectory.appendingPathComponent(filename)
+        let data: Data
+        if fileManager.fileExists(atPath: itemURL.path) {
+            data = try! Data(contentsOf: itemURL)
+        } else {
+            data = try! Data(contentsOf: url)
+            fileManager.createFile(atPath: itemURL.path, contents: data, attributes: nil)
+        }
+        let activityView = ActivityView(activityItems: [itemURL], applicationActivities: nil)
+        return Group {
+        if self.horizontalSizeClass == .regular && self.verticalSizeClass == .regular {
+            activityView.frame(width: 300, height: 480)
+        } else {
+            activityView
+            .edgesIgnoringSafeArea(.all)
+            }
+        }
     }
 }
 

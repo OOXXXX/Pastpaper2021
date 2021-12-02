@@ -87,3 +87,76 @@ class WebviewController: UIViewController {
         }
     }
 }
+
+class RemoteURLActivityItemProvider : UIActivityItemProvider {
+    let remoteURL: URL
+    private var urlSession: URLSession
+    private var fileManager: FileManager
+    private var semaphore: DispatchSemaphore?
+
+    init(url: URL, urlSession: URLSession = .shared, fileManager: FileManager = .default) {
+        self.remoteURL = url
+        self.urlSession = urlSession
+        self.fileManager = fileManager
+        super.init(placeholderItem: url)
+    }
+
+    override var item: Any {
+        guard let filename = remoteURL.pathComponents.last else { return super.item }
+        
+        // ✅ Return existing data from the user's temp directory, if previously saved:
+        let itemURL = fileManager.temporaryDirectory.appendingPathComponent(filename)
+        if fileManager.fileExists(atPath: itemURL.path) {
+            return try! Data(contentsOf: itemURL)
+        }
+        
+        // ✅ Use a semaphore to make the async data task blocking task:
+        var localData: Data?
+        semaphore = DispatchSemaphore(value: 0)
+        let task = urlSession.dataTask(with: remoteURL) { [weak weakSelf = self] data, response, error in
+            defer { weakSelf?.semaphore?.signal() }
+            guard let strongSelf = weakSelf, let remoteData = data else { return }
+
+            // ✅ Create (or overwrite) the data to the user's temp directory:
+            strongSelf.fileManager.createFile(atPath: itemURL.path, contents: remoteData, attributes: nil)
+            localData = try! Data(contentsOf: itemURL)
+        }
+
+        task.resume()
+        semaphore?.wait()
+        semaphore = nil
+
+        // ✅ Return the stored data from the user's temp directory:
+        if let item = localData {
+            return item
+        }
+
+        task.cancel()
+        return super.item
+    }
+
+    override func cancel() {
+        semaphore?.signal()
+        super.cancel()
+    }
+}
+
+struct ActivityView: UIViewControllerRepresentable {
+    typealias CompletionWithItemsHandler = (_ activityType: UIActivity.ActivityType?, _ completed: Bool, _ returnedItems: [Any]?, _ error: Error?) -> Void
+    
+    var activityItems: [Any]
+    var applicationActivities: [UIActivity]?
+    let excludedActivityTypes: [UIActivity.ActivityType]? = nil
+    let completion: CompletionWithItemsHandler? = nil
+    
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        let controller = UIActivityViewController(activityItems: activityItems, applicationActivities: applicationActivities)
+        controller.excludedActivityTypes = excludedActivityTypes
+        controller.completionWithItemsHandler = completion
+        return controller
+    }
+    
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {
+        // no-op
+    }
+}
