@@ -47,16 +47,13 @@ struct IALView: View {
                 }
                 .headerProminence(.increased)
                 
-                Section(header: Text("Edexcel")) {
+                Section(header: Text("AQA")) {
                     
                     NavigationLink(destination: Text("quali")) {
                         Text("Accounting")
                     }
                     NavigationLink(destination: Text("quali")) {
                         Text("Biology")
-                    }
-                    NavigationLink(destination: Text("quali")) {
-                        Text("Business")
                     }
                     NavigationLink(destination: Text("quali")) {
                         Text("Chemistry")
@@ -84,9 +81,9 @@ struct IALView: View {
                 
                 
             }
-            .listStyle(.inset)
+            //.listStyle(.sidebar)
+            .listStyle(.automatic)
             .navigationBarTitle("International AL", displayMode: .inline)
-            //.navigationBarHidden(true)
             
         
     }
