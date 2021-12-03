@@ -81,7 +81,7 @@ struct ContentView: View {
                         Image(systemName: "i.square.fill")
                              .font(Font.system(.title))
                              .foregroundColor(.indigo)
-                        Text("International Advanced Level")
+                        Text("International AL")
                     }
                     .offset(x: -8)
                 }

@@ -51,7 +51,7 @@ struct IalEdxMathsInnerWebView: View {
                 // ⚠️ IMPORTANT: `UIActivityViewController` must be presented in a popover on iPad:
                 self.isActivityPopoverPresented.toggle()
             default:
-                // ⚠️ IMPORTANT: `UIActivityViewController` must be presented in a popover on iPhone and iPod Touch:
+                // ⚠️ IMPORTANT: `UIActivityViewController` must be presented in a sheet on iPhone and iPod Touch:
                 self.isActivitySheetPresented.toggle()
             }
         }, label: {
@@ -80,7 +80,7 @@ struct IalEdxMathsInnerWebView: View {
         let activityView = ActivityView(activityItems: [itemURL], applicationActivities: nil)
         return Group {
         if self.horizontalSizeClass == .regular && self.verticalSizeClass == .regular {
-            activityView.frame(width: 330, height: 480)
+            activityView.frame(width: 333, height: 480)
         } else {
             activityView
             .edgesIgnoringSafeArea(.all)

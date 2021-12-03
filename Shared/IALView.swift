@@ -14,26 +14,12 @@ struct IALView: View {
             List {
                 Section(header: Text("Edexcel")) {
                     
-                    NavigationLink(destination: Text("quali")) {
-                        Text("Accounting")
-                    }
-                    NavigationLink(destination: Text("quali")) {
-                        Text("Biology")
-                    }
+                    
                     NavigationLink(destination: Text("quali")) {
                         Text("Business")
                     }
                     NavigationLink(destination: Text("quali")) {
-                        Text("Chemistry")
-                    }
-                    NavigationLink(destination: Text("quali")) {
                         Text("Economics")
-                    }
-                    NavigationLink(destination: Text("quali")) {
-                        Text("Geography")
-                    }
-                    NavigationLink(destination: Text("quali")) {
-                        Text("History")
                     }
                     NavigationLink(destination: IalEdxMathsView()) {
                         Text("Mathematics")
@@ -49,27 +35,15 @@ struct IALView: View {
                 
                 Section(header: Text("AQA")) {
                     
-                    NavigationLink(destination: Text("quali")) {
-                        Text("Accounting")
-                    }
+                    
                     NavigationLink(destination: Text("quali")) {
                         Text("Biology")
                     }
                     NavigationLink(destination: Text("quali")) {
                         Text("Chemistry")
                     }
-                    NavigationLink(destination: Text("quali")) {
-                        Text("Economics")
-                    }
-                    NavigationLink(destination: Text("quali")) {
-                        Text("Geography")
-                    }
-                    NavigationLink(destination: Text("quali")) {
-                        Text("History")
-                    }
-                    NavigationLink(destination: Text("quali")) {
-                        Text("Mathematics")
-                    }
+                    
+                    
                     NavigationLink(destination: Text("quali")) {
                         Text("Physics")
                     }
@@ -82,7 +56,7 @@ struct IALView: View {
                 
             }
             //.listStyle(.sidebar)
-            .listStyle(.automatic)
+            .listStyle(.plain)
             .navigationBarTitle("International AL", displayMode: .inline)
             
         
