@@ -11,7 +11,9 @@ import SwiftUI
 
 var activityIndicator: UIActivityIndicatorView!
 
+
 struct Webview: UIViewControllerRepresentable {
+    var preferredFrameRateRange = CAFrameRateRange(minimum:120, maximum:120, preferred:120)
     let url: String
     
 
@@ -34,8 +36,10 @@ struct Webview: UIViewControllerRepresentable {
 }
 
 class WebviewController: UIViewController {
+    
     lazy var webview: WKWebView = WKWebView()
     lazy var progressbar: UIProgressView = UIProgressView()
+    var preferredFrameRateRange = CAFrameRateRange(minimum:120, maximum:120, preferred:120)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -160,3 +164,4 @@ struct ActivityView: UIViewControllerRepresentable {
         // no-op
     }
 }
+

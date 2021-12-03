@@ -28,6 +28,7 @@
 		4B5D43702758C2E30092865C /* IalEdxMathsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMathsView.swift; sourceTree = "<group>"; };
 		4B5D43732758CF240092865C /* IalEdxMathsInnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMathsInnerView.swift; sourceTree = "<group>"; };
 		4B5D4376275927440092865C /* WebViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModifier.swift; sourceTree = "<group>"; };
+		4B5D437B2759ED4A0092865C /* Pastpaper2021--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pastpaper2021--iOS--Info.plist"; sourceTree = "<group>"; };
 		4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pastpaper2021App.swift; sourceTree = "<group>"; };
 		4BC9677D2750B71C007DE392 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4BC9677E2750B71D007DE392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 		4BC967762750B71C007DE392 = {
 			isa = PBXGroup;
 			children = (
+				4B5D437B2759ED4A0092865C /* Pastpaper2021--iOS--Info.plist */,
 				4BC9677B2750B71C007DE392 /* Shared */,
 				4BC9678A2750B71D007DE392 /* macOS */,
 				4BC967842750B71D007DE392 /* Products */,
@@ -338,11 +340,13 @@
 				DEVELOPMENT_TEAM = 6MM6Y2NK23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pastpaper2021--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -368,11 +372,13 @@
 				DEVELOPMENT_TEAM = 6MM6Y2NK23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pastpaper2021--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
