@@ -28,7 +28,11 @@ struct Contest {
 
 struct ContentView: View {
     
-    @State private var presentingSafariView = false
+    @State private var presentingSafariView1 = false
+    @State private var presentingSafariView2 = false
+    @State private var presentingSafariView3 = false
+    @State private var presentingSafariView4 = false
+    @State private var presentingSafariView5 = false
     @State private var showSafari = false
     
     var qualiList = [
@@ -154,7 +158,7 @@ struct ContentView: View {
 //                        .font(Font.system(.body))
                 }) {
                     Button(action: {
-                        self.presentingSafariView = true
+                        self.presentingSafariView1 = true
                     }) {
                         HStack {
                             Text("Oxford")
@@ -164,7 +168,7 @@ struct ContentView: View {
                             DisclosureIndicator()
                         }
                     }
-                    .safariView(isPresented: $presentingSafariView) {
+                    .safariView(isPresented: $presentingSafariView1) {
                         SafariView(
                             url: URL(string: "https://www.ox.ac.uk")!,
                             configuration: SafariView.Configuration(
@@ -176,7 +180,7 @@ struct ContentView: View {
                    }
                     
                     Button(action: {
-                        self.presentingSafariView = true
+                        self.presentingSafariView2 = true
                     }) {
                         HStack {
                             Text("Cambridge")
@@ -186,7 +190,7 @@ struct ContentView: View {
                             DisclosureIndicator()
                         }
                     }
-                    .safariView(isPresented: $presentingSafariView) {
+                    .safariView(isPresented: $presentingSafariView2) {
                         SafariView(
                             url: URL(string: "https://www.cam.ac.uk")!,
                             configuration: SafariView.Configuration(
@@ -198,7 +202,7 @@ struct ContentView: View {
                    }
                     
                     Button(action: {
-                        self.presentingSafariView = true
+                        self.presentingSafariView3 = true
                     }) {
                         HStack {
                             Text("Imperial London")
@@ -208,7 +212,7 @@ struct ContentView: View {
                             DisclosureIndicator()
                         }
                     }
-                    .safariView(isPresented: $presentingSafariView) {
+                    .safariView(isPresented: $presentingSafariView3) {
                         SafariView(
                             url: URL(string: "https://www.imperial.ac.uk")!,
                             configuration: SafariView.Configuration(
@@ -220,7 +224,7 @@ struct ContentView: View {
                    }
                     
                     Button(action: {
-                        self.presentingSafariView = true
+                        self.presentingSafariView4 = true
                     }) {
                         HStack {
                             Text("London School of Economics")
@@ -230,7 +234,7 @@ struct ContentView: View {
                             DisclosureIndicator()
                         }
                     }
-                    .safariView(isPresented: $presentingSafariView) {
+                    .safariView(isPresented: $presentingSafariView4) {
                         SafariView(
                             url: URL(string: "https://www.lse.ac.uk")!,
                             configuration: SafariView.Configuration(
@@ -242,7 +246,7 @@ struct ContentView: View {
                    }
                     
                     Button(action: {
-                        self.presentingSafariView = true
+                        self.presentingSafariView5 = true
                     }) {
                         HStack {
                             Text("University College London")
@@ -252,7 +256,7 @@ struct ContentView: View {
                             DisclosureIndicator()
                         }
                     }
-                    .safariView(isPresented: $presentingSafariView) {
+                    .safariView(isPresented: $presentingSafariView5) {
                         SafariView(
                             url: URL(string: "https://www.ucl.ac.uk")!,
                             configuration: SafariView.Configuration(
