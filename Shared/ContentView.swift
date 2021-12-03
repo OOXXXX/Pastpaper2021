@@ -147,13 +147,18 @@ struct ContentView: View {
                 .listSectionSeparator(.visible)
                 .headerProminence(.increased)
                 
-                Section(header: Text("Official Websites")) {
+                Section(header: HStack {
+                    Text("Official Websites")
+//                    Image(systemName: "link")
+//                        .foregroundColor(.blue)
+//                        .font(Font.system(.body))
+                }) {
                     Button(action: {
                         self.presentingSafariView = true
                     }) {
                         HStack {
                             Text("Oxford")
-                            
+                                //.foregroundColor(.black)
                             Spacer()
                             
                             DisclosureIndicator()
