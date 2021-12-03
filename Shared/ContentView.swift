@@ -58,7 +58,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 
-                NavigationLink(destination: Text("quali")) {
+                NavigationLink(destination: IGCSEView()) {
                     HStack {
                         Image(systemName: "i.square.fill")
                              .font(Font.system(.title))

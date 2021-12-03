@@ -55,11 +55,9 @@ struct IALView: View {
                 
                 
             }
-            //.listStyle(.sidebar)
             .listStyle(.plain)
             .navigationBarTitle("International AL", displayMode: .inline)
             
-        
     }
 }
 
