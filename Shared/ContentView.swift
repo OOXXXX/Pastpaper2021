@@ -67,7 +67,7 @@ struct ContentView: View {
                     }
                     .offset(x: -8)
                 }
-                NavigationLink(destination: Text("quali")) {
+                NavigationLink(destination: ALView()) {
                     HStack {
                         Image(systemName: "a.square.fill")
                              .font(Font.system(.title))
@@ -85,12 +85,12 @@ struct ContentView: View {
                     }
                     .offset(x: -8)
                 }
-                NavigationLink(destination: Text("quali")) {
+                NavigationLink(destination: OLView()) {
                     HStack {
                         Image(systemName: "o.square.fill")
                              .font(Font.system(.title))
                              .foregroundColor(.purple)
-                        Text("OLevel")
+                        Text("O Level")
                     }
                     .offset(x: -8)
                 }

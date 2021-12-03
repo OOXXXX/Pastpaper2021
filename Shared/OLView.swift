@@ -1,5 +1,5 @@
 //
-//  IGCSEView.swift
+//  OLView.swift
 //  Pastpaper2021
 //
 //  Created by ZhuPinxi on 2021/12/3.
@@ -7,35 +7,35 @@
 
 import SwiftUI
 
-struct IGCSEView: View {
+struct OLView: View {
     var body: some View {
         List {
             Section(header: Text("CAIE")) {
                 
                 
                 NavigationLink(destination: Text("quali")) {
-                    Text("Biology (0610)")
+                    Text("Biology (5090)")
                 }
                 NavigationLink(destination: Text("quali")) {
-                    Text("Chemistry (0620)")
+                    Text("Chemistry (5070)")
                 }
                 NavigationLink(destination: Text("quali")) {
-                    Text("Computer Science (0478)")
+                    Text("Computer Science (2210)")
                 }
                 NavigationLink(destination: Text("quali")) {
-                    Text("Economics (0455)")
+                    Text("Economics (2281)")
                 }
                 NavigationLink(destination: Text("quali")) {
-                    Text("English as Second Language (0511)")
+                    Text("English Language (1123)")
                 }
                 NavigationLink(destination: Text("quali")) {
-                    Text("English as First Language (0500)")
+                    Text("Geography (2217)")
                 }
                 NavigationLink(destination: Text("quali")) {
-                    Text("Mathematics (0580)")
+                    Text("Mathematics D (4024)")
                 }
                 NavigationLink(destination: Text("quali")) {
-                    Text("Additional Mathematics (0606)")
+                    Text("Physcis (5054)")
                 }
             }
             .headerProminence(.increased)
@@ -43,12 +43,12 @@ struct IGCSEView: View {
             
         }
         .listStyle(.plain)
-        .navigationBarTitle("IGCSE", displayMode: .inline)
+        .navigationBarTitle("O Level", displayMode: .inline)
     }
 }
 
-struct IGCSEView_Previews: PreviewProvider {
+struct OLView_Previews: PreviewProvider {
     static var previews: some View {
-        IGCSEView()
+        OLView()
     }
 }
