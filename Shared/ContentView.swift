@@ -29,6 +29,7 @@ struct Contest {
 struct ContentView: View {
     
     @State private var presentingSafariView = false
+    @State private var showSafari = false
     
     var qualiList = [
       Quali(image: "i.square.fill", name: "IGCSE", color: .blue),
@@ -45,8 +46,8 @@ struct ContentView: View {
       ]
     
     var contestList = [
-      Contest(image: "o.square.fill", name: "Oxford admissions", color: .gray),
       Contest(image: "c.square.fill", name: "Cambridge admissions", color: .orange),
+      Contest(image: "o.square.fill", name: "Oxford admissions", color: .gray),
       Contest(image: "m.square.fill", name: "MAA AMC", color: .cyan),
       Contest(image: "u.square.fill", name: "UKMT", color: .black),
         ]
@@ -145,6 +146,7 @@ struct ContentView: View {
                 }
                 .listSectionSeparator(.visible)
                 .headerProminence(.increased)
+                
                 Section(header: Text("Official Websites")) {
                     Button(action: {
                         self.presentingSafariView = true
@@ -159,7 +161,7 @@ struct ContentView: View {
                     }
                     .safariView(isPresented: $presentingSafariView) {
                         SafariView(
-                            url: URL(string: "https://github.com/")!,
+                            url: URL(string: "https://www.ox.ac.uk")!,
                             configuration: SafariView.Configuration(
                                 entersReaderIfAvailable: false,
                                 barCollapsingEnabled: true
@@ -167,6 +169,95 @@ struct ContentView: View {
                         )
                             
                    }
+                    
+                    Button(action: {
+                        self.presentingSafariView = true
+                    }) {
+                        HStack {
+                            Text("Cambridge")
+                            
+                            Spacer()
+                            
+                            DisclosureIndicator()
+                        }
+                    }
+                    .safariView(isPresented: $presentingSafariView) {
+                        SafariView(
+                            url: URL(string: "https://www.cam.ac.uk")!,
+                            configuration: SafariView.Configuration(
+                                entersReaderIfAvailable: false,
+                                barCollapsingEnabled: true
+                            )
+                        )
+                            
+                   }
+                    
+                    Button(action: {
+                        self.presentingSafariView = true
+                    }) {
+                        HStack {
+                            Text("Imperial London")
+                            
+                            Spacer()
+                            
+                            DisclosureIndicator()
+                        }
+                    }
+                    .safariView(isPresented: $presentingSafariView) {
+                        SafariView(
+                            url: URL(string: "https://www.imperial.ac.uk")!,
+                            configuration: SafariView.Configuration(
+                                entersReaderIfAvailable: false,
+                                barCollapsingEnabled: true
+                            )
+                        )
+                            
+                   }
+                    
+                    Button(action: {
+                        self.presentingSafariView = true
+                    }) {
+                        HStack {
+                            Text("London School of Economics")
+                            
+                            Spacer()
+                            
+                            DisclosureIndicator()
+                        }
+                    }
+                    .safariView(isPresented: $presentingSafariView) {
+                        SafariView(
+                            url: URL(string: "https://www.lse.ac.uk")!,
+                            configuration: SafariView.Configuration(
+                                entersReaderIfAvailable: false,
+                                barCollapsingEnabled: true
+                            )
+                        )
+                            
+                   }
+                    
+                    Button(action: {
+                        self.presentingSafariView = true
+                    }) {
+                        HStack {
+                            Text("University College London")
+                            
+                            Spacer()
+                            
+                            DisclosureIndicator()
+                        }
+                    }
+                    .safariView(isPresented: $presentingSafariView) {
+                        SafariView(
+                            url: URL(string: "https://www.ucl.ac.uk")!,
+                            configuration: SafariView.Configuration(
+                                entersReaderIfAvailable: false,
+                                barCollapsingEnabled: true
+                            )
+                        )
+                            
+                   }
+                    
                     
                 }
                 .listSectionSeparator(.visible)
