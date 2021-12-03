@@ -21,6 +21,9 @@
 		4B5D43AB275A1FE80092865C /* ALView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5D43A9275A1FE80092865C /* ALView.swift */; };
 		4B5D43AD275A25990092865C /* OLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5D43AC275A25990092865C /* OLView.swift */; };
 		4B5D43AE275A25990092865C /* OLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5D43AC275A25990092865C /* OLView.swift */; };
+		4B5D43B7275A80A10092865C /* BetterSafariView in Frameworks */ = {isa = PBXBuildFile; productRef = 4B5D43B6275A80A10092865C /* BetterSafariView */; };
+		4B5D43BC275A81D60092865C /* IndicatorTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5D43BB275A81D60092865C /* IndicatorTitleLabel.swift */; };
+		4B5D43BD275A81D60092865C /* IndicatorTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5D43BB275A81D60092865C /* IndicatorTitleLabel.swift */; };
 		4BC9678C2750B71D007DE392 /* Pastpaper2021App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */; };
 		4BC9678D2750B71D007DE392 /* Pastpaper2021App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */; };
 		4BC9678E2750B71D007DE392 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9677D2750B71C007DE392 /* ContentView.swift */; };
@@ -38,6 +41,7 @@
 		4B5D43A6275A15670092865C /* IGCSEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGCSEView.swift; sourceTree = "<group>"; };
 		4B5D43A9275A1FE80092865C /* ALView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALView.swift; sourceTree = "<group>"; };
 		4B5D43AC275A25990092865C /* OLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLView.swift; sourceTree = "<group>"; };
+		4B5D43BB275A81D60092865C /* IndicatorTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorTitleLabel.swift; sourceTree = "<group>"; };
 		4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pastpaper2021App.swift; sourceTree = "<group>"; };
 		4BC9677D2750B71C007DE392 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4BC9677E2750B71D007DE392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B5D43B7275A80A10092865C /* BetterSafariView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +84,7 @@
 			children = (
 				4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */,
 				4BC9677D2750B71C007DE392 /* ContentView.swift */,
+				4B5D43BB275A81D60092865C /* IndicatorTitleLabel.swift */,
 				4B5D43A6275A15670092865C /* IGCSEView.swift */,
 				4B5D43A9275A1FE80092865C /* ALView.swift */,
 				4B5D43AC275A25990092865C /* OLView.swift */,
@@ -124,6 +130,9 @@
 			dependencies = (
 			);
 			name = "Pastpaper2021 (iOS)";
+			packageProductDependencies = (
+				4B5D43B6275A80A10092865C /* BetterSafariView */,
+			);
 			productName = "Pastpaper2021 (iOS)";
 			productReference = 4BC967832750B71D007DE392 /* Pastpaper2021.app */;
 			productType = "com.apple.product-type.application";
@@ -172,6 +181,9 @@
 				Base,
 			);
 			mainGroup = 4BC967762750B71C007DE392;
+			packageReferences = (
+				4B5D43B5275A80A10092865C /* XCRemoteSwiftPackageReference "BetterSafariView" */,
+			);
 			productRefGroup = 4BC967842750B71D007DE392 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -207,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BC9678E2750B71D007DE392 /* ContentView.swift in Sources */,
+				4B5D43BC275A81D60092865C /* IndicatorTitleLabel.swift in Sources */,
 				4B5D43A7275A15670092865C /* IGCSEView.swift in Sources */,
 				4B5D43742758CF240092865C /* IalEdxMathsInnerView.swift in Sources */,
 				4BC9678C2750B71D007DE392 /* Pastpaper2021App.swift in Sources */,
@@ -223,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BC9678F2750B71D007DE392 /* ContentView.swift in Sources */,
+				4B5D43BD275A81D60092865C /* IndicatorTitleLabel.swift in Sources */,
 				4B5D43A8275A15670092865C /* IGCSEView.swift in Sources */,
 				4B5D43752758CF240092865C /* IalEdxMathsInnerView.swift in Sources */,
 				4BC9678D2750B71D007DE392 /* Pastpaper2021App.swift in Sources */,
@@ -500,6 +514,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B5D43B5275A80A10092865C /* XCRemoteSwiftPackageReference "BetterSafariView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stleamist/BetterSafariView.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B5D43B6275A80A10092865C /* BetterSafariView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B5D43B5275A80A10092865C /* XCRemoteSwiftPackageReference "BetterSafariView" */;
+			productName = BetterSafariView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BC967772750B71C007DE392 /* Project object */;
 }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import BetterSafariView
 
 struct Quali {
   let image: String
@@ -26,6 +27,8 @@ struct Contest {
 }
 
 struct ContentView: View {
+    
+    @State private var presentingSafariView = false
     
     var qualiList = [
       Quali(image: "i.square.fill", name: "IGCSE", color: .blue),
@@ -143,12 +146,27 @@ struct ContentView: View {
                 .listSectionSeparator(.visible)
                 .headerProminence(.increased)
                 Section(header: Text("Official Websites")) {
-                    ForEach(searchResults4, id: \.self) { website in
-                        NavigationLink(destination: Text(website)) {
-                            Text(website)
+                    Button(action: {
+                        self.presentingSafariView = true
+                    }) {
+                        HStack {
+                            Text("Oxford")
+                            
+                            Spacer()
+                            
+                            DisclosureIndicator()
                         }
-                        
                     }
+                    .safariView(isPresented: $presentingSafariView) {
+                        SafariView(
+                            url: URL(string: "https://github.com/")!,
+                            configuration: SafariView.Configuration(
+                                entersReaderIfAvailable: false,
+                                barCollapsingEnabled: true
+                            )
+                        )
+                            
+                   }
                     
                 }
                 .listSectionSeparator(.visible)
