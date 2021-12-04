@@ -102,7 +102,7 @@ struct ContentView: View {
                     }
                     .offset(x: -8)
                 }
-                NavigationLink(destination: Text("quali")) {
+                NavigationLink(destination: Text("Still under development")) {
                     HStack {
                         Image(systemName: "i.square.fill")
                              .font(Font.system(.title))

@@ -14,28 +14,35 @@ struct IGCSEView: View {
                 
                 
                 NavigationLink(destination: Text("quali")) {
-                    Text("Biology (0610)")
+                    TitleLabel("Biology", subtitle: "0610")
                 }
                 NavigationLink(destination: Text("quali")) {
-                    Text("Chemistry (0620)")
+                    //Text("Chemistry (0620)")
+                    TitleLabel("Chemistry", subtitle: "0620")
                 }
                 NavigationLink(destination: Text("quali")) {
-                    Text("Computer Science (0478)")
+                    //Text("Computer Science (0478)")
+                    TitleLabel("Computer Science", subtitle: "0478")
                 }
                 NavigationLink(destination: Text("quali")) {
-                    Text("Economics (0455)")
+                    //Text("Economics (0455)")
+                    TitleLabel("Economics", subtitle: "0455")
                 }
                 NavigationLink(destination: Text("quali")) {
-                    Text("English as Second Language (0511)")
+                    //Text("English as Second Language (0511)")
+                    TitleLabel("English as Second Language", subtitle: "0511")
                 }
                 NavigationLink(destination: Text("quali")) {
-                    Text("English as First Language (0500)")
+                    //Text("English as First Language (0500)")
+                    TitleLabel("English as First Language", subtitle: "0500")
                 }
                 NavigationLink(destination: Text("quali")) {
-                    Text("Mathematics (0580)")
+                    //Text("Mathematics (0580)")
+                    TitleLabel("Mathematics", subtitle: "0580")
                 }
                 NavigationLink(destination: Text("quali")) {
-                    Text("Additional Mathematics (0606)")
+                    //Text("Additional Mathematics (0606)")
+                    TitleLabel("Additional Mathematics", subtitle: "0606")
                 }
             }
             .headerProminence(.increased)
