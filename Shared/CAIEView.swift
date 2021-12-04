@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CAIEView: View {
+    @State private var showingAlert = false
 
     var body: some View {
         List {
@@ -43,14 +44,19 @@ struct CAIEView: View {
                     }
                     //.offset(x: -8)
                 }
-                NavigationLink(destination: Text("Still under development")) {
+                Button(action: {
+                    self.showingAlert = true
+                }) {
                     HStack {
-//                        Image(systemName: "p.square")
-//                             .font(Font.system(.title))
-                             //.foregroundColor(.purple)
-                        Text("Pre-U")
+                            Text("Pre-U")
+                                .foregroundColor(Color("Color2"))
+                       Spacer()
+                       DisclosureIndicator()
                     }
-                    //.offset(x: -8)
+                    .alert("Still under development 🚴", isPresented: $showingAlert) {
+                                
+                    }
+                    
                 }
                 
             }

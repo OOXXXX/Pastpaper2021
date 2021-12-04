@@ -96,14 +96,26 @@ struct ContentView: View {
                     .offset(x: -8)
                 }
                 
-                NavigationLink(destination: Text("Still under development")) {
+            Button(action: {
+                    self.showingAlert = true
+                }) {
                     HStack {
-                        Image(systemName: "i.square.fill")
-                             .font(Font.system(.title))
-                             .foregroundColor(.yellow)
-                        Text("IBDP")
+                        Group {
+                            Image(systemName: "i.square.fill")
+                                .font(Font.system(.title))
+                            .foregroundColor(.yellow)
+                            Text("IBDP")
+                                .foregroundColor(Color("Color2"))
+                        }
+                        .offset(x: -8)
+                            
+                        Spacer()
+                       DisclosureIndicator()
                     }
-                    .offset(x: -8)
+                    .alert("Still under development 🚴", isPresented: $showingAlert) {
+                                
+                    }
+                    
                 }
                 
                 NavigationLink(destination: OLView()) {

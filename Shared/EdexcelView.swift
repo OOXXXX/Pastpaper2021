@@ -8,23 +8,59 @@
 import SwiftUI
 
 struct EdexcelView: View {
+    @State private var showingAlert = false
+    
     var body: some View {
         List {
             Section(header: Text("Level 2")) {
-                NavigationLink(destination: Text("quali")) {
-                    Text("International GCSEs")
+                Button(action: {
+                    self.showingAlert = true
+                }) {
+                    HStack {
+                            Text("International GCSEs")
+                                .foregroundColor(Color("Color2"))
+                       Spacer()
+                       DisclosureIndicator()
+                    }
+                    .alert("Still under development 🚴", isPresented: $showingAlert) {
+                                
+                    }
                 }
-                NavigationLink(destination: Text("quali")) {
-                    Text("GCSEs")
+                
+                Button(action: {
+                    self.showingAlert = true
+                }) {
+                    HStack {
+                            Text("GCSEs")
+                                .foregroundColor(Color("Color2"))
+                       Spacer()
+                       DisclosureIndicator()
+                    }
+                    .alert("Still under development 🚴", isPresented: $showingAlert) {
+                                
+                    }
+                    
                 }
             }
             
             Section(header: Text("Level 3")) {
-                NavigationLink(destination: Text("quali")) {
-                    Text("AS & A levels")
+                Button(action: {
+                    self.showingAlert = true
+                }) {
+                    HStack {
+                            Text("AS & A Levels")
+                                .foregroundColor(Color("Color2"))
+                       Spacer()
+                       DisclosureIndicator()
+                    }
+                    .alert("Still under development 🚴", isPresented: $showingAlert) {
+                                
+                    }
+                    
                 }
+                
                 NavigationLink(destination: EdxIALView()) {
-                    Text("International AS & A levels")
+                    Text("International AS & A Levels")
                 }
             }
             
