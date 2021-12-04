@@ -10,18 +10,24 @@ import SwiftUI
 struct EdexcelView: View {
     var body: some View {
         List {
-            NavigationLink(destination: Text("quali")) {
-                Text("AS & A levels")
+            Section(header: Text("Level 2")) {
+                NavigationLink(destination: Text("quali")) {
+                    Text("International GCSEs")
+                }
+                NavigationLink(destination: Text("quali")) {
+                    Text("GCSEs")
+                }
             }
-            NavigationLink(destination: Text("quali")) {
-                Text("GCSEs")
+            
+            Section(header: Text("Level 3")) {
+                NavigationLink(destination: Text("quali")) {
+                    Text("AS & A levels")
+                }
+                NavigationLink(destination: EdxIALView()) {
+                    Text("International AS & A levels")
+                }
             }
-            NavigationLink(destination: Text("quali")) {
-                Text("International AS & A levels")
-            }
-            NavigationLink(destination: Text("quali")) {
-                Text("International GCSEs")
-            }
+            
         }
         .listStyle(.plain)
         .navigationBarTitle("Edexcel", displayMode: .inline)

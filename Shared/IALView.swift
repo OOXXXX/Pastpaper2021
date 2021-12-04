@@ -9,9 +9,7 @@ import SwiftUI
 
 struct IALView: View {
     var body: some View {
-        
-        
-            List {
+         List {
                 Section(header: Text("Edexcel")) {
                     
                     
@@ -60,6 +58,33 @@ struct IALView: View {
             
     }
 }
+
+struct EdxIALView: View {
+    var body: some View {
+         List {
+                    NavigationLink(destination: Text("quali")) {
+                        Text("Business")
+                    }
+                    NavigationLink(destination: Text("quali")) {
+                        Text("Economics")
+                    }
+                    NavigationLink(destination: IalEdxMathsView()) {
+                        Text("Mathematics")
+                    }
+                    NavigationLink(destination: Text("quali")) {
+                        Text("Physics")
+                    }
+                    NavigationLink(destination: Text("quali")) {
+                        Text("Psychology")
+                    }
+               
+            }
+            .listStyle(.plain)
+            .navigationBarTitle("IAL", displayMode: .inline)
+            
+    }
+}
+
 
 struct IALView_Previews: PreviewProvider {
     static var previews: some View {

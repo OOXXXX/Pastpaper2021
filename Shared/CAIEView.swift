@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct CAIEView: View {
+
     var body: some View {
         List {
             Section(header: Text("Cambridge Upper Secondary")) {
-                NavigationLink(destination: IGCSEView()) {
+                NavigationLink(destination: CaieIGCSEView()) {
                     HStack {
 //                        Image(systemName: "i.square")
 //                             .font(Font.system(.title))

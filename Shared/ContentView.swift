@@ -27,6 +27,7 @@ struct Contest {
 }
 
 struct ContentView: View {
+    @State private var showingAlert = false
     
     @State private var presentingSafariView1 = false
     @State private var presentingSafariView2 = false
@@ -168,16 +169,15 @@ struct ContentView: View {
                 
                 Section(header: HStack {
                     Text("Official Websites")
-//                    Image(systemName: "link")
-//                        .foregroundColor(.blue)
-//                        .font(Font.system(.body))
-                }) {
+               }) {
                     Button(action: {
                         self.presentingSafariView1 = true
                     }) {
                         HStack {
-                            Text("Oxford")
-                                //.foregroundColor(.black)
+                            Text("University of Oxford")
+                                .foregroundColor(Color("Color1"))
+                            Image(systemName: "arrow.up.right")
+                                .font(Font.system(.caption))
                             Spacer()
                             
                             DisclosureIndicator()
@@ -198,8 +198,10 @@ struct ContentView: View {
                         self.presentingSafariView2 = true
                     }) {
                         HStack {
-                            Text("Cambridge")
-                            
+                            Text("University of Cambridge")
+                                .foregroundColor(Color("Color1"))
+                            Image(systemName: "arrow.up.right")
+                                .font(Font.system(.caption))
                             Spacer()
                             
                             DisclosureIndicator()
@@ -220,8 +222,11 @@ struct ContentView: View {
                         self.presentingSafariView3 = true
                     }) {
                         HStack {
-                            Text("Imperial London")
-                            
+                            Text("Imperial College London")
+                                .foregroundColor(Color("Color1"))
+                            Image(systemName: "arrow.up.right")
+                                .font(Font.system(.caption))
+                                
                             Spacer()
                             
                             DisclosureIndicator()
@@ -243,7 +248,9 @@ struct ContentView: View {
                     }) {
                         HStack {
                             Text("London School of Economics")
-                            
+                                .foregroundColor(Color("Color1"))
+                            Image(systemName: "arrow.up.right")
+                                .font(Font.system(.caption))
                             Spacer()
                             
                             DisclosureIndicator()
@@ -265,7 +272,9 @@ struct ContentView: View {
                     }) {
                         HStack {
                             Text("University College London")
-                            
+                                .foregroundColor(Color("Color1"))
+                            Image(systemName: "arrow.up.right")
+                                .font(Font.system(.caption))
                             Spacer()
                             
                             DisclosureIndicator()

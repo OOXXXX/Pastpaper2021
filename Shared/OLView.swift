@@ -10,10 +10,7 @@ import SwiftUI
 struct OLView: View {
     var body: some View {
         List {
-            Section(header: Text("CAIE")) {
-                
-                
-                NavigationLink(destination: Text("quali")) {
+               NavigationLink(destination: Text("quali")) {
                     //Text("Biology (5090)")
                     TitleLabel("Biology", subtitle: "5090")
                 }
@@ -45,7 +42,7 @@ struct OLView: View {
                     //Text("Physcis (5054)")
                     TitleLabel("Physcis", subtitle: "5054")
                 }
-            }
+            
             .headerProminence(.increased)
             
             
