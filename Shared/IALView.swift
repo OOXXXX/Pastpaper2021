@@ -56,7 +56,7 @@ struct IALView: View {
                 
             }
             .listStyle(.plain)
-            .navigationBarTitle("International AL", displayMode: .inline)
+            .navigationBarTitle("IAL", displayMode: .inline)
             
     }
 }

@@ -66,21 +66,12 @@ struct ContentView: View {
         NavigationView {
             List {
                 
-                NavigationLink(destination: IGCSEView()) {
-                    HStack {
-                        Image(systemName: "i.square.fill")
-                             .font(Font.system(.title))
-                             .foregroundColor(.blue)
-                        Text("IGCSE")
-                    }
-                    .offset(x: -8)
-                }
                 NavigationLink(destination: ALView()) {
                     HStack {
                         Image(systemName: "a.square.fill")
                              .font(Font.system(.title))
                              .foregroundColor(.green)
-                        Text("Advanced Level")
+                        Text("AS & A Levels")
                     }
                     .offset(x: -8)
                 }
@@ -89,19 +80,21 @@ struct ContentView: View {
                         Image(systemName: "i.square.fill")
                              .font(Font.system(.title))
                              .foregroundColor(.indigo)
-                        Text("International AL")
+                        Text("International AS & A Levels")
                     }
                     .offset(x: -8)
                 }
-                NavigationLink(destination: OLView()) {
+                
+                NavigationLink(destination: IGCSEView()) {
                     HStack {
-                        Image(systemName: "o.square.fill")
+                        Image(systemName: "i.square.fill")
                              .font(Font.system(.title))
-                             .foregroundColor(.purple)
-                        Text("O Level")
+                             .foregroundColor(.blue)
+                        Text("International GCSE")
                     }
                     .offset(x: -8)
                 }
+                
                 NavigationLink(destination: Text("Still under development")) {
                     HStack {
                         Image(systemName: "i.square.fill")
@@ -111,27 +104,49 @@ struct ContentView: View {
                     }
                     .offset(x: -8)
                 }
-
                 
-
-                Section(header: Text("Examination Bureau")) {
-                    ForEach(examList, id: \.name) { exam in
-                        NavigationLink(destination: Text("quali")) {
-                            HStack {
-                                Image(systemName: exam.image)
-                                     .font(Font.system(.title))
-                                     .foregroundColor(exam.color)
-                                Text(exam.name)
-                               
-                              }
-                            .offset(x: -8)
-                        }
-                        
+                NavigationLink(destination: OLView()) {
+                    HStack {
+                        Image(systemName: "o.square.fill")
+                             .font(Font.system(.title))
+                             .foregroundColor(.purple)
+                        Text("O Level")
                     }
-                    
+                    .offset(x: -8)
+                }
+                
+                Section(header: Text("Examination Bureau")) {
+                    NavigationLink(destination: CAIEView()) {
+                        HStack {
+                            Image(systemName: "c.square.fill")
+                                 .font(Font.system(.title))
+                                 .foregroundColor(.brown)
+                            Text("CAIE")
+                        }
+                        .offset(x: -8)
+                    }
+                    NavigationLink(destination: EdexcelView()) {
+                        HStack {
+                            Image(systemName: "e.square.fill")
+                                 .font(Font.system(.title))
+                                 .foregroundColor(.mint)
+                            Text("Edexcel")
+                        }
+                        .offset(x: -8)
+                    }
+                    NavigationLink(destination: AqaView()) {
+                        HStack {
+                            Image(systemName: "a.square.fill")
+                                 .font(Font.system(.title))
+                                 .foregroundColor(.red)
+                            Text("AQA")
+                        }
+                        .offset(x: -8)
+                    }
                 }
                 .listSectionSeparator(.visible)
                 .headerProminence(.increased)
+                
                 Section(header: Text("Contest/Extra Tests")) {
                     ForEach(contestList, id: \.name) { contest in
                         NavigationLink(destination: Text("quali")) {

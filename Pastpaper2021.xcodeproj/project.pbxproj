@@ -30,6 +30,12 @@
 		4BC9678F2750B71D007DE392 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9677D2750B71C007DE392 /* ContentView.swift */; };
 		4BC967902750B71D007DE392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC9677E2750B71D007DE392 /* Assets.xcassets */; };
 		4BC967912750B71D007DE392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC9677E2750B71D007DE392 /* Assets.xcassets */; };
+		4BFBFDFB275BA2B700401100 /* CAIEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBFDFA275BA2B700401100 /* CAIEView.swift */; };
+		4BFBFDFC275BA2B700401100 /* CAIEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBFDFA275BA2B700401100 /* CAIEView.swift */; };
+		4BFBFDFE275BC09300401100 /* EdexcelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBFDFD275BC09300401100 /* EdexcelView.swift */; };
+		4BFBFDFF275BC09300401100 /* EdexcelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBFDFD275BC09300401100 /* EdexcelView.swift */; };
+		4BFBFE01275BC67E00401100 /* AqaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBFE00275BC67E00401100 /* AqaView.swift */; };
+		4BFBFE02275BC67E00401100 /* AqaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBFE00275BC67E00401100 /* AqaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +54,9 @@
 		4BC967832750B71D007DE392 /* Pastpaper2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pastpaper2021.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC967892750B71D007DE392 /* Pastpaper2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pastpaper2021.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC9678B2750B71D007DE392 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		4BFBFDFA275BA2B700401100 /* CAIEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAIEView.swift; sourceTree = "<group>"; };
+		4BFBFDFD275BC09300401100 /* EdexcelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdexcelView.swift; sourceTree = "<group>"; };
+		4BFBFE00275BC67E00401100 /* AqaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AqaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,13 +93,16 @@
 			children = (
 				4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */,
 				4BC9677D2750B71C007DE392 /* ContentView.swift */,
-				4B5D43BB275A81D60092865C /* IndicatorTitleLabel.swift */,
 				4B5D43A6275A15670092865C /* IGCSEView.swift */,
 				4B5D43A9275A1FE80092865C /* ALView.swift */,
 				4B5D43AC275A25990092865C /* OLView.swift */,
+				4BFBFDFA275BA2B700401100 /* CAIEView.swift */,
+				4BFBFE00275BC67E00401100 /* AqaView.swift */,
+				4BFBFDFD275BC09300401100 /* EdexcelView.swift */,
 				4B5D436D2758A1A30092865C /* IALView.swift */,
 				4B5D43702758C2E30092865C /* IalEdxMathsView.swift */,
 				4B5D43732758CF240092865C /* IalEdxMathsInnerView.swift */,
+				4B5D43BB275A81D60092865C /* IndicatorTitleLabel.swift */,
 				4B5D4376275927440092865C /* WebViewModifier.swift */,
 				4BC9677E2750B71D007DE392 /* Assets.xcassets */,
 			);
@@ -223,10 +235,13 @@
 				4B5D43A7275A15670092865C /* IGCSEView.swift in Sources */,
 				4B5D43742758CF240092865C /* IalEdxMathsInnerView.swift in Sources */,
 				4BC9678C2750B71D007DE392 /* Pastpaper2021App.swift in Sources */,
+				4BFBFDFE275BC09300401100 /* EdexcelView.swift in Sources */,
 				4B5D43AD275A25990092865C /* OLView.swift in Sources */,
 				4B5D436E2758A1A30092865C /* IALView.swift in Sources */,
 				4B5D4377275927440092865C /* WebViewModifier.swift in Sources */,
+				4BFBFDFB275BA2B700401100 /* CAIEView.swift in Sources */,
 				4B5D43712758C2E30092865C /* IalEdxMathsView.swift in Sources */,
+				4BFBFE01275BC67E00401100 /* AqaView.swift in Sources */,
 				4B5D43AA275A1FE80092865C /* ALView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,10 +255,13 @@
 				4B5D43A8275A15670092865C /* IGCSEView.swift in Sources */,
 				4B5D43752758CF240092865C /* IalEdxMathsInnerView.swift in Sources */,
 				4BC9678D2750B71D007DE392 /* Pastpaper2021App.swift in Sources */,
+				4BFBFDFF275BC09300401100 /* EdexcelView.swift in Sources */,
 				4B5D43AE275A25990092865C /* OLView.swift in Sources */,
 				4B5D436F2758A1A30092865C /* IALView.swift in Sources */,
 				4B5D4378275927440092865C /* WebViewModifier.swift in Sources */,
+				4BFBFDFC275BA2B700401100 /* CAIEView.swift in Sources */,
 				4B5D43722758C2E30092865C /* IalEdxMathsView.swift in Sources */,
+				4BFBFE02275BC67E00401100 /* AqaView.swift in Sources */,
 				4B5D43AB275A1FE80092865C /* ALView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
