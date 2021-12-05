@@ -19,7 +19,7 @@ struct IalEdxMathsView: View {
                 NavigationLink(destination: Text("quali")) {
                     Text("2020")
                 }
-                NavigationLink(destination: IalEdxMathsInnerView()) {
+                NavigationLink(destination: IalEdxMaths2019JanView()) {
                     Text("2019")
                 }
                 NavigationLink(destination: Text("quali")) {
@@ -37,18 +37,11 @@ struct IalEdxMathsView: View {
                 NavigationLink(destination: Text("quali")) {
                     Text("2014")
                 }
-                NavigationLink(destination: Text("quali")) {
-                    Text("2013")
-                }
-                NavigationLink(destination: Text("quali")) {
-                    Text("2012")
-                }
             }
             .headerProminence(.increased)
             
             Section(header: Text("May/Jun")) {
                 
-                Group {
                     NavigationLink(destination: Text("quali")) {
                         Text("2021")
                     }
@@ -73,26 +66,9 @@ struct IalEdxMathsView: View {
                     NavigationLink(destination: Text("quali")) {
                         Text("2014")
                     }
-                    NavigationLink(destination: Text("quali")) {
-                        Text("2013")
-                    }
-                    NavigationLink(destination: Text("quali")) {
-                        Text("2012")
-                    }
-                }
+         
                 .headerProminence(.increased)
                
-                Group {
-                    NavigationLink(destination: Text("quali")) {
-                        Text("2011")
-                    }
-                    NavigationLink(destination: Text("quali")) {
-                        Text("2009")
-                    }
-                    
-                }
-                .headerProminence(.increased)
-                    
             }
             
             Section(header: Text("Oct/Nov")) {
@@ -115,19 +91,7 @@ struct IalEdxMathsView: View {
                 NavigationLink(destination: Text("quali")) {
                     Text("2016")
                 }
-                NavigationLink(destination: Text("quali")) {
-                    Text("2015")
-                }
-                NavigationLink(destination: Text("quali")) {
-                    Text("2014")
-                }
-                NavigationLink(destination: Text("quali")) {
-                    Text("2013")
-                }
-                NavigationLink(destination: Text("quali")) {
-                    Text("2012")
-                }
-            }
+         }
             .headerProminence(.increased)
             
             

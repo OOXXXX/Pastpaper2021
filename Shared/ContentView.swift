@@ -159,7 +159,7 @@ struct ContentView: View {
                 .listSectionSeparator(.visible)
                 .headerProminence(.increased)
                 
-                Section(header: Text("Contest/Extra Tests")) {
+                Section(header: Text("Admissions Tests")) {
                     Button(action: {
                             self.showingAlert = true
                         }) {

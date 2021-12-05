@@ -8,39 +8,30 @@
 import SwiftUI
 import WebKit
 
-struct IalEdxMathsInnerView: View {
-    
-    
+struct IalEdxMaths2019JanView: View {
     var body: some View {
-        List {
-            
-            Section(header: Text("Pure Maths")) {
-                
-                NavigationLink(destination: IalEdxMathsInnerWebView()) {
-                    Text("WMA11/01")
+        List(IalMaths2019JanData) { ialMaths2019Jan in
+                NavigationLink(destination: IalEdxMaths2019JanWebView(ialMaths2019Jan: ialMaths2019Jan)) {
+                    Text(ialMaths2019Jan.name)
                 }
-                
-            }
-            .headerProminence(.increased)
-        
         }
-        //.listStyle(.sidebar)
         .listStyle(.plain)
-        .navigationBarTitle("2019", displayMode: .inline)
+        .navigationBarTitle("2019Jan", displayMode: .inline)
     }
 }
 
-struct IalEdxMathsInnerWebView: View {
+struct IalEdxMaths2019JanWebView: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.verticalSizeClass) var verticalSizeClass
     @State private var isPresented = false
     @State private var isActivityPopoverPresented = false
     @State private var isActivitySheetPresented = false
+    var ialMaths2019Jan: IalMaths2019Jan
     
     var body: some View {
-        Webview(url: "https://cdn.savemyexams.co.uk/wp-content/uploads/2020/12/WMA11_01_que_20190109.pdf")
+        Webview(url: ialMaths2019Jan.url)
             .edgesIgnoringSafeArea(.all)
-            .navigationBarTitle("WMA11/01", displayMode: .inline)
+            .navigationBarTitle(ialMaths2019Jan.name, displayMode: .inline)
             .navigationBarItems(trailing: shareButton)
             .sheet(isPresented: $isActivitySheetPresented, content: activityView)
     }
@@ -48,10 +39,8 @@ struct IalEdxMathsInnerWebView: View {
         Button(action: {
             switch (self.horizontalSizeClass, self.verticalSizeClass) {
             case (.regular, .regular):
-                // ⚠️ IMPORTANT: `UIActivityViewController` must be presented in a popover on iPad:
                 self.isActivityPopoverPresented.toggle()
             default:
-                // ⚠️ IMPORTANT: `UIActivityViewController` must be presented in a sheet on iPhone and iPod Touch:
                 self.isActivitySheetPresented.toggle()
             }
         }, label: {
@@ -61,12 +50,11 @@ struct IalEdxMathsInnerWebView: View {
                 .popover(isPresented: $isActivityPopoverPresented) {
                     activityView()
                 }
-                
         })
     }
     
     private func activityView() -> some View {
-        let url = URL(string: "https://cdn.savemyexams.co.uk/wp-content/uploads/2020/12/WMA11_01_que_20190109.pdf")!
+        let url = URL(string: ialMaths2019Jan.url)!
         let filename = url.pathComponents.last!
         let fileManager = FileManager.default
         let itemURL = fileManager.temporaryDirectory.appendingPathComponent(filename)
@@ -92,6 +80,16 @@ struct IalEdxMathsInnerWebView: View {
 
 struct IalEdxMathsInnerView_Previews: PreviewProvider {
     static var previews: some View {
-        IalEdxMathsInnerView()
+        IalEdxMaths2019JanView()
     }
 }
+
+//
+struct IalMaths2019Jan: Hashable, Codable, Identifiable {
+    var id: Int
+    var name: String
+    var url: String
+}
+
+let IalMaths2019JanData: [IalMaths2019Jan] = load("IalMaths2019Jan.json")
+
