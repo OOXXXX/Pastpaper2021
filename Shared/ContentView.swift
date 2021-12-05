@@ -115,7 +115,6 @@ struct ContentView: View {
                     .alert("Still under development 🚴", isPresented: $showingAlert) {
                                 
                     }
-                    
                 }
                 
                 NavigationLink(destination: OLView()) {
@@ -161,20 +160,85 @@ struct ContentView: View {
                 .headerProminence(.increased)
                 
                 Section(header: Text("Contest/Extra Tests")) {
-                    ForEach(contestList, id: \.name) { contest in
-                        NavigationLink(destination: Text("quali")) {
+                    Button(action: {
+                            self.showingAlert = true
+                        }) {
                             HStack {
-                                Image(systemName: contest.image)
-                                     .font(Font.system(.title))
-                                     .foregroundColor(contest.color)
-                                Text(contest.name)
-                               
-                              }
-                            .offset(x: -8)
+                                Group {
+                                    Image(systemName: "c.square.fill")
+                                        .font(Font.system(.title))
+                                    .foregroundColor(.orange)
+                                    Text("Cambridge admissions")
+                                        .foregroundColor(Color("Color2"))
+                                }
+                                .offset(x: -8)
+                                    
+                                Spacer()
+                               DisclosureIndicator()
+                            }
+                            .alert("Still under development 🚴", isPresented: $showingAlert) {
+                            }
                         }
-                        
-                    }
-                    
+                    Button(action: {
+                            self.showingAlert = true
+                        }) {
+                            HStack {
+                                Group {
+                                    Image(systemName: "o.square.fill")
+                                        .font(Font.system(.title))
+                                    .foregroundColor(.gray)
+                                    Text("Oxford admissions")
+                                        .foregroundColor(Color("Color2"))
+                                }
+                                .offset(x: -8)
+                                    
+                                Spacer()
+                               DisclosureIndicator()
+                            }
+                            .alert("Still under development 🚴", isPresented: $showingAlert) {
+                                        
+                            }
+                        }
+                    Button(action: {
+                            self.showingAlert = true
+                        }) {
+                            HStack {
+                                Group {
+                                    Image(systemName: "m.square.fill")
+                                        .font(Font.system(.title))
+                                    .foregroundColor(.cyan)
+                                    Text("MAA AMC")
+                                        .foregroundColor(Color("Color2"))
+                                }
+                                .offset(x: -8)
+                                    
+                                Spacer()
+                               DisclosureIndicator()
+                            }
+                            .alert("Still under development 🚴", isPresented: $showingAlert) {
+                                        
+                            }
+                        }
+                    Button(action: {
+                            self.showingAlert = true
+                        }) {
+                            HStack {
+                                Group {
+                                    Image(systemName: "u.square.fill")
+                                        .font(Font.system(.title))
+                                    .foregroundColor(.black)
+                                    Text("UKMT")
+                                        .foregroundColor(Color("Color2"))
+                                }
+                                .offset(x: -8)
+                                    
+                                Spacer()
+                               DisclosureIndicator()
+                            }
+                            .alert("Still under development 🚴", isPresented: $showingAlert) {
+                                        
+                            }
+                        }
                 }
                 .listSectionSeparator(.visible)
                 .headerProminence(.increased)

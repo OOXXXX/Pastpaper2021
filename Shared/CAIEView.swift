@@ -22,7 +22,7 @@ struct CAIEView: View {
                     }
                     //.offset(x: -8)
                 }
-                NavigationLink(destination: OLView()) {
+                NavigationLink(destination: CaieOLView()) {
                     HStack {
 //                        Image(systemName: "o.square")
 //                             .font(Font.system(.title))

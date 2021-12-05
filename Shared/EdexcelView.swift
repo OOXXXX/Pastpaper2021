@@ -12,7 +12,7 @@ struct EdexcelView: View {
     
     var body: some View {
         List {
-            Section(header: Text("Level 2")) {
+            Section(header: Text("Level 1 & 2")) {
                 Button(action: {
                     self.showingAlert = true
                 }) {
