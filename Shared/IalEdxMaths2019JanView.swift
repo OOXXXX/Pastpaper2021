@@ -34,6 +34,7 @@ struct IalEdxMaths2019JanWebView: View {
             .navigationBarTitle(ialMaths2019Jan.name, displayMode: .inline)
             .navigationBarItems(trailing: shareButton)
             .sheet(isPresented: $isActivitySheetPresented, content: activityView)
+           
     }
     private var shareButton: some View {
         Button(action: {
@@ -47,7 +48,7 @@ struct IalEdxMaths2019JanWebView: View {
             Image(systemName: "square.and.arrow.up")
                 .font(.system(size: 17))
                 .frame(width: 30, height: 30)
-                .popover(isPresented: $isActivityPopoverPresented) {
+                .popover(isPresented: $isActivityPopoverPresented, attachmentAnchor: .point(.bottom), arrowEdge: .bottom) {
                     activityView()
                 }
         })
