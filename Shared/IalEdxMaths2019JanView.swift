@@ -9,14 +9,25 @@ import SwiftUI
 import WebKit
 
 struct IalEdxMaths2019JanView: View {
+    @State private var searchText = ""
     var body: some View {
-        List(IalMaths2019JanData) { ialMaths2019Jan in
-                NavigationLink(destination: IalEdxMaths2019JanWebView(ialMaths2019Jan: ialMaths2019Jan)) {
-                    Text(ialMaths2019Jan.name)
+        List {
+            Section(header: Text("Jan/Feb")) {
+                ForEach(IalMaths2019JanData)  { ialMaths2019Jan in
+                    NavigationLink(destination: IalEdxMaths2019JanWebView(ialMaths2019Jan: ialMaths2019Jan)) {
+                            Text(ialMaths2019Jan.name)
+                    }
                 }
+            }
         }
+//        .toolbar{
+//            ToolbarItem(placement: .navigationBarTrailing) {
+//                Text("Jan/Feb")
+//            }
+//        }
+//        .searchable(text: $searchText)
         .listStyle(.plain)
-        .navigationBarTitle("2019Jan", displayMode: .inline)
+        .navigationBarTitle("2019", displayMode: .inline)
     }
 }
 
