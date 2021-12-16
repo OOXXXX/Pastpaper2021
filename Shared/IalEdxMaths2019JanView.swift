@@ -20,12 +20,12 @@ struct IalEdxMaths2019JanView: View {
                 }
             }
         }
-//        .toolbar{
-//            ToolbarItem(placement: .navigationBarTrailing) {
-//                Text("Jan/Feb")
-//            }
-//        }
-//        .searchable(text: $searchText)
+        .toolbar{
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Text("Jan/Feb")
+            }
+        }
+        .searchable(text: $searchText)
         .listStyle(.plain)
         .navigationBarTitle("2019", displayMode: .inline)
     }
