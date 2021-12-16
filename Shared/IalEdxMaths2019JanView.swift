@@ -10,6 +10,8 @@ import WebKit
 
 struct IalEdxMaths2019JanView: View {
     @State private var searchText = ""
+    @State private var showNew1 = false
+    @State private var showNew2 = false
     var body: some View {
         List {
             Section(header: Text("Question Paper")) {
@@ -20,11 +22,17 @@ struct IalEdxMaths2019JanView: View {
                 }
             }
         }
+        //.background(NavigationLink(destination: IalEdxMaths2019JanView(), isActive: $showNew1) { })
+        //.background(NavigationLink(destination: SwiftUIView1(), isActive: $showNew2) { })
         .toolbar{
             ToolbarItem(placement: .navigationBarTrailing){
                 Menu("Select") {
-                    Button("Question Paper", action: placeOrder)
-                    Button("Mark Scheme", action: placeOrder)
+                    Button("Question Paper"){
+                        self.showNew1 = true
+                    }
+                    Button("Mark Scheme"){
+                        self.showNew2 = true
+                    }
                 }
             }
         }
@@ -34,6 +42,12 @@ struct IalEdxMaths2019JanView: View {
     }
     func placeOrder() { }
     func adjustOrder() { }
+}
+
+struct SwiftUIView1: View {
+    var body: some View {
+        Text("SwiftUIView1")
+    }
 }
 
 struct IalEdxMaths2019JanWebView: View {
