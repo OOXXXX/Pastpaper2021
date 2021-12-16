@@ -12,7 +12,7 @@ struct IalEdxMaths2019JanView: View {
     @State private var searchText = ""
     var body: some View {
         List {
-            Section(header: Text("Jan/Feb")) {
+            Section(header: Text("Question Paper")) {
                 ForEach(IalMaths2019JanData)  { ialMaths2019Jan in
                     NavigationLink(destination: IalEdxMaths2019JanWebView(ialMaths2019Jan: ialMaths2019Jan)) {
                             Text(ialMaths2019Jan.name)
@@ -21,14 +21,19 @@ struct IalEdxMaths2019JanView: View {
             }
         }
         .toolbar{
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Text("Jan/Feb")
+            ToolbarItem(placement: .navigationBarTrailing){
+                Menu("Select") {
+                    Button("Question Paper", action: placeOrder)
+                    Button("Mark Scheme", action: placeOrder)
+                }
             }
         }
-        .searchable(text: $searchText)
+        //.searchable(text: $searchText)
         .listStyle(.plain)
-        .navigationBarTitle("2019", displayMode: .inline)
+        .navigationBarTitle("PastPaper", displayMode: .inline)
     }
+    func placeOrder() { }
+    func adjustOrder() { }
 }
 
 struct IalEdxMaths2019JanWebView: View {

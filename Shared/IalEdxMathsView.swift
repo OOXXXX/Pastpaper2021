@@ -11,7 +11,7 @@ struct IalEdxMathsView: View {
     var body: some View {
         List {
             
-            Section(header: Text("Jan/Feb")) {
+            Section(header: Text("Select Year")) {
                 
                 NavigationLink(destination: Text("quali")) {
                     Text("2021")
@@ -19,7 +19,7 @@ struct IalEdxMathsView: View {
                 NavigationLink(destination: Text("quali")) {
                     Text("2020")
                 }
-                NavigationLink(destination: IalEdxMaths2019JanView()) {
+                NavigationLink(destination: MonthView()) {
                     Text("2019")
                 }
                 NavigationLink(destination: Text("quali")) {
@@ -39,66 +39,11 @@ struct IalEdxMathsView: View {
                 }
             }
             .headerProminence(.increased)
-            
-            Section(header: Text("May/Jun")) {
-                
-                    NavigationLink(destination: Text("quali")) {
-                        Text("2021")
-                    }
-                    NavigationLink(destination: Text("quali")) {
-                        Text("2020")
-                    }
-                    NavigationLink(destination: Text("quali")) {
-                        Text("2019")
-                    }
-                    NavigationLink(destination: Text("quali")) {
-                        Text("2018")
-                    }
-                    NavigationLink(destination: Text("quali")) {
-                        Text("2017")
-                    }
-                    NavigationLink(destination: Text("quali")) {
-                        Text("2016")
-                    }
-                    NavigationLink(destination: Text("quali")) {
-                        Text("2015")
-                    }
-                    NavigationLink(destination: Text("quali")) {
-                        Text("2014")
-                    }
-         
-                .headerProminence(.increased)
-               
-            }
-            
-            Section(header: Text("Oct/Nov")) {
-                
-                NavigationLink(destination: Text("quali")) {
-                    Text("2021")
-                }
-                NavigationLink(destination: Text("quali")) {
-                    Text("2020")
-                }
-                NavigationLink(destination: Text("quali")) {
-                    Text("2019")
-                }
-                NavigationLink(destination: Text("quali")) {
-                    Text("2018")
-                }
-                NavigationLink(destination: Text("quali")) {
-                    Text("2017")
-                }
-                NavigationLink(destination: Text("quali")) {
-                    Text("2016")
-                }
-         }
-            .headerProminence(.increased)
-            
-            
+
         }
         //.listStyle(.sidebar)
         .listStyle(.plain)
-        .navigationBarTitle("Maths", displayMode: .inline)
+        .navigationBarTitle("Years", displayMode: .inline)
     }
 }
 
