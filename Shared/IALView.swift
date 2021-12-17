@@ -54,7 +54,7 @@ struct IALView: View {
                 
             }
             .listStyle(.plain)
-            .navigationBarTitle("IAL", displayMode: .inline)
+            .navigationBarTitle("Subjects", displayMode: .inline)
             
     }
 }
@@ -80,7 +80,7 @@ struct EdxIALView: View {
                
             }
             .listStyle(.plain)
-            .navigationBarTitle("IAL", displayMode: .inline)
+            .navigationBarTitle("Subjects", displayMode: .inline)
             
     }
 }
