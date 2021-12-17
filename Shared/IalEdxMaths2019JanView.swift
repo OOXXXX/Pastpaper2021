@@ -14,38 +14,58 @@ struct IalEdxMaths2019JanView: View {
     @State private var showNew2 = false
     @State var selected = 1
     var body: some View {
-            VStack{
-                Picker(selection: $selected, label: Text("")){
-                    Text("Question Paper").tag(1)
-                    Text("Mark Scheme").tag(2)
-                }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding(.horizontal, 10)
-                .padding(.vertical, 6.5)
-                
-                if selected == 1{
-                    IalEdxMaths2019JanList1()
-                }
-                if selected == 2{
-                    IalEdxMaths2019JanList2()
-                }
+        VStack{
+            Picker(selection: $selected, label: Text("")){
+                Text("Question Paper").tag(1)
+                Text("Mark Scheme").tag(2)
             }
-
-        .toolbar{
-            ToolbarItem(placement: .navigationBarTrailing){
-                Menu("Select") {
-                    Button("Question Paper"){
-                        self.showNew1 = true
-                    }
-                    Button("Mark Scheme"){
-                        self.showNew2 = true
-                    }
-                }
+            .pickerStyle(SegmentedPickerStyle())
+            .padding(.horizontal, 10)
+            .padding(.vertical, 6.5)
+            
+            if selected == 1{
+                IalEdxMaths2019JanList1()
+            }
+            if selected == 2{
+                IalEdxMaths2019JanList2()
             }
         }
         
+        .toolbar {
+            ToolbarItem(placement: .primaryAction) {
+                Menu() {
+                    Menu("2021") {
+                        Button("Jan/Feb") {
+                            self.showNew1 = true
+                        }
+                        Button("May/June") {
+                            //self.showNew2 = true
+                        }
+                        Button("Oct/Nov") {
+                            //self.showNew1 = true
+                        }
+                    }
+                    Button("2020") {
+                        self.showNew1 = true
+                    }
+                    Button("2019", action: placeOrder)
+                    Button("2018", action: placeOrder)
+                    Button("2017", action: placeOrder)
+                    Button("2016", action: placeOrder)
+                    Button("2015", action: placeOrder)
+                    Button("2014", action: placeOrder)
+                    
+                }label: {
+                    Label("Create", systemImage: "list.bullet.circle")
+                }
+            }
+        }
         .listStyle(.plain)
         .navigationBarTitle("PastPaper", displayMode: .inline)
+        .background(
+            NavigationLink(destination: IalEdxMaths2019JanView(), isActive: $showNew1) {
+            }
+        )
     }
     func placeOrder() { }
     func adjustOrder() { }
@@ -54,11 +74,11 @@ struct IalEdxMaths2019JanView: View {
 struct IalEdxMaths2019JanList1: View {
     var  body: some View {
         List {
-                ForEach(IalMaths2019JanData1)  { ialMaths2019Jan1 in
-                    NavigationLink(destination: IalEdxMaths2019JanWebView1(ialMaths2019Jan1: ialMaths2019Jan1)) {
-                        Text(ialMaths2019Jan1.name)
-                    }
+            ForEach(IalMaths2019JanData1)  { ialMaths2019Jan1 in
+                NavigationLink(destination: IalEdxMaths2019JanWebView1(ialMaths2019Jan1: ialMaths2019Jan1)) {
+                    Text(ialMaths2019Jan1.name)
                 }
+            }
         }
     }
 }
@@ -66,11 +86,11 @@ struct IalEdxMaths2019JanList1: View {
 struct IalEdxMaths2019JanList2: View {
     var  body: some View {
         List {
-                ForEach(IalMaths2019JanData2)  { ialMaths2019Jan2 in
-                    NavigationLink(destination: IalEdxMaths2019JanWebView2(ialMaths2019Jan2: ialMaths2019Jan2)) {
-                        Text(ialMaths2019Jan2.name)
-                    }
+            ForEach(IalMaths2019JanData2)  { ialMaths2019Jan2 in
+                NavigationLink(destination: IalEdxMaths2019JanWebView2(ialMaths2019Jan2: ialMaths2019Jan2)) {
+                    Text(ialMaths2019Jan2.name)
                 }
+            }
         }
     }
 }
@@ -89,7 +109,7 @@ struct IalEdxMaths2019JanWebView1: View {
             .navigationBarTitle(ialMaths2019Jan1.name, displayMode: .inline)
             .navigationBarItems(trailing: shareButton)
             .sheet(isPresented: $isActivitySheetPresented, content: activityView)
-           
+        
     }
     private var shareButton: some View {
         Button(action: {
@@ -123,11 +143,11 @@ struct IalEdxMaths2019JanWebView1: View {
         }
         let activityView = ActivityView(activityItems: [itemURL], applicationActivities: nil)
         return Group {
-        if self.horizontalSizeClass == .regular && self.verticalSizeClass == .regular {
-            activityView.frame(width: 333, height: 480)
-        } else {
-            activityView
-            .edgesIgnoringSafeArea(.all)
+            if self.horizontalSizeClass == .regular && self.verticalSizeClass == .regular {
+                activityView.frame(width: 333, height: 480)
+            } else {
+                activityView
+                    .edgesIgnoringSafeArea(.all)
             }
         }
     }
@@ -147,7 +167,7 @@ struct IalEdxMaths2019JanWebView2: View {
             .navigationBarTitle(ialMaths2019Jan2.name, displayMode: .inline)
             .navigationBarItems(trailing: shareButton)
             .sheet(isPresented: $isActivitySheetPresented, content: activityView)
-           
+        
     }
     private var shareButton: some View {
         Button(action: {
@@ -181,11 +201,11 @@ struct IalEdxMaths2019JanWebView2: View {
         }
         let activityView = ActivityView(activityItems: [itemURL], applicationActivities: nil)
         return Group {
-        if self.horizontalSizeClass == .regular && self.verticalSizeClass == .regular {
-            activityView.frame(width: 333, height: 480)
-        } else {
-            activityView
-            .edgesIgnoringSafeArea(.all)
+            if self.horizontalSizeClass == .regular && self.verticalSizeClass == .regular {
+                activityView.frame(width: 333, height: 480)
+            } else {
+                activityView
+                    .edgesIgnoringSafeArea(.all)
             }
         }
     }
