@@ -21,7 +21,7 @@ struct IalEdxMaths2019JanView: View {
                 }
                 .pickerStyle(SegmentedPickerStyle())
                 .padding(.horizontal, 10)
-                .padding(.vertical, 3)
+                .padding(.vertical, 6.5)
                 
                 if selected == 1{
                     IalEdxMaths2019JanList1()
@@ -31,18 +31,19 @@ struct IalEdxMaths2019JanView: View {
                 }
             }
 
-//        .toolbar{
-//            ToolbarItem(placement: .navigationBarTrailing){
-//                Menu("Select") {
-//                    Button("Question Paper"){
-//                        self.showNew1 = true
-//                    }
-//                    Button("Mark Scheme"){
-//                        self.showNew2 = true
-//                    }
-//                }
-//            }
-//        }
+        .toolbar{
+            ToolbarItem(placement: .navigationBarTrailing){
+                Menu("Select") {
+                    Button("Question Paper"){
+                        self.showNew1 = true
+                    }
+                    Button("Mark Scheme"){
+                        self.showNew2 = true
+                    }
+                }
+            }
+        }
+        
         .listStyle(.plain)
         .navigationBarTitle("PastPaper", displayMode: .inline)
     }
