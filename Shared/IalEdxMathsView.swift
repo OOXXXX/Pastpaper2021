@@ -45,28 +45,96 @@ struct IalEdxMathsView: View {
             ToolbarItem(placement: .primaryAction) {
                 Menu() {
                     Menu("2021") {
-                        Button("Jan/Feb") {
-                            self.showNew1 = true
+                        Button("Spring") {
+                            //self.showNew1 = true
                         }
-                        Button("May/June") {
+                        Button("Summer") {
                             //self.showNew2 = true
                         }
-                        Button("Oct/Nov") {
+                        Button("Winter") {
                             //self.showNew1 = true
                         }
                     }
-                    Button("2020") {
-                        self.showNew1 = true
+                    Menu("2020") {
+                        Button("Spring") {
+                            //self.showNew1 = true
+                        }
+                        Button("Summer") {
+                            //self.showNew2 = true
+                        }
+                        Button("Winter") {
+                            //self.showNew1 = true
+                        }
                     }
-                    Button("2019", action: placeOrder)
-                    Button("2018", action: placeOrder)
-                    Button("2017", action: placeOrder)
-                    Button("2016", action: placeOrder)
-                    Button("2015", action: placeOrder)
-                    Button("2014", action: placeOrder)
-                    
-                }label: {
-                    Label("Create", systemImage: "list.bullet.circle")
+                    Menu("2019") {
+                        Button("Spring") {
+                            self.showNew1 = true
+                        }
+                        Button("Summer") {
+                            //self.showNew2 = true
+                        }
+                        Button("Winter") {
+                            //self.showNew1 = true
+                        }
+                    }
+                    Menu("2018") {
+                        Button("Spring") {
+                            //self.showNew1 = true
+                        }
+                        Button("Summer") {
+                            //self.showNew2 = true
+                        }
+                        Button("Winter") {
+                            //self.showNew1 = true
+                        }
+                    }
+                    Menu("2017") {
+                        Button("Spring") {
+                            //self.showNew1 = true
+                        }
+                        Button("Summer") {
+                            //self.showNew2 = true
+                        }
+                        Button("Winter") {
+                            //self.showNew1 = true
+                        }
+                    }
+                    Menu("2016") {
+                        Button("Spring") {
+                            //self.showNew1 = true
+                        }
+                        Button("Summer") {
+                            //self.showNew2 = true
+                        }
+                        Button("Winter") {
+                            //self.showNew1 = true
+                        }
+                    }
+                    Menu("2015") {
+                        Button("Spring") {
+                            //self.showNew1 = true
+                        }
+                        Button("Summer") {
+                            //self.showNew2 = true
+                        }
+                        Button("Winter") {
+                            //self.showNew1 = true
+                        }
+                    }
+                    Menu("2014") {
+                        Button("Spring") {
+                            //self.showNew1 = true
+                        }
+                        Button("Summer") {
+                            //self.showNew2 = true
+                        }
+                        Button("Winter") {
+                            //self.showNew1 = true
+                        }
+                    }
+                }
+                label: {
+                    Label("Quick List", systemImage: "list.bullet.circle")
                 }
             }
         }
