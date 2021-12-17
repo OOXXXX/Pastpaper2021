@@ -21,7 +21,7 @@ struct IalEdxMaths2019JanView: View {
                 }
                 .pickerStyle(SegmentedPickerStyle())
                 .padding(.horizontal, 10)
-                .padding(.vertical, 5)
+                .padding(.vertical, 3)
                 
                 if selected == 1{
                     IalEdxMaths2019JanList1()
