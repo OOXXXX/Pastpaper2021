@@ -376,7 +376,7 @@ struct ContentView: View {
             //.listRowInsets(EdgeInsets())
             //.padding(.vertical, -10)
             .listStyle(.insetGrouped)
-            .navigationBarTitle("Pastpaper", displayMode: .large)
+            .navigationBarTitle("PaperHub", displayMode: .large)
             //.navigationBarHidden(false)
             .searchable(text: $searchText)
                         

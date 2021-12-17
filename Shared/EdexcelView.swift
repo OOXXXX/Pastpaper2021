@@ -17,13 +17,13 @@ struct EdexcelView: View {
                     self.showingAlert = true
                 }) {
                     HStack {
-                            Text("International GCSEs")
-                                .foregroundColor(Color("Color2"))
-                       Spacer()
-                       DisclosureIndicator()
+                        Text("International GCSEs")
+                            .foregroundColor(Color("Color2"))
+                        Spacer()
+                        DisclosureIndicator()
                     }
                     .alert("Still under development 🚴", isPresented: $showingAlert) {
-                                
+                        
                     }
                 }
                 
@@ -31,13 +31,13 @@ struct EdexcelView: View {
                     self.showingAlert = true
                 }) {
                     HStack {
-                            Text("GCSEs")
-                                .foregroundColor(Color("Color2"))
-                       Spacer()
-                       DisclosureIndicator()
+                        Text("GCSEs")
+                            .foregroundColor(Color("Color2"))
+                        Spacer()
+                        DisclosureIndicator()
                     }
                     .alert("Still under development 🚴", isPresented: $showingAlert) {
-                                
+                        
                     }
                     
                 }
@@ -48,13 +48,13 @@ struct EdexcelView: View {
                     self.showingAlert = true
                 }) {
                     HStack {
-                            Text("AS & A Levels")
-                                .foregroundColor(Color("Color2"))
-                       Spacer()
-                       DisclosureIndicator()
+                        Text("AS & A Levels")
+                            .foregroundColor(Color("Color2"))
+                        Spacer()
+                        DisclosureIndicator()
                     }
                     .alert("Still under development 🚴", isPresented: $showingAlert) {
-                                
+                        
                     }
                     
                 }
