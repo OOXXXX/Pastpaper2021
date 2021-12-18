@@ -32,6 +32,8 @@
 		4BBDF564276BA758009F71C0 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBDF562276BA758009F71C0 /* MonthView.swift */; };
 		4BBDF567276CE206009F71C0 /* IalMaths2019Jan2.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDF566276CE206009F71C0 /* IalMaths2019Jan2.json */; };
 		4BBDF568276CE206009F71C0 /* IalMaths2019Jan2.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDF566276CE206009F71C0 /* IalMaths2019Jan2.json */; };
+		4BBDF56A276D0BA1009F71C0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDF569276D0BA1009F71C0 /* Localizable.strings */; };
+		4BBDF56B276D0BA1009F71C0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDF569276D0BA1009F71C0 /* Localizable.strings */; };
 		4BC9678C2750B71D007DE392 /* Pastpaper2021App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */; };
 		4BC9678D2750B71D007DE392 /* Pastpaper2021App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */; };
 		4BC9678E2750B71D007DE392 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9677D2750B71C007DE392 /* ContentView.swift */; };
@@ -60,6 +62,7 @@
 		4BBB2FBD275CB0A7002588C3 /* OlevelEng2019Jan.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OlevelEng2019Jan.json; sourceTree = "<group>"; };
 		4BBDF562276BA758009F71C0 /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
 		4BBDF566276CE206009F71C0 /* IalMaths2019Jan2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2019Jan2.json; sourceTree = "<group>"; };
+		4BBDF569276D0BA1009F71C0 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pastpaper2021App.swift; sourceTree = "<group>"; };
 		4BC9677D2750B71C007DE392 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4BC9677E2750B71D007DE392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +120,7 @@
 				4B5D43732758CF240092865C /* IalEdxMaths2019JanView.swift */,
 				4B5D43BB275A81D60092865C /* IndicatorTitleLabel.swift */,
 				4B5D4376275927440092865C /* Modifier.swift */,
+				4BBDF569276D0BA1009F71C0 /* Localizable.strings */,
 				4BBB2FB7275CAB5A002588C3 /* IalMaths2019Jan1.json */,
 				4BBDF566276CE206009F71C0 /* IalMaths2019Jan2.json */,
 				4BBB2FBD275CB0A7002588C3 /* OlevelEng2019Jan.json */,
@@ -227,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BBDF56A276D0BA1009F71C0 /* Localizable.strings in Resources */,
 				4BBB2FB8275CAB5A002588C3 /* IalMaths2019Jan1.json in Resources */,
 				4BBB2FBE275CB0A7002588C3 /* OlevelEng2019Jan.json in Resources */,
 				4BC967902750B71D007DE392 /* Assets.xcassets in Resources */,
@@ -238,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BBDF56B276D0BA1009F71C0 /* Localizable.strings in Resources */,
 				4BBB2FB9275CAB5A002588C3 /* IalMaths2019Jan1.json in Resources */,
 				4BBB2FBF275CB0A7002588C3 /* OlevelEng2019Jan.json in Resources */,
 				4BC967912750B71D007DE392 /* Assets.xcassets in Resources */,
