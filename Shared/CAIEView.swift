@@ -62,7 +62,7 @@ struct CAIEView: View {
             }
         }
         .listStyle(.plain)
-        .navigationBarTitle("CAIE", displayMode: .inline)
+        .navigationBarTitle("Qualifications", displayMode: .inline)
     }
 }
 

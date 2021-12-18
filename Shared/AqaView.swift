@@ -24,7 +24,7 @@ struct AqaView: View {
             }
         }
         .listStyle(.plain)
-        .navigationBarTitle("AQA", displayMode: .inline)
+        .navigationBarTitle("Qualifications", displayMode: .inline)
     }
 }
 

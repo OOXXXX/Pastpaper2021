@@ -66,7 +66,7 @@ struct EdexcelView: View {
             
         }
         .listStyle(.plain)
-        .navigationBarTitle("Edexcel", displayMode: .inline)
+        .navigationBarTitle("Qualifications", displayMode: .inline)
     }
 }
 
