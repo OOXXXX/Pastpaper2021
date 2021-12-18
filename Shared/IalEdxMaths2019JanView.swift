@@ -44,6 +44,11 @@ struct IalEdxMaths2019JanView: View {
                         NavigationLink(destination: EmptyView()) {
                             Label("Show course resources", systemImage: "bookmark")
                         }
+                        Section(header: Text("Secondary actions")) {
+                            NavigationLink(destination: EmptyView()) {
+                                Label("Paper request", systemImage: "arrowshape.turn.up.right")
+                            }
+                        }
                     } label: {
                         Image(systemName: "ellipsis.circle")
                             //.foregroundColor(Color.gray)
