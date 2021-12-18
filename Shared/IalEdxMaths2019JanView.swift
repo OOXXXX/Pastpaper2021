@@ -34,10 +34,19 @@ struct IalEdxMaths2019JanView: View {
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 HStack {
-                    Button {
-                        //print("Edit button was tapped")
+                    Menu() {
+                        NavigationLink(destination: EmptyView()) {
+                            Label("Show data booklet", systemImage: "list.bullet.rectangle.portrait")
+                        }
+                        NavigationLink(destination: EmptyView()) {
+                            Label("Show Syllabus", systemImage: "character.book.closed")
+                        }
+                        NavigationLink(destination: EmptyView()) {
+                            Label("Show course resources", systemImage: "bookmark")
+                        }
                     } label: {
                         Image(systemName: "ellipsis.circle")
+                            //.foregroundColor(Color.gray)
                     }
                     Menu() {
                         Menu("2021") {
@@ -136,7 +145,7 @@ struct IalEdxMaths2019JanView: View {
             }
         }
         .listStyle(.plain)
-        .navigationBarTitle("2019 Spring", displayMode: .inline)
+        .navigationBarTitle("19 Spring", displayMode: .inline)
         .background(
             NavigationLink(destination: IalEdxMaths2019JanView(), isActive: $showNew1) {
             }
