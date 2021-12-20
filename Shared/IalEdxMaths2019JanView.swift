@@ -39,7 +39,7 @@ struct IalEdxMaths2019JanView: View {
                             Label("Show data booklet", systemImage: "list.bullet.rectangle.portrait")
                         }
                         NavigationLink(destination: EmptyView()) {
-                            Label("Show Syllabus", systemImage: "character.book.closed")
+                            Label("Show syllabus", systemImage: "character.book.closed")
                         }
                         NavigationLink(destination: EmptyView()) {
                             Label("Show course resources", systemImage: "bookmark")
