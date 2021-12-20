@@ -34,6 +34,8 @@
 		4BBDF568276CE206009F71C0 /* IalMaths2019Jan2.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDF566276CE206009F71C0 /* IalMaths2019Jan2.json */; };
 		4BBDF56A276D0BA1009F71C0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDF569276D0BA1009F71C0 /* Localizable.strings */; };
 		4BBDF56B276D0BA1009F71C0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDF569276D0BA1009F71C0 /* Localizable.strings */; };
+		4BBDF5702771030A009F71C0 /* IalEdxMathsViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBDF56F2771030A009F71C0 /* IalEdxMathsViewTest.swift */; };
+		4BBDF5712771030A009F71C0 /* IalEdxMathsViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBDF56F2771030A009F71C0 /* IalEdxMathsViewTest.swift */; };
 		4BC9678C2750B71D007DE392 /* Pastpaper2021App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */; };
 		4BC9678D2750B71D007DE392 /* Pastpaper2021App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */; };
 		4BC9678E2750B71D007DE392 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9677D2750B71C007DE392 /* ContentView.swift */; };
@@ -63,6 +65,7 @@
 		4BBDF562276BA758009F71C0 /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
 		4BBDF566276CE206009F71C0 /* IalMaths2019Jan2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2019Jan2.json; sourceTree = "<group>"; };
 		4BBDF569276D0BA1009F71C0 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		4BBDF56F2771030A009F71C0 /* IalEdxMathsViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMathsViewTest.swift; sourceTree = "<group>"; };
 		4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pastpaper2021App.swift; sourceTree = "<group>"; };
 		4BC9677D2750B71C007DE392 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4BC9677E2750B71D007DE392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +120,7 @@
 				4B5D436D2758A1A30092865C /* IALView.swift */,
 				4B5D43702758C2E30092865C /* IalEdxMathsView.swift */,
 				4BBDF562276BA758009F71C0 /* MonthView.swift */,
+				4BBDF56F2771030A009F71C0 /* IalEdxMathsViewTest.swift */,
 				4B5D43732758CF240092865C /* IalEdxMaths2019JanView.swift */,
 				4B5D43BB275A81D60092865C /* IndicatorTitleLabel.swift */,
 				4B5D4376275927440092865C /* Modifier.swift */,
@@ -259,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BC9678E2750B71D007DE392 /* ContentView.swift in Sources */,
+				4BBDF5702771030A009F71C0 /* IalEdxMathsViewTest.swift in Sources */,
 				4B5D43BC275A81D60092865C /* IndicatorTitleLabel.swift in Sources */,
 				4B5D43A7275A15670092865C /* IGCSEView.swift in Sources */,
 				4B5D43742758CF240092865C /* IalEdxMaths2019JanView.swift in Sources */,
@@ -280,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BC9678F2750B71D007DE392 /* ContentView.swift in Sources */,
+				4BBDF5712771030A009F71C0 /* IalEdxMathsViewTest.swift in Sources */,
 				4B5D43BD275A81D60092865C /* IndicatorTitleLabel.swift in Sources */,
 				4B5D43A8275A15670092865C /* IGCSEView.swift in Sources */,
 				4B5D43752758CF240092865C /* IalEdxMaths2019JanView.swift in Sources */,

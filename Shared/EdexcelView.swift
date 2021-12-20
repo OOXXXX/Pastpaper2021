@@ -56,7 +56,7 @@ struct EdexcelView: View {
                     .alert("Still under development 🚴", isPresented: $showingAlert) {
                         
                     }
-                }                
+                }
                 NavigationLink(destination: EdxIALView()) {
                     Text("International AS & A Levels")
                 }
