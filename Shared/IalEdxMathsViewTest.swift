@@ -9,7 +9,7 @@ import SwiftUI
 
 struct IalEdxMathsViewTest: View {
     var body: some View {
-        Text("Hello, World!")
+        IalEdxMaths2019JanView()        
     }
 }
 
