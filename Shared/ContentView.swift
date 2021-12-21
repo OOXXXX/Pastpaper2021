@@ -46,6 +46,8 @@ struct ContentView: View {
     @State private var presentingSafariView4 = false
     @State private var presentingSafariView5 = false
     @State private var showSafari = false
+    @State private var showingSettingSheet = false
+    @State private var showingInfoSheet = false
     
     var qualiList = [
         Quali(image: "i.square.fill", name: "IGCSE", color: .blue),
@@ -76,6 +78,7 @@ struct ContentView: View {
     
     var body: some View {
         SearchNavigation(text: $searchString, search: search, cancel: cancel) {
+        //NavigationView {
             List {
                 
                 NavigationLink(destination: ALView()) {
@@ -259,12 +262,47 @@ struct ContentView: View {
             //.listRowInsets(EdgeInsets())
             //.padding(.vertical, -10)
             .listStyle(.insetGrouped)
+            //.searchable(text: $searchText, placement: .navigationBarDrawer)
             .navigationBarTitle("PaperHub", displayMode: .large)
             //.navigationBarHidden(false)
-            //.searchable(text: $searchText)
-            
+            .toolbar(content: {
+                ToolbarItem(placement: .primaryAction){
+                    HStack {
+                        Button {
+                            showingInfoSheet.toggle()
+                        }label: {
+                            Image(systemName: "ellipsis.circle")
+                                //.foregroundColor(Color.orange)
+                            //Image(systemName: "gear")
+                        }
+                        .sheet(isPresented: $showingInfoSheet) {
+                            EmptyView()
+                        }
+                        Button {
+                            showingSettingSheet.toggle()
+                        }label: {
+                            Image(systemName: "gearshape")
+                                //.foregroundColor(Color.orange)
+                            //Image(systemName: "gear")
+                        }
+                        .sheet(isPresented: $showingSettingSheet) {
+                            SettingView()
+                        }
+                    }
+                }
+                ToolbarItem(placement: .navigationBarLeading){
+                    HStack {
+                        Button {
+                            
+                        }label: {
+                            Text("Edit")
+                       }
+                    }
+                }
+            })
         }
         .edgesIgnoringSafeArea(.all)
+        //.navigationViewStyle(.stack)
     }
     
 }
