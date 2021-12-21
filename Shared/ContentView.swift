@@ -27,6 +27,17 @@ struct Contest {
 }
 
 struct ContentView: View {
+    // Search string to use in the search bar
+    @State var searchString = ""
+    
+    // Search action. Called when search key pressed on keyboard
+    func search() {
+    }
+    
+    // Cancel action. Called when cancel button of search bar pressed
+    func cancel() {
+    }
+    
     @State private var showingAlert = false
     
     @State private var presentingSafariView1 = false
@@ -64,7 +75,7 @@ struct ContentView: View {
     @State private var searchText = ""
     
     var body: some View {
-        NavigationView {
+        SearchNavigation(text: $searchString, search: search, cancel: cancel) {
             List {
                 
                 NavigationLink(destination: ALView()) {
@@ -243,144 +254,17 @@ struct ContentView: View {
                 .listSectionSeparator(.visible)
                 .headerProminence(.increased)
                 
-                Section(header: HStack {
-                    Text("Official Websites")
-                }) {
-                    Button(action: {
-                        self.presentingSafariView1 = true
-                    }) {
-                        HStack {
-                            Text("University of Oxford")
-                                .foregroundColor(Color("Color1"))
-                            Image(systemName: "arrow.up.right")
-                                .font(Font.system(.caption))
-                            Spacer()
-                            
-                            DisclosureIndicator()
-                        }
-                    }
-                    .safariView(isPresented: $presentingSafariView1) {
-                        SafariView(
-                            url: URL(string: "https://www.ox.ac.uk")!,
-                            configuration: SafariView.Configuration(
-                                entersReaderIfAvailable: false,
-                                barCollapsingEnabled: true
-                            )
-                        )
-                        
-                    }
-                    
-                    Button(action: {
-                        self.presentingSafariView2 = true
-                    }) {
-                        HStack {
-                            Text("University of Cambridge")
-                                .foregroundColor(Color("Color1"))
-                            Image(systemName: "arrow.up.right")
-                                .font(Font.system(.caption))
-                            Spacer()
-                            
-                            DisclosureIndicator()
-                        }
-                    }
-                    .safariView(isPresented: $presentingSafariView2) {
-                        SafariView(
-                            url: URL(string: "https://www.cam.ac.uk")!,
-                            configuration: SafariView.Configuration(
-                                entersReaderIfAvailable: false,
-                                barCollapsingEnabled: true
-                            )
-                        )
-                        
-                    }
-                    
-                    Button(action: {
-                        self.presentingSafariView3 = true
-                    }) {
-                        HStack {
-                            Text("Imperial College London")
-                                .foregroundColor(Color("Color1"))
-                            Image(systemName: "arrow.up.right")
-                                .font(Font.system(.caption))
-                            
-                            Spacer()
-                            
-                            DisclosureIndicator()
-                        }
-                    }
-                    .safariView(isPresented: $presentingSafariView3) {
-                        SafariView(
-                            url: URL(string: "https://www.imperial.ac.uk")!,
-                            configuration: SafariView.Configuration(
-                                entersReaderIfAvailable: false,
-                                barCollapsingEnabled: true
-                            )
-                        )
-                        
-                    }
-                    
-                    Button(action: {
-                        self.presentingSafariView4 = true
-                    }) {
-                        HStack {
-                            Text("London School of Economics")
-                                .foregroundColor(Color("Color1"))
-                            Image(systemName: "arrow.up.right")
-                                .font(Font.system(.caption))
-                            Spacer()
-                            
-                            DisclosureIndicator()
-                        }
-                    }
-                    .safariView(isPresented: $presentingSafariView4) {
-                        SafariView(
-                            url: URL(string: "https://www.lse.ac.uk")!,
-                            configuration: SafariView.Configuration(
-                                entersReaderIfAvailable: false,
-                                barCollapsingEnabled: true
-                            )
-                        )
-                        
-                    }
-                    
-                    Button(action: {
-                        self.presentingSafariView5 = true
-                    }) {
-                        HStack {
-                            Text("University College London")
-                                .foregroundColor(Color("Color1"))
-                            Image(systemName: "arrow.up.right")
-                                .font(Font.system(.caption))
-                            Spacer()
-                            
-                            DisclosureIndicator()
-                        }
-                    }
-                    .safariView(isPresented: $presentingSafariView5) {
-                        SafariView(
-                            url: URL(string: "https://www.ucl.ac.uk")!,
-                            configuration: SafariView.Configuration(
-                                entersReaderIfAvailable: false,
-                                barCollapsingEnabled: true
-                            )
-                        )
-                        
-                    }
-                    
-                    
-                }
-                .listSectionSeparator(.visible)
-                .headerProminence(.increased)
-                
+                //OfficialWebsitesView()
             }
             //.listRowInsets(EdgeInsets())
             //.padding(.vertical, -10)
             .listStyle(.insetGrouped)
             .navigationBarTitle("PaperHub", displayMode: .large)
             //.navigationBarHidden(false)
-            .searchable(text: $searchText)
+            //.searchable(text: $searchText)
             
         }
+        .edgesIgnoringSafeArea(.all)
     }
     
 }
