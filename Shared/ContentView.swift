@@ -269,15 +269,13 @@ struct ContentView: View {
                 ToolbarItem(placement: .primaryAction){
                     HStack {
                         Button {
-                            showingInfoSheet.toggle()
+                            
                         }label: {
                             Image(systemName: "ellipsis.circle")
                                 //.foregroundColor(Color.orange)
                             //Image(systemName: "gear")
                         }
-                        .sheet(isPresented: $showingInfoSheet) {
-                            EmptyView()
-                        }
+                        
                         Button {
                             showingSettingSheet.toggle()
                         }label: {
