@@ -9,21 +9,21 @@ import SwiftUI
 import BetterSafariView
 
 struct Quali {
-  let image: String
-  let name: String
-  let color: Color
+    let image: String
+    let name: String
+    let color: Color
 }
 
 struct Exam {
-  let image: String
-  let name: String
-  let color: Color
+    let image: String
+    let name: String
+    let color: Color
 }
 
 struct Contest {
-  let image: String
-  let name: String
-  let color: Color
+    let image: String
+    let name: String
+    let color: Color
 }
 
 struct ContentView: View {
@@ -37,32 +37,32 @@ struct ContentView: View {
     @State private var showSafari = false
     
     var qualiList = [
-      Quali(image: "i.square.fill", name: "IGCSE", color: .blue),
-      Quali(image: "a.square.fill", name: "Advanced Level", color: .green),
-      Quali(image: "i.square.fill", name: "International Advanced Level", color: .indigo),
-      Quali(image: "o.square.fill", name: "OLevel", color: .purple),
-      Quali(image: "i.square.fill", name: "IBDP", color: .yellow),
+        Quali(image: "i.square.fill", name: "IGCSE", color: .blue),
+        Quali(image: "a.square.fill", name: "Advanced Level", color: .green),
+        Quali(image: "i.square.fill", name: "International Advanced Level", color: .indigo),
+        Quali(image: "o.square.fill", name: "OLevel", color: .purple),
+        Quali(image: "i.square.fill", name: "IBDP", color: .yellow),
     ]
     
     var examList = [
-      Exam(image: "c.square.fill", name: "CAIE", color: .brown),
-      Exam(image: "e.square.fill", name: "Edexcel", color: .mint),
-      Exam(image: "a.square.fill", name: "AQA", color: .red),
-      ]
+        Exam(image: "c.square.fill", name: "CAIE", color: .brown),
+        Exam(image: "e.square.fill", name: "Edexcel", color: .mint),
+        Exam(image: "a.square.fill", name: "AQA", color: .red),
+    ]
     
     var contestList = [
-      Contest(image: "c.square.fill", name: "Cambridge admissions", color: .orange),
-      Contest(image: "o.square.fill", name: "Oxford admissions", color: .gray),
-      Contest(image: "m.square.fill", name: "MAA AMC", color: .cyan),
-      Contest(image: "u.square.fill", name: "UKMT", color: .black),
-        ]
+        Contest(image: "c.square.fill", name: "Cambridge admissions", color: .orange),
+        Contest(image: "o.square.fill", name: "Oxford admissions", color: .gray),
+        Contest(image: "m.square.fill", name: "MAA AMC", color: .cyan),
+        Contest(image: "u.square.fill", name: "UKMT", color: .black),
+    ]
     
     let qualifications = ["IGCSE", "Advanced Level", "International Advanced Level", "OLevel", "IBDP"]
     let bureaus = ["CAIE", "Edexcel", "AQA"]
     let extraTests = ["Oxford admissions", "Cambridge admissions", "MAA AMC", "UKMT"]
     let websites = ["Oxford", "Cambridge", "Imperial London", "London School of Economics", "University College London"]
     @State private var searchText = ""
-
+    
     var body: some View {
         NavigationView {
             List {
@@ -70,8 +70,8 @@ struct ContentView: View {
                 NavigationLink(destination: ALView()) {
                     HStack {
                         Image(systemName: "a.square.fill")
-                             .font(Font.system(.title))
-                             .foregroundColor(.green)
+                            .font(Font.system(.title))
+                            .foregroundColor(.green)
                         Text("AS & A Levels")
                     }
                     .offset(x: -8)
@@ -79,8 +79,8 @@ struct ContentView: View {
                 NavigationLink(destination: IALView()) {
                     HStack {
                         Image(systemName: "i.square.fill")
-                             .font(Font.system(.title))
-                             .foregroundColor(.indigo)
+                            .font(Font.system(.title))
+                            .foregroundColor(.indigo)
                         Text("International AS & A Levels")
                     }
                     .offset(x: -8)
@@ -89,39 +89,39 @@ struct ContentView: View {
                 NavigationLink(destination: IGCSEView()) {
                     HStack {
                         Image(systemName: "i.square.fill")
-                             .font(Font.system(.title))
-                             .foregroundColor(.blue)
+                            .font(Font.system(.title))
+                            .foregroundColor(.blue)
                         Text("International GCSE")
                     }
                     .offset(x: -8)
                 }
                 
-            Button(action: {
+                Button(action: {
                     self.showingAlert = true
                 }) {
                     HStack {
                         Group {
                             Image(systemName: "i.square.fill")
                                 .font(Font.system(.title))
-                            .foregroundColor(.yellow)
+                                .foregroundColor(.yellow)
                             Text("IBDP")
                                 .foregroundColor(Color("Color2"))
                         }
                         .offset(x: -8)
-                            
+                        
                         Spacer()
-                       DisclosureIndicator()
+                        DisclosureIndicator()
                     }
                     .alert("Still under development 🚴", isPresented: $showingAlert) {
-                                
+                        
                     }
                 }
                 
                 NavigationLink(destination: OLView()) {
                     HStack {
                         Image(systemName: "o.square.fill")
-                             .font(Font.system(.title))
-                             .foregroundColor(.purple)
+                            .font(Font.system(.title))
+                            .foregroundColor(.purple)
                         Text("O Level")
                     }
                     .offset(x: -8)
@@ -131,8 +131,8 @@ struct ContentView: View {
                     NavigationLink(destination: CAIEView()) {
                         HStack {
                             Image(systemName: "c.square.fill")
-                                 .font(Font.system(.title))
-                                 .foregroundColor(.brown)
+                                .font(Font.system(.title))
+                                .foregroundColor(.brown)
                             Text("CAIE")
                         }
                         .offset(x: -8)
@@ -140,8 +140,8 @@ struct ContentView: View {
                     NavigationLink(destination: EdexcelView()) {
                         HStack {
                             Image(systemName: "e.square.fill")
-                                 .font(Font.system(.title))
-                                 .foregroundColor(.mint)
+                                .font(Font.system(.title))
+                                .foregroundColor(.mint)
                             Text("Edexcel")
                         }
                         .offset(x: -8)
@@ -149,8 +149,8 @@ struct ContentView: View {
                     NavigationLink(destination: AqaView()) {
                         HStack {
                             Image(systemName: "a.square.fill")
-                                 .font(Font.system(.title))
-                                 .foregroundColor(.red)
+                                .font(Font.system(.title))
+                                .foregroundColor(.red)
                             Text("AQA")
                         }
                         .offset(x: -8)
@@ -161,91 +161,91 @@ struct ContentView: View {
                 
                 Section(header: Text("Admissions Tests")) {
                     Button(action: {
-                            self.showingAlert = true
-                        }) {
-                            HStack {
-                                Group {
-                                    Image(systemName: "c.square.fill")
-                                        .font(Font.system(.title))
+                        self.showingAlert = true
+                    }) {
+                        HStack {
+                            Group {
+                                Image(systemName: "c.square.fill")
+                                    .font(Font.system(.title))
                                     .foregroundColor(.orange)
-                                    Text("Cambridge admissions")
-                                        .foregroundColor(Color("Color2"))
-                                }
-                                .offset(x: -8)
-                                    
-                                Spacer()
-                               DisclosureIndicator()
+                                Text("Cambridge admissions")
+                                    .foregroundColor(Color("Color2"))
                             }
-                            .alert("Still under development 🚴", isPresented: $showingAlert) {
-                            }
+                            .offset(x: -8)
+                            
+                            Spacer()
+                            DisclosureIndicator()
                         }
+                        .alert("Still under development 🚴", isPresented: $showingAlert) {
+                        }
+                    }
                     Button(action: {
-                            self.showingAlert = true
-                        }) {
-                            HStack {
-                                Group {
-                                    Image(systemName: "o.square.fill")
-                                        .font(Font.system(.title))
+                        self.showingAlert = true
+                    }) {
+                        HStack {
+                            Group {
+                                Image(systemName: "o.square.fill")
+                                    .font(Font.system(.title))
                                     .foregroundColor(.gray)
-                                    Text("Oxford admissions")
-                                        .foregroundColor(Color("Color2"))
-                                }
-                                .offset(x: -8)
-                                    
-                                Spacer()
-                               DisclosureIndicator()
+                                Text("Oxford admissions")
+                                    .foregroundColor(Color("Color2"))
                             }
-                            .alert("Still under development 🚴", isPresented: $showingAlert) {
-                                        
-                            }
+                            .offset(x: -8)
+                            
+                            Spacer()
+                            DisclosureIndicator()
                         }
+                        .alert("Still under development 🚴", isPresented: $showingAlert) {
+                            
+                        }
+                    }
                     Button(action: {
-                            self.showingAlert = true
-                        }) {
-                            HStack {
-                                Group {
-                                    Image(systemName: "m.square.fill")
-                                        .font(Font.system(.title))
+                        self.showingAlert = true
+                    }) {
+                        HStack {
+                            Group {
+                                Image(systemName: "m.square.fill")
+                                    .font(Font.system(.title))
                                     .foregroundColor(.cyan)
-                                    Text("MAA AMC")
-                                        .foregroundColor(Color("Color2"))
-                                }
-                                .offset(x: -8)
-                                    
-                                Spacer()
-                               DisclosureIndicator()
+                                Text("MAA AMC")
+                                    .foregroundColor(Color("Color2"))
                             }
-                            .alert("Still under development 🚴", isPresented: $showingAlert) {
-                                        
-                            }
+                            .offset(x: -8)
+                            
+                            Spacer()
+                            DisclosureIndicator()
                         }
+                        .alert("Still under development 🚴", isPresented: $showingAlert) {
+                            
+                        }
+                    }
                     Button(action: {
-                            self.showingAlert = true
-                        }) {
-                            HStack {
-                                Group {
-                                    Image(systemName: "u.square.fill")
-                                        .font(Font.system(.title))
+                        self.showingAlert = true
+                    }) {
+                        HStack {
+                            Group {
+                                Image(systemName: "u.square.fill")
+                                    .font(Font.system(.title))
                                     .foregroundColor(.black)
-                                    Text("UKMT")
-                                        .foregroundColor(Color("Color2"))
-                                }
-                                .offset(x: -8)
-                                    
-                                Spacer()
-                               DisclosureIndicator()
+                                Text("UKMT")
+                                    .foregroundColor(Color("Color2"))
                             }
-                            .alert("Still under development 🚴", isPresented: $showingAlert) {
-                                        
-                            }
+                            .offset(x: -8)
+                            
+                            Spacer()
+                            DisclosureIndicator()
                         }
+                        .alert("Still under development 🚴", isPresented: $showingAlert) {
+                            
+                        }
+                    }
                 }
                 .listSectionSeparator(.visible)
                 .headerProminence(.increased)
                 
                 Section(header: HStack {
                     Text("Official Websites")
-               }) {
+                }) {
                     Button(action: {
                         self.presentingSafariView1 = true
                     }) {
@@ -267,8 +267,8 @@ struct ContentView: View {
                                 barCollapsingEnabled: true
                             )
                         )
-                            
-                   }
+                        
+                    }
                     
                     Button(action: {
                         self.presentingSafariView2 = true
@@ -291,8 +291,8 @@ struct ContentView: View {
                                 barCollapsingEnabled: true
                             )
                         )
-                            
-                   }
+                        
+                    }
                     
                     Button(action: {
                         self.presentingSafariView3 = true
@@ -302,7 +302,7 @@ struct ContentView: View {
                                 .foregroundColor(Color("Color1"))
                             Image(systemName: "arrow.up.right")
                                 .font(Font.system(.caption))
-                                
+                            
                             Spacer()
                             
                             DisclosureIndicator()
@@ -316,8 +316,8 @@ struct ContentView: View {
                                 barCollapsingEnabled: true
                             )
                         )
-                            
-                   }
+                        
+                    }
                     
                     Button(action: {
                         self.presentingSafariView4 = true
@@ -340,8 +340,8 @@ struct ContentView: View {
                                 barCollapsingEnabled: true
                             )
                         )
-                            
-                   }
+                        
+                    }
                     
                     Button(action: {
                         self.presentingSafariView5 = true
@@ -364,8 +364,8 @@ struct ContentView: View {
                                 barCollapsingEnabled: true
                             )
                         )
-                            
-                   }
+                        
+                    }
                     
                     
                 }
@@ -379,7 +379,7 @@ struct ContentView: View {
             .navigationBarTitle("PaperHub", displayMode: .large)
             //.navigationBarHidden(false)
             .searchable(text: $searchText)
-                        
+            
         }
     }
     
