@@ -10,131 +10,91 @@ import SwiftUI
 struct IalEdxMathsViewTest: View {
     @State private var showNew1 = false
     @State private var showNew2 = false
+    @State var selected = 1
+    
     var body: some View {
-        IalEdxMaths2019JanView()
-            .toolbar {
-                ToolbarItem(placement: .primaryAction) {
-                    HStack {
-                        Menu() {
-                            NavigationLink(destination: EmptyView()) {
-                                Label("Show data booklet", systemImage: "list.bullet.rectangle.portrait")
-                            }
-                            NavigationLink(destination: EmptyView()) {
-                                Label("Show syllabus", systemImage: "character.book.closed")
-                            }
-                            NavigationLink(destination: EmptyView()) {
-                                Label("Show course resources", systemImage: "bookmark")
-                            }
-                            Section(header: Text("Secondary actions")) {
+        if selected == 1{
+            IalEdxMaths2019JanView()
+                .toolbar {
+                    ToolbarItem(placement: .primaryAction){
+                        HStack {
+                            Menu() {
                                 NavigationLink(destination: EmptyView()) {
-                                    Label("Paper request", systemImage: "arrowshape.turn.up.right")
+                                    Label("Show data booklet", systemImage: "list.bullet.rectangle.portrait")
                                 }
+                                NavigationLink(destination: EmptyView()) {
+                                    Label("Show syllabus", systemImage: "character.book.closed")
+                                }
+                                NavigationLink(destination: EmptyView()) {
+                                    Label("Show course resources", systemImage: "bookmark")
+                                }
+                                Section(header: Text("Secondary actions")) {
+                                    NavigationLink(destination: EmptyView()) {
+                                        Label("Paper request", systemImage: "arrowshape.turn.up.right")
+                                    }
+                                }
+                            } label: {
+                                Image(systemName: "ellipsis.circle")
+                                    //.foregroundColor(Color.gray)
                             }
-                        } label: {
-                            Image(systemName: "ellipsis.circle")
-                                //.foregroundColor(Color.gray)
+                            Menu(content: {
+                                Menu("2021") {
+                                    Picker(selection: $selected, label: Text("")){
+                                        Text("Spring").tag(3)
+                                        Text("Summer").tag(4)
+                                    }
+                                }
+                                Menu("2020") {
+                                    Picker(selection: $selected, label: Text("")){
+                                        Text("Spring").tag(5)
+                                        Text("Summer").tag(6)
+                                    }
+                                }
+                                Menu("2019") {
+                                    Picker(selection: $selected, label: Text("")){
+                                        Text("Spring").tag(1)
+                                        Text("Summer").tag(2)
+                                    }
+                                }
+                                Menu("2018") {
+                                    Picker(selection: $selected, label: Text("")){
+                                        Text("Spring").tag(7)
+                                        Text("Summer").tag(8)
+                                    }
+                                }
+                                Menu("2017") {
+                                    Picker(selection: $selected, label: Text("")){
+                                        Text("Spring").tag(9)
+                                        Text("Summer").tag(10)
+                                    }
+                                }
+                                Menu("2016") {
+                                    Picker(selection: $selected, label: Text("")){
+                                        Text("Spring").tag(11)
+                                        Text("Summer").tag(12)
+                                    }
+                                }
+                                Menu("2015") {
+                                    Picker(selection: $selected, label: Text("")){
+                                        Text("Spring").tag(13)
+                                        Text("Summer").tag(14)
+                                    }
+                                }
+                                Menu("2014") {
+                                    Picker(selection: $selected, label: Text("")){
+                                        Text("Spring").tag(15)
+                                        Text("Summer").tag(16)
+                                    }
+                                }
+                            }) {
+                                Image(systemName: "list.bullet.circle")
                         }
-                        Menu() {
-                            Menu("2021") {
-                                Button("Spring") {
-                                    //self.showNew1 = true
-                                }
-                                Button("Summer") {
-                                    //self.showNew2 = true
-                                }
-                                Button("Winter") {
-                                    //self.showNew1 = true
-                                }
-                            }
-                            Menu("2020") {
-                                Button("Spring") {
-                                    //self.showNew1 = true
-                                }
-                                Button("Summer") {
-                                    //self.showNew2 = true
-                                }
-                                Button("Winter") {
-                                    //self.showNew1 = true
-                                }
-                            }
-                            Menu("2019") {
-                                Button("Spring") {
-                                    self.showNew1 = true
-                                }
-                                Button("Summer") {
-                                    //self.showNew2 = true
-                                }
-                                Button("Winter") {
-                                    //self.showNew1 = true
-                                }
-                            }
-                            Menu("2018") {
-                                Button("Spring") {
-                                    //self.showNew1 = true
-                                }
-                                Button("Summer") {
-                                    //self.showNew2 = true
-                                }
-                                Button("Winter") {
-                                    //self.showNew1 = true
-                                }
-                            }
-                            Menu("2017") {
-                                Button("Spring") {
-                                    //self.showNew1 = true
-                                }
-                                Button("Summer") {
-                                    //self.showNew2 = true
-                                }
-                                Button("Winter") {
-                                    //self.showNew1 = true
-                                }
-                            }
-                            Menu("2016") {
-                                Button("Spring") {
-                                    //self.showNew1 = true
-                                }
-                                Button("Summer") {
-                                    //self.showNew2 = true
-                                }
-                                Button("Winter") {
-                                    //self.showNew1 = true
-                                }
-                            }
-                            Menu("2015") {
-                                Button("Spring") {
-                                    //self.showNew1 = true
-                                }
-                                Button("Summer") {
-                                    //self.showNew2 = true
-                                }
-                                Button("Winter") {
-                                    //self.showNew1 = true
-                                }
-                            }
-                            Menu("2014") {
-                                Button("Spring") {
-                                    //self.showNew1 = true
-                                }
-                                Button("Summer") {
-                                    //self.showNew2 = true
-                                }
-                                Button("Winter") {
-                                    //self.showNew1 = true
-                                }
-                            }
-                            
-                        }label: {
-                            Label("Quick List", systemImage: "list.bullet.circle")
                         }
+                       
                     }
                 }
-            }
-            .navigationBarTitle("19 Spring", displayMode: .inline)
-            .background(
-                NavigationLink(destination: IalEdxMaths2019JanView(), isActive: $showNew1) {
-                }
-            )
+        }
+ 
     }
 }
 

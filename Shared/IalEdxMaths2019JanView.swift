@@ -31,7 +31,7 @@ struct IalEdxMaths2019JanView: View {
             }
         }
         
-
+        .navigationBarTitle("19 Spring", displayMode: .inline)
         .listStyle(.plain)
         
     }
