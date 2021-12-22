@@ -209,20 +209,21 @@ struct ContentView: View {
             .toolbar(content: {
                 ToolbarItem(placement: .primaryAction){
                     HStack {
-                        Button {
-                            
-                        }label: {
+                       
+                        Button(action: {
+                            let impactLight = UIImpactFeedbackGenerator(style: .rigid)
+                            impactLight.impactOccurred()
+                        }) {
                             Image(systemName: "ellipsis.circle")
-                                //.foregroundColor(Color.orange)
-                            //Image(systemName: "gear")
                         }
                         
-                        Button {
+                        
+                        Button(action: {
                             showingSettingSheet.toggle()
-                        }label: {
+                            let impactLight = UIImpactFeedbackGenerator(style: .rigid)
+                            impactLight.impactOccurred()
+                        }) {
                             Image(systemName: "gearshape")
-                                //.foregroundColor(Color.orange)
-                            //Image(systemName: "gear")
                         }
                         .sheet(isPresented: $showingSettingSheet) {
                             SettingView()
@@ -239,7 +240,7 @@ struct ContentView: View {
                     }
                 }
             })
-            //.padding(.top, -20)
+            .padding(.top, -18)
         }
         .edgesIgnoringSafeArea(.all)
         //.navigationViewStyle(.stack)

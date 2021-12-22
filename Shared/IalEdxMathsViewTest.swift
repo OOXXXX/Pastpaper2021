@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct IalEdxMathsViewTest: View {
+    let impactMed = UIImpactFeedbackGenerator(style: .medium)
+        
     @State private var showNew1 = false
     @State private var showNew2 = false
     @State var selected = 7
@@ -17,6 +19,7 @@ struct IalEdxMathsViewTest: View {
             IalEdxMaths2019JanView()
                 .toolbar {
                     ToolbarItem(placement: .primaryAction){
+                        
                         HStack {
                             Menu() {
                                 NavigationLink(destination: EmptyView()) {
@@ -35,8 +38,8 @@ struct IalEdxMathsViewTest: View {
                                 }
                             } label: {
                                 Image(systemName: "ellipsis.circle")
-                                    //.foregroundColor(Color.gray)
                             }
+                            
                             Menu(content: {
                                 Menu("2021") {
                                     Picker(selection: $selected, label: Text("")){

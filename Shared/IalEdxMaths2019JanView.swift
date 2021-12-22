@@ -86,6 +86,8 @@ struct IalEdxMaths2019JanWebView1: View {
                 self.isActivityPopoverPresented.toggle()
             default:
                 self.isActivitySheetPresented.toggle()
+                let impactLight = UIImpactFeedbackGenerator(style: .light)
+                impactLight.impactOccurred()
             }
         }, label: {
             Image(systemName: "square.and.arrow.up")
@@ -144,6 +146,8 @@ struct IalEdxMaths2019JanWebView2: View {
                 self.isActivityPopoverPresented.toggle()
             default:
                 self.isActivitySheetPresented.toggle()
+                let impactLight = UIImpactFeedbackGenerator(style: .light)
+                impactLight.impactOccurred()
             }
         }, label: {
             Image(systemName: "square.and.arrow.up")
