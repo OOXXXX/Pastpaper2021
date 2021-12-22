@@ -27,7 +27,7 @@ struct SettingView: View {
                     }
                     Toggle("Taptic Engine Feedback", isOn: $showFeedback)
                     
-                    Toggle("Traditional Mode", isOn: $showTraditional)
+                    Toggle("Traditional Stack Mode", isOn: $showTraditional)
                 }
                 
                 Section(header: Text("MISC")) {

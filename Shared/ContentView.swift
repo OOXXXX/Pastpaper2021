@@ -80,67 +80,8 @@ struct ContentView: View {
         SearchNavigation(text: $searchString, search: search, cancel: cancel) {
         //NavigationView {
             List {
-                
-                NavigationLink(destination: ALView()) {
-                    HStack {
-                        Image(systemName: "a.square.fill")
-                            .font(Font.system(.title))
-                            .foregroundColor(.green)
-                        Text("AS & A Levels")
-                    }
-                    .offset(x: -8)
-                }
-                NavigationLink(destination: IALView()) {
-                    HStack {
-                        Image(systemName: "i.square.fill")
-                            .font(Font.system(.title))
-                            .foregroundColor(.indigo)
-                        Text("International AS & A Levels")
-                    }
-                    .offset(x: -8)
-                }
-                
-                NavigationLink(destination: IGCSEView()) {
-                    HStack {
-                        Image(systemName: "i.square.fill")
-                            .font(Font.system(.title))
-                            .foregroundColor(.blue)
-                        Text("International GCSE")
-                    }
-                    .offset(x: -8)
-                }
-                
-                Button(action: {
-                    self.showingAlert = true
-                }) {
-                    HStack {
-                        Group {
-                            Image(systemName: "i.square.fill")
-                                .font(Font.system(.title))
-                                .foregroundColor(.yellow)
-                            Text("IBDP")
-                                .foregroundColor(Color("Color2"))
-                        }
-                        .offset(x: -8)
-                        
-                        Spacer()
-                        DisclosureIndicator()
-                    }
-                    .alert("Still under development 🚴", isPresented: $showingAlert) {
-                        
-                    }
-                }
-                
-                NavigationLink(destination: OLView()) {
-                    HStack {
-                        Image(systemName: "o.square.fill")
-                            .font(Font.system(.title))
-                            .foregroundColor(.purple)
-                        Text("O Level")
-                    }
-                    .offset(x: -8)
-                }
-                
+                QualiView()
+
                 Section(header: Text("Examination Bureau")) {
                     NavigationLink(destination: CAIEView()) {
                         HStack {
@@ -261,7 +202,7 @@ struct ContentView: View {
             }
             //.listRowInsets(EdgeInsets())
             //.padding(.vertical, -10)
-            .listStyle(.insetGrouped)
+            .listStyle(.automatic)
             //.searchable(text: $searchText, placement: .navigationBarDrawer)
             .navigationBarTitle("PaperHub", displayMode: .large)
             //.navigationBarHidden(false)
@@ -298,10 +239,13 @@ struct ContentView: View {
                     }
                 }
             })
+            //.padding(.top, -20)
         }
         .edgesIgnoringSafeArea(.all)
         //.navigationViewStyle(.stack)
+        
     }
+    
     
 }
 struct ContentView_Previews: PreviewProvider {
