@@ -19,6 +19,20 @@
 		4B1B1FA9277487C100563CFA /* IalMaths2018Jan2.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B1FA7277487C100563CFA /* IalMaths2018Jan2.json */; };
 		4B1B1FAB2774885500563CFA /* IalEdxMaths2018JanList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B1FAA2774885500563CFA /* IalEdxMaths2018JanList.swift */; };
 		4B1B1FAC2774885500563CFA /* IalEdxMaths2018JanList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B1FAA2774885500563CFA /* IalEdxMaths2018JanList.swift */; };
+		4B1B1FAE2774DBC400563CFA /* IalMaths2018Oct1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B1FAD2774DBC400563CFA /* IalMaths2018Oct1.json */; };
+		4B1B1FAF2774DBC400563CFA /* IalMaths2018Oct1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B1FAD2774DBC400563CFA /* IalMaths2018Oct1.json */; };
+		4B1B1FB12774DCCB00563CFA /* IalMaths2018Oct2.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B1FB02774DCCB00563CFA /* IalMaths2018Oct2.json */; };
+		4B1B1FB22774DCCB00563CFA /* IalMaths2018Oct2.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B1FB02774DCCB00563CFA /* IalMaths2018Oct2.json */; };
+		4B1B1FB42774DD7D00563CFA /* IalMaths2018Oct3.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B1FB32774DD7D00563CFA /* IalMaths2018Oct3.json */; };
+		4B1B1FB52774DD7D00563CFA /* IalMaths2018Oct3.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B1FB32774DD7D00563CFA /* IalMaths2018Oct3.json */; };
+		4B1B1FB72774DE8400563CFA /* IalMaths2018June3.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B1FB62774DE8400563CFA /* IalMaths2018June3.json */; };
+		4B1B1FB82774DE8400563CFA /* IalMaths2018June3.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B1FB62774DE8400563CFA /* IalMaths2018June3.json */; };
+		4B1B1FBA2774E02800563CFA /* IalMaths2018Jan3.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B1FB92774E02800563CFA /* IalMaths2018Jan3.json */; };
+		4B1B1FBB2774E02800563CFA /* IalMaths2018Jan3.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B1FB92774E02800563CFA /* IalMaths2018Jan3.json */; };
+		4B1B1FBD2774E17800563CFA /* IalMaths2019Jan3.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B1FBC2774E17800563CFA /* IalMaths2019Jan3.json */; };
+		4B1B1FBE2774E17800563CFA /* IalMaths2019Jan3.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B1FBC2774E17800563CFA /* IalMaths2019Jan3.json */; };
+		4B1B1FC02774E23900563CFA /* IalEdxMaths2018OctList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B1FBF2774E23900563CFA /* IalEdxMaths2018OctList.swift */; };
+		4B1B1FC12774E23900563CFA /* IalEdxMaths2018OctList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B1FBF2774E23900563CFA /* IalEdxMaths2018OctList.swift */; };
 		4B5D436E2758A1A30092865C /* IALView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5D436D2758A1A30092865C /* IALView.swift */; };
 		4B5D436F2758A1A30092865C /* IALView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5D436D2758A1A30092865C /* IALView.swift */; };
 		4B5D43712758C2E30092865C /* IalEdxMathsViewOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5D43702758C2E30092865C /* IalEdxMathsViewOld.swift */; };
@@ -73,6 +87,13 @@
 		4B1B1FA42774864800563CFA /* IalMaths2018Jan1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2018Jan1.json; sourceTree = "<group>"; };
 		4B1B1FA7277487C100563CFA /* IalMaths2018Jan2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2018Jan2.json; sourceTree = "<group>"; };
 		4B1B1FAA2774885500563CFA /* IalEdxMaths2018JanList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMaths2018JanList.swift; sourceTree = "<group>"; };
+		4B1B1FAD2774DBC400563CFA /* IalMaths2018Oct1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2018Oct1.json; sourceTree = "<group>"; };
+		4B1B1FB02774DCCB00563CFA /* IalMaths2018Oct2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2018Oct2.json; sourceTree = "<group>"; };
+		4B1B1FB32774DD7D00563CFA /* IalMaths2018Oct3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2018Oct3.json; sourceTree = "<group>"; };
+		4B1B1FB62774DE8400563CFA /* IalMaths2018June3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2018June3.json; sourceTree = "<group>"; };
+		4B1B1FB92774E02800563CFA /* IalMaths2018Jan3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2018Jan3.json; sourceTree = "<group>"; };
+		4B1B1FBC2774E17800563CFA /* IalMaths2019Jan3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2019Jan3.json; sourceTree = "<group>"; };
+		4B1B1FBF2774E23900563CFA /* IalEdxMaths2018OctList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMaths2018OctList.swift; sourceTree = "<group>"; };
 		4B5D436D2758A1A30092865C /* IALView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IALView.swift; sourceTree = "<group>"; };
 		4B5D43702758C2E30092865C /* IalEdxMathsViewOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMathsViewOld.swift; sourceTree = "<group>"; };
 		4B5D43732758CF240092865C /* IalEdxMaths2019JanList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMaths2019JanList.swift; sourceTree = "<group>"; };
@@ -151,15 +172,22 @@
 				4B5D43732758CF240092865C /* IalEdxMaths2019JanList.swift */,
 				4B1B1FAA2774885500563CFA /* IalEdxMaths2018JanList.swift */,
 				4B1B1F9B27746C1100563CFA /* IalEdxMaths2018JuneList.swift */,
+				4B1B1FBF2774E23900563CFA /* IalEdxMaths2018OctList.swift */,
 				4B5D43BB275A81D60092865C /* IndicatorTitleLabel.swift */,
 				4B5D4376275927440092865C /* Modifier.swift */,
 				4BBDF569276D0BA1009F71C0 /* Localizable.strings */,
 				4BBB2FB7275CAB5A002588C3 /* IalMaths2019Jan1.json */,
 				4BBDF566276CE206009F71C0 /* IalMaths2019Jan2.json */,
+				4B1B1FBC2774E17800563CFA /* IalMaths2019Jan3.json */,
 				4B1B1FA42774864800563CFA /* IalMaths2018Jan1.json */,
 				4B1B1FA7277487C100563CFA /* IalMaths2018Jan2.json */,
+				4B1B1FB92774E02800563CFA /* IalMaths2018Jan3.json */,
 				4B1B1F9827746AA500563CFA /* IalMaths2018June1.json */,
 				4B1B1FA12774712700563CFA /* IalMaths2018June2.json */,
+				4B1B1FB62774DE8400563CFA /* IalMaths2018June3.json */,
+				4B1B1FAD2774DBC400563CFA /* IalMaths2018Oct1.json */,
+				4B1B1FB02774DCCB00563CFA /* IalMaths2018Oct2.json */,
+				4B1B1FB32774DD7D00563CFA /* IalMaths2018Oct3.json */,
 				4BC9677E2750B71D007DE392 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -268,13 +296,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B1B1F9927746AA500563CFA /* IalMaths2018June1.json in Resources */,
+				4B1B1FB12774DCCB00563CFA /* IalMaths2018Oct2.json in Resources */,
+				4B1B1FBD2774E17800563CFA /* IalMaths2019Jan3.json in Resources */,
 				4B1B1FA8277487C100563CFA /* IalMaths2018Jan2.json in Resources */,
+				4B1B1FAE2774DBC400563CFA /* IalMaths2018Oct1.json in Resources */,
 				4BBDF56A276D0BA1009F71C0 /* Localizable.strings in Resources */,
+				4B1B1FB72774DE8400563CFA /* IalMaths2018June3.json in Resources */,
+				4B1B1FB42774DD7D00563CFA /* IalMaths2018Oct3.json in Resources */,
 				4BBB2FB8275CAB5A002588C3 /* IalMaths2019Jan1.json in Resources */,
 				4BC967902750B71D007DE392 /* Assets.xcassets in Resources */,
 				4B1B1FA52774864800563CFA /* IalMaths2018Jan1.json in Resources */,
 				4B1B1FA22774712700563CFA /* IalMaths2018June2.json in Resources */,
 				4BBDF567276CE206009F71C0 /* IalMaths2019Jan2.json in Resources */,
+				4B1B1FBA2774E02800563CFA /* IalMaths2018Jan3.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,13 +317,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B1B1F9A27746AA500563CFA /* IalMaths2018June1.json in Resources */,
+				4B1B1FB22774DCCB00563CFA /* IalMaths2018Oct2.json in Resources */,
+				4B1B1FBE2774E17800563CFA /* IalMaths2019Jan3.json in Resources */,
 				4B1B1FA9277487C100563CFA /* IalMaths2018Jan2.json in Resources */,
+				4B1B1FAF2774DBC400563CFA /* IalMaths2018Oct1.json in Resources */,
 				4BBDF56B276D0BA1009F71C0 /* Localizable.strings in Resources */,
+				4B1B1FB82774DE8400563CFA /* IalMaths2018June3.json in Resources */,
+				4B1B1FB52774DD7D00563CFA /* IalMaths2018Oct3.json in Resources */,
 				4BBB2FB9275CAB5A002588C3 /* IalMaths2019Jan1.json in Resources */,
 				4BC967912750B71D007DE392 /* Assets.xcassets in Resources */,
 				4B1B1FA62774864800563CFA /* IalMaths2018Jan1.json in Resources */,
 				4B1B1FA32774712700563CFA /* IalMaths2018June2.json in Resources */,
 				4BBDF568276CE206009F71C0 /* IalMaths2019Jan2.json in Resources */,
+				4B1B1FBB2774E02800563CFA /* IalMaths2018Jan3.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +355,7 @@
 				4B5D436E2758A1A30092865C /* IALView.swift in Sources */,
 				4B5D4377275927440092865C /* Modifier.swift in Sources */,
 				4BFBFDFB275BA2B700401100 /* CAIEView.swift in Sources */,
+				4B1B1FC02774E23900563CFA /* IalEdxMaths2018OctList.swift in Sources */,
 				4B5D43712758C2E30092865C /* IalEdxMathsViewOld.swift in Sources */,
 				4BFBFE01275BC67E00401100 /* AqaView.swift in Sources */,
 				4B1B1F9C27746C1100563CFA /* IalEdxMaths2018JuneList.swift in Sources */,
@@ -342,6 +383,7 @@
 				4B5D436F2758A1A30092865C /* IALView.swift in Sources */,
 				4B5D4378275927440092865C /* Modifier.swift in Sources */,
 				4BFBFDFC275BA2B700401100 /* CAIEView.swift in Sources */,
+				4B1B1FC12774E23900563CFA /* IalEdxMaths2018OctList.swift in Sources */,
 				4B5D43722758C2E30092865C /* IalEdxMathsViewOld.swift in Sources */,
 				4BFBFE02275BC67E00401100 /* AqaView.swift in Sources */,
 				4B1B1F9D27746C1100563CFA /* IalEdxMaths2018JuneList.swift in Sources */,
