@@ -105,7 +105,7 @@ struct ALView: View {
             
             
         }
-        .listStyle(.plain)
+        .listStyle(.insetGrouped)
         .navigationBarTitle("AS & A Levels", displayMode: .inline)
     }
 }

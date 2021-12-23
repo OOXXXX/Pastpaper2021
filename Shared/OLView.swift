@@ -44,10 +44,11 @@ struct OLView: View {
                     TitleLabel("Physcis", subtitle: "5054")
                 }
             
-            .headerProminence(.increased)
+            
             }
+            .headerProminence(.increased)
        }
-        .listStyle(.plain)
+        .listStyle(.insetGrouped)
         .navigationBarTitle("O Level", displayMode: .inline)
     }
 }

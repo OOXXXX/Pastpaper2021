@@ -49,7 +49,7 @@ struct IGCSEView: View {
             
             
         }
-        .listStyle(.plain)
+        .listStyle(.insetGrouped)
         .navigationBarTitle("IGCSE", displayMode: .inline)
     }
 }

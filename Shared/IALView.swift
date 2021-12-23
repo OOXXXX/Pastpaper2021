@@ -53,7 +53,7 @@ struct IALView: View {
                 
                 
             }
-            .listStyle(.plain)
+            .listStyle(.insetGrouped)
             .navigationBarTitle("Subjects", displayMode: .inline)
             
     }
