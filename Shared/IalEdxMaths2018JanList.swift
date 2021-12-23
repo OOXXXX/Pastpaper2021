@@ -9,9 +9,7 @@ import SwiftUI
 import WebKit
 
 struct IalEdxMaths2018JanView: View {
-    @State private var searchText = ""
-    @State private var showNew1 = false
-    @State private var showNew2 = false
+    
     @State var selected = 1
     var body: some View {
         VStack{
