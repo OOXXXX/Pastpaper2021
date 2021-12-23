@@ -183,14 +183,6 @@ struct IalEdxMaths2019JanWebView2: View {
     }
 }
 
-
-struct IalEdxMathsInnerView_Previews: PreviewProvider {
-    static var previews: some View {
-        IalEdxMaths2019JanView()
-    }
-}
-
-//
 struct IalMaths2019Jan1: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
