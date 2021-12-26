@@ -120,6 +120,14 @@
 		4BCC06BE277858AC00E50FD8 /* IalMaths2021Jan3.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BCC06BC277858AC00E50FD8 /* IalMaths2021Jan3.json */; };
 		4BCC06C027785DED00E50FD8 /* IalEdxMaths2021JanList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCC06BF27785DED00E50FD8 /* IalEdxMaths2021JanList.swift */; };
 		4BCC06C127785DED00E50FD8 /* IalEdxMaths2021JanList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCC06BF27785DED00E50FD8 /* IalEdxMaths2021JanList.swift */; };
+		4BCC06C32778681500E50FD8 /* IalMaths2021June1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BCC06C22778681500E50FD8 /* IalMaths2021June1.json */; };
+		4BCC06C42778681500E50FD8 /* IalMaths2021June1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BCC06C22778681500E50FD8 /* IalMaths2021June1.json */; };
+		4BCC06C62778682100E50FD8 /* IalMaths2021June2.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BCC06C52778682100E50FD8 /* IalMaths2021June2.json */; };
+		4BCC06C72778682100E50FD8 /* IalMaths2021June2.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BCC06C52778682100E50FD8 /* IalMaths2021June2.json */; };
+		4BCC06CC277869BA00E50FD8 /* IalEdxMaths2021JuneList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCC06CB277869BA00E50FD8 /* IalEdxMaths2021JuneList.swift */; };
+		4BCC06CD277869BA00E50FD8 /* IalEdxMaths2021JuneList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCC06CB277869BA00E50FD8 /* IalEdxMaths2021JuneList.swift */; };
+		4BD35BD527786C4C0009B2F9 /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD35BD427786C4C0009B2F9 /* ToolBarView.swift */; };
+		4BD35BD627786C4C0009B2F9 /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD35BD427786C4C0009B2F9 /* ToolBarView.swift */; };
 		4BFBFDFB275BA2B700401100 /* CAIEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBFDFA275BA2B700401100 /* CAIEView.swift */; };
 		4BFBFDFC275BA2B700401100 /* CAIEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBFDFA275BA2B700401100 /* CAIEView.swift */; };
 		4BFBFDFE275BC09300401100 /* EdexcelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBFDFD275BC09300401100 /* EdexcelView.swift */; };
@@ -189,6 +197,10 @@
 		4BCC06B92778585F00E50FD8 /* IalMaths2021Jan2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2021Jan2.json; sourceTree = "<group>"; };
 		4BCC06BC277858AC00E50FD8 /* IalMaths2021Jan3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2021Jan3.json; sourceTree = "<group>"; };
 		4BCC06BF27785DED00E50FD8 /* IalEdxMaths2021JanList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMaths2021JanList.swift; sourceTree = "<group>"; };
+		4BCC06C22778681500E50FD8 /* IalMaths2021June1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2021June1.json; sourceTree = "<group>"; };
+		4BCC06C52778682100E50FD8 /* IalMaths2021June2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2021June2.json; sourceTree = "<group>"; };
+		4BCC06CB277869BA00E50FD8 /* IalEdxMaths2021JuneList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMaths2021JuneList.swift; sourceTree = "<group>"; };
+		4BD35BD427786C4C0009B2F9 /* ToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
 		4BFBFDFA275BA2B700401100 /* CAIEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAIEView.swift; sourceTree = "<group>"; };
 		4BFBFDFD275BC09300401100 /* EdexcelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdexcelView.swift; sourceTree = "<group>"; };
 		4BFBFE00275BC67E00401100 /* AqaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AqaView.swift; sourceTree = "<group>"; };
@@ -240,7 +252,9 @@
 				4B5D436D2758A1A30092865C /* IALView.swift */,
 				4B5D43702758C2E30092865C /* IalEdxMathsViewOld.swift */,
 				4BBDF562276BA758009F71C0 /* MonthView.swift */,
+				4BD35BD427786C4C0009B2F9 /* ToolBarView.swift */,
 				4BBDF56F2771030A009F71C0 /* IalEdxMathsViewNew.swift */,
+				4BCC06CB277869BA00E50FD8 /* IalEdxMaths2021JuneList.swift */,
 				4BCC06BF27785DED00E50FD8 /* IalEdxMaths2021JanList.swift */,
 				4B1B1FF227763FCD00563CFA /* IalEdxMaths2020OctList.swift */,
 				4B1B1FE6277623EA00563CFA /* IalEdxMaths2020JanList.swift */,
@@ -254,6 +268,8 @@
 				4B5D43BB275A81D60092865C /* IndicatorTitleLabel.swift */,
 				4B5D4376275927440092865C /* Modifier.swift */,
 				4BBDF569276D0BA1009F71C0 /* Localizable.strings */,
+				4BCC06C22778681500E50FD8 /* IalMaths2021June1.json */,
+				4BCC06C52778682100E50FD8 /* IalMaths2021June2.json */,
 				4BCC06B62778584D00E50FD8 /* IalMaths2021Jan1.json */,
 				4BCC06B92778585F00E50FD8 /* IalMaths2021Jan2.json */,
 				4BCC06BC277858AC00E50FD8 /* IalMaths2021Jan3.json */,
@@ -414,8 +430,10 @@
 				4B1B1FED27763C1D00563CFA /* IalMaths2020Oct2.json in Resources */,
 				4B1B1FB42774DD7D00563CFA /* IalMaths2018Oct3.json in Resources */,
 				4BBB2FB8275CAB5A002588C3 /* IalMaths2019Jan1.json in Resources */,
+				4BCC06C32778681500E50FD8 /* IalMaths2021June1.json in Resources */,
 				4BC967902750B71D007DE392 /* Assets.xcassets in Resources */,
 				4B1B1FA52774864800563CFA /* IalMaths2018Jan1.json in Resources */,
+				4BCC06C62778682100E50FD8 /* IalMaths2021June2.json in Resources */,
 				4B1B1FE42776229700563CFA /* IalMaths2020Jan3.json in Resources */,
 				4B1B1FA22774712700563CFA /* IalMaths2018June2.json in Resources */,
 				4B1B1FD82776162A00563CFA /* IalMaths2019Oct3.json in Resources */,
@@ -453,8 +471,10 @@
 				4B1B1FEE27763C1D00563CFA /* IalMaths2020Oct2.json in Resources */,
 				4B1B1FB52774DD7D00563CFA /* IalMaths2018Oct3.json in Resources */,
 				4BBB2FB9275CAB5A002588C3 /* IalMaths2019Jan1.json in Resources */,
+				4BCC06C42778681500E50FD8 /* IalMaths2021June1.json in Resources */,
 				4BC967912750B71D007DE392 /* Assets.xcassets in Resources */,
 				4B1B1FA62774864800563CFA /* IalMaths2018Jan1.json in Resources */,
+				4BCC06C72778682100E50FD8 /* IalMaths2021June2.json in Resources */,
 				4B1B1FE52776229700563CFA /* IalMaths2020Jan3.json in Resources */,
 				4B1B1FA32774712700563CFA /* IalMaths2018June2.json in Resources */,
 				4B1B1FD92776162A00563CFA /* IalMaths2019Oct3.json in Resources */,
@@ -495,6 +515,8 @@
 				4B1B1FC02774E23900563CFA /* IalEdxMaths2018OctList.swift in Sources */,
 				4B5D43712758C2E30092865C /* IalEdxMathsViewOld.swift in Sources */,
 				4BFBFE01275BC67E00401100 /* AqaView.swift in Sources */,
+				4BCC06CC277869BA00E50FD8 /* IalEdxMaths2021JuneList.swift in Sources */,
+				4BD35BD527786C4C0009B2F9 /* ToolBarView.swift in Sources */,
 				4B1B1F9C27746C1100563CFA /* IalEdxMaths2018JuneList.swift in Sources */,
 				4B1B1FF327763FCD00563CFA /* IalEdxMaths2020OctList.swift in Sources */,
 				4B5D43AA275A1FE80092865C /* ALView.swift in Sources */,
@@ -529,6 +551,8 @@
 				4B1B1FC12774E23900563CFA /* IalEdxMaths2018OctList.swift in Sources */,
 				4B5D43722758C2E30092865C /* IalEdxMathsViewOld.swift in Sources */,
 				4BFBFE02275BC67E00401100 /* AqaView.swift in Sources */,
+				4BCC06CD277869BA00E50FD8 /* IalEdxMaths2021JuneList.swift in Sources */,
+				4BD35BD627786C4C0009B2F9 /* ToolBarView.swift in Sources */,
 				4B1B1F9D27746C1100563CFA /* IalEdxMaths2018JuneList.swift in Sources */,
 				4B1B1FF427763FCD00563CFA /* IalEdxMaths2020OctList.swift in Sources */,
 				4B5D43AB275A1FE80092865C /* ALView.swift in Sources */,
