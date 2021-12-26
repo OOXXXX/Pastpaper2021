@@ -7,6 +7,7 @@
 
 import SwiftUI
 import BetterSafariView
+import NavigationSearchBar
 
 struct Quali {
     let image: String
@@ -27,17 +28,9 @@ struct Contest {
 }
 
 struct ContentView: View {
-    // Search string to use in the search bar
+    @State var text: String = ""
+    @State var scopeSelection: Int = 0
     @State var searchString = ""
-    
-    // Search action. Called when search key pressed on keyboard
-    func search() {
-    }
-    
-    // Cancel action. Called when cancel button of search bar pressed
-    func cancel() {
-    }
-    
     @State private var showingAlert = false
     
     @State private var presentingSafariView1 = false
@@ -77,8 +70,8 @@ struct ContentView: View {
     @State private var searchText = ""
     
     var body: some View {
-        SearchNavigation(text: $searchString, search: search, cancel: cancel) {
-        //NavigationView {
+        //SearchNavigation(text: $searchString, search: search, cancel: cancel) {
+        NavigationView {
             List {
                 QualiView()
 
@@ -241,6 +234,32 @@ struct ContentView: View {
                 }
             })
             .padding(.top, -18)
+            .navigationSearchBar(text: $text,
+                                 scopeSelection: $scopeSelection,
+                                 options: [
+                                    .automaticallyShowsSearchBar: true,
+                                    .obscuresBackgroundDuringPresentation: true,
+                                    .hidesNavigationBarDuringPresentation: true,
+                                    .hidesSearchBarWhenScrolling: false,
+                                    .placeholder: "Search",
+                                    .showsBookmarkButton: true,
+                                    .scopeButtonTitles: ["All", "Subject", "Paper"]
+                                 ],
+                                 actions: [
+                                    .onCancelButtonClicked: {
+                                        print("Cancel")
+                                    },
+                                    .onSearchButtonClicked: {
+                                        print("Search")
+                                    },
+                                    .onBookmarkButtonClicked: {
+                                        print("Present Bookmarks")
+                                    }
+                                 ], searchResultsContent: {
+                                     NavigationLink(destination: Text("Destination")) {
+                                         Text("Search Results for \(text) in \(String(scopeSelection))")
+                                     }
+                                 })
         }
         .edgesIgnoringSafeArea(.all)
         //.navigationViewStyle(.stack)

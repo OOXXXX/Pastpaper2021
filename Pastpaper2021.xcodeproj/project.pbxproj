@@ -128,6 +128,7 @@
 		4BCC06CD277869BA00E50FD8 /* IalEdxMaths2021JuneList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCC06CB277869BA00E50FD8 /* IalEdxMaths2021JuneList.swift */; };
 		4BD35BD527786C4C0009B2F9 /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD35BD427786C4C0009B2F9 /* ToolBarView.swift */; };
 		4BD35BD627786C4C0009B2F9 /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD35BD427786C4C0009B2F9 /* ToolBarView.swift */; };
+		4BD35BDC2778E0650009B2F9 /* NavigationSearchBar in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD35BDB2778E0650009B2F9 /* NavigationSearchBar */; };
 		4BFBFDFB275BA2B700401100 /* CAIEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBFDFA275BA2B700401100 /* CAIEView.swift */; };
 		4BFBFDFC275BA2B700401100 /* CAIEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBFDFA275BA2B700401100 /* CAIEView.swift */; };
 		4BFBFDFE275BC09300401100 /* EdexcelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBFDFD275BC09300401100 /* EdexcelView.swift */; };
@@ -211,6 +212,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD35BDC2778E0650009B2F9 /* NavigationSearchBar in Frameworks */,
 				4B5D43B7275A80A10092865C /* BetterSafariView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +270,32 @@
 				4B5D43BB275A81D60092865C /* IndicatorTitleLabel.swift */,
 				4B5D4376275927440092865C /* Modifier.swift */,
 				4BBDF569276D0BA1009F71C0 /* Localizable.strings */,
+				4BD35BDD2778E0860009B2F9 /* JSON file */,
+				4BC9677E2750B71D007DE392 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4BC967842750B71D007DE392 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BC967832750B71D007DE392 /* Pastpaper2021.app */,
+				4BC967892750B71D007DE392 /* Pastpaper2021.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BC9678A2750B71D007DE392 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				4BC9678B2750B71D007DE392 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		4BD35BDD2778E0860009B2F9 /* JSON file */ = {
+			isa = PBXGroup;
+			children = (
 				4BCC06C22778681500E50FD8 /* IalMaths2021June1.json */,
 				4BCC06C52778682100E50FD8 /* IalMaths2021June2.json */,
 				4BCC06B62778584D00E50FD8 /* IalMaths2021Jan1.json */,
@@ -300,26 +328,8 @@
 				4BCC06AA2777853000E50FD8 /* IalMaths2017Jan1.json */,
 				4BCC06AD2777854700E50FD8 /* IalMaths2017Jan2.json */,
 				4BCC06B02777855800E50FD8 /* IalMaths2017Jan3.json */,
-				4BC9677E2750B71D007DE392 /* Assets.xcassets */,
 			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		4BC967842750B71D007DE392 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4BC967832750B71D007DE392 /* Pastpaper2021.app */,
-				4BC967892750B71D007DE392 /* Pastpaper2021.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4BC9678A2750B71D007DE392 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				4BC9678B2750B71D007DE392 /* macOS.entitlements */,
-			);
-			path = macOS;
+			path = "JSON file";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +350,7 @@
 			name = "Pastpaper2021 (iOS)";
 			packageProductDependencies = (
 				4B5D43B6275A80A10092865C /* BetterSafariView */,
+				4BD35BDB2778E0650009B2F9 /* NavigationSearchBar */,
 			);
 			productName = "Pastpaper2021 (iOS)";
 			productReference = 4BC967832750B71D007DE392 /* Pastpaper2021.app */;
@@ -391,6 +402,7 @@
 			mainGroup = 4BC967762750B71C007DE392;
 			packageReferences = (
 				4B5D43B5275A80A10092865C /* XCRemoteSwiftPackageReference "BetterSafariView" */,
+				4BD35BDA2778E0650009B2F9 /* XCRemoteSwiftPackageReference "NavigationSearchBar" */,
 			);
 			productRefGroup = 4BC967842750B71D007DE392 /* Products */;
 			projectDirPath = "";
@@ -838,6 +850,14 @@
 				kind = branch;
 			};
 		};
+		4BD35BDA2778E0650009B2F9 /* XCRemoteSwiftPackageReference "NavigationSearchBar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/markvanwijnen/NavigationSearchBar.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -845,6 +865,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4B5D43B5275A80A10092865C /* XCRemoteSwiftPackageReference "BetterSafariView" */;
 			productName = BetterSafariView;
+		};
+		4BD35BDB2778E0650009B2F9 /* NavigationSearchBar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BD35BDA2778E0650009B2F9 /* XCRemoteSwiftPackageReference "NavigationSearchBar" */;
+			productName = NavigationSearchBar;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
