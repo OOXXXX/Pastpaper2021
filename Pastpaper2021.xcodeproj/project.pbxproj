@@ -120,6 +120,8 @@
 		4B890528277B7974003A2445 /* IalEdxMaths2017OctList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B890526277B7974003A2445 /* IalEdxMaths2017OctList.swift */; };
 		4B89052A277B8BC0003A2445 /* IalEdxMaths2016JuneList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B890529277B8BC0003A2445 /* IalEdxMaths2016JuneList.swift */; };
 		4B89052B277B8BC0003A2445 /* IalEdxMaths2016JuneList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B890529277B8BC0003A2445 /* IalEdxMaths2016JuneList.swift */; };
+		4B89052D277B907B003A2445 /* IalEdxMaths2016OctList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B89052C277B907B003A2445 /* IalEdxMaths2016OctList.swift */; };
+		4B89052E277B907B003A2445 /* IalEdxMaths2016OctList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B89052C277B907B003A2445 /* IalEdxMaths2016OctList.swift */; };
 		4BBB2FB8275CAB5A002588C3 /* IalMaths2019Jan1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BBB2FB7275CAB5A002588C3 /* IalMaths2019Jan1.json */; };
 		4BBB2FB9275CAB5A002588C3 /* IalMaths2019Jan1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BBB2FB7275CAB5A002588C3 /* IalMaths2019Jan1.json */; };
 		4BBDF563276BA758009F71C0 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBDF562276BA758009F71C0 /* MonthView.swift */; };
@@ -233,6 +235,7 @@
 		4B890523277B75BF003A2445 /* IalEdxMaths2017JuneList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMaths2017JuneList.swift; sourceTree = "<group>"; };
 		4B890526277B7974003A2445 /* IalEdxMaths2017OctList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMaths2017OctList.swift; sourceTree = "<group>"; };
 		4B890529277B8BC0003A2445 /* IalEdxMaths2016JuneList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMaths2016JuneList.swift; sourceTree = "<group>"; };
+		4B89052C277B907B003A2445 /* IalEdxMaths2016OctList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMaths2016OctList.swift; sourceTree = "<group>"; };
 		4BBB2FB7275CAB5A002588C3 /* IalMaths2019Jan1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2019Jan1.json; sourceTree = "<group>"; };
 		4BBDF562276BA758009F71C0 /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
 		4BBDF566276CE206009F71C0 /* IalMaths2019Jan2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2019Jan2.json; sourceTree = "<group>"; };
@@ -325,17 +328,40 @@
 				4BCC06AA2777853000E50FD8 /* IalMaths2017Jan1.json */,
 				4BCC06AD2777854700E50FD8 /* IalMaths2017Jan2.json */,
 				4BCC06B02777855800E50FD8 /* IalMaths2017Jan3.json */,
-				4B890511277B6EBB003A2445 /* IalMaths2016June1.json */,
-				4B890514277B6EC5003A2445 /* IalMaths2016June2.json */,
-				4B890517277B6ED3003A2445 /* IalMaths2016June3.json */,
 				4B89051A277B6EE5003A2445 /* IalMaths2016Oct1.json */,
 				4B89051D277B6EFD003A2445 /* IalMaths2016Oct2.json */,
 				4B890520277B6F07003A2445 /* IalMaths2016Oct3.json */,
+				4B890511277B6EBB003A2445 /* IalMaths2016June1.json */,
+				4B890514277B6EC5003A2445 /* IalMaths2016June2.json */,
+				4B890517277B6ED3003A2445 /* IalMaths2016June3.json */,
 				4B8904F3277B0AE6003A2445 /* IalMaths2016Jan1.json */,
 				4B8904F6277B0AFA003A2445 /* IalMaths2016Jan2.json */,
 				4B8904F9277B0B0A003A2445 /* IalMaths2016Jan3.json */,
 			);
 			path = IalEdxMaths;
+			sourceTree = "<group>";
+		};
+		4B89052F277B91B0003A2445 /* IalEdxMathsList */ = {
+			isa = PBXGroup;
+			children = (
+				4BCC06CB277869BA00E50FD8 /* IalEdxMaths2021JuneList.swift */,
+				4BCC06BF27785DED00E50FD8 /* IalEdxMaths2021JanList.swift */,
+				4B1B1FF227763FCD00563CFA /* IalEdxMaths2020OctList.swift */,
+				4B1B1FE6277623EA00563CFA /* IalEdxMaths2020JanList.swift */,
+				4B1B1FDA2776174800563CFA /* IalEdxMaths2019OctList.swift */,
+				4B1B1FCE2775D3AB00563CFA /* IalEdxMaths2019JuneList.swift */,
+				4B5D43732758CF240092865C /* IalEdxMaths2019JanList.swift */,
+				4B1B1FBF2774E23900563CFA /* IalEdxMaths2018OctList.swift */,
+				4B1B1F9B27746C1100563CFA /* IalEdxMaths2018JuneList.swift */,
+				4B1B1FAA2774885500563CFA /* IalEdxMaths2018JanList.swift */,
+				4B890526277B7974003A2445 /* IalEdxMaths2017OctList.swift */,
+				4B890523277B75BF003A2445 /* IalEdxMaths2017JuneList.swift */,
+				4BCC06B32777865300E50FD8 /* IalEdxMaths2017JanList.swift */,
+				4B89052C277B907B003A2445 /* IalEdxMaths2016OctList.swift */,
+				4B890529277B8BC0003A2445 /* IalEdxMaths2016JuneList.swift */,
+				4B8904FC277B6B4F003A2445 /* IalEdxMaths2016JanList.swift */,
+			);
+			path = IalEdxMathsList;
 			sourceTree = "<group>";
 		};
 		4BC967762750B71C007DE392 = {
@@ -367,21 +393,7 @@
 				4BBDF562276BA758009F71C0 /* MonthView.swift */,
 				4BD35BD427786C4C0009B2F9 /* ToolBarView.swift */,
 				4BBDF56F2771030A009F71C0 /* IalEdxMathsViewNew.swift */,
-				4BCC06CB277869BA00E50FD8 /* IalEdxMaths2021JuneList.swift */,
-				4BCC06BF27785DED00E50FD8 /* IalEdxMaths2021JanList.swift */,
-				4B1B1FF227763FCD00563CFA /* IalEdxMaths2020OctList.swift */,
-				4B1B1FE6277623EA00563CFA /* IalEdxMaths2020JanList.swift */,
-				4B1B1FDA2776174800563CFA /* IalEdxMaths2019OctList.swift */,
-				4B1B1FCE2775D3AB00563CFA /* IalEdxMaths2019JuneList.swift */,
-				4B5D43732758CF240092865C /* IalEdxMaths2019JanList.swift */,
-				4B1B1FBF2774E23900563CFA /* IalEdxMaths2018OctList.swift */,
-				4B1B1F9B27746C1100563CFA /* IalEdxMaths2018JuneList.swift */,
-				4B1B1FAA2774885500563CFA /* IalEdxMaths2018JanList.swift */,
-				4B890526277B7974003A2445 /* IalEdxMaths2017OctList.swift */,
-				4B890523277B75BF003A2445 /* IalEdxMaths2017JuneList.swift */,
-				4BCC06B32777865300E50FD8 /* IalEdxMaths2017JanList.swift */,
-				4B890529277B8BC0003A2445 /* IalEdxMaths2016JuneList.swift */,
-				4B8904FC277B6B4F003A2445 /* IalEdxMaths2016JanList.swift */,
+				4B89052F277B91B0003A2445 /* IalEdxMathsList */,
 				4B5D43BB275A81D60092865C /* IndicatorTitleLabel.swift */,
 				4B5D4376275927440092865C /* Modifier.swift */,
 				4BBDF569276D0BA1009F71C0 /* Localizable.strings */,
@@ -626,6 +638,7 @@
 				4BBDF583277221CD009F71C0 /* OfficialWebsitesView.swift in Sources */,
 				4B5D43A7275A15670092865C /* IGCSEView.swift in Sources */,
 				4B890524277B75BF003A2445 /* IalEdxMaths2017JuneList.swift in Sources */,
+				4B89052D277B907B003A2445 /* IalEdxMaths2016OctList.swift in Sources */,
 				4B5D43742758CF240092865C /* IalEdxMaths2019JanList.swift in Sources */,
 				4B1B1FAB2774885500563CFA /* IalEdxMaths2018JanList.swift in Sources */,
 				4BC9678C2750B71D007DE392 /* Pastpaper2021App.swift in Sources */,
@@ -666,6 +679,7 @@
 				4BBDF584277221CD009F71C0 /* OfficialWebsitesView.swift in Sources */,
 				4B5D43A8275A15670092865C /* IGCSEView.swift in Sources */,
 				4B890525277B75BF003A2445 /* IalEdxMaths2017JuneList.swift in Sources */,
+				4B89052E277B907B003A2445 /* IalEdxMaths2016OctList.swift in Sources */,
 				4B5D43752758CF240092865C /* IalEdxMaths2019JanList.swift in Sources */,
 				4B1B1FAC2774885500563CFA /* IalEdxMaths2018JanList.swift in Sources */,
 				4BC9678D2750B71D007DE392 /* Pastpaper2021App.swift in Sources */,
