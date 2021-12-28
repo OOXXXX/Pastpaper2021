@@ -243,7 +243,7 @@ struct ContentView: View {
                                     .hidesSearchBarWhenScrolling: false,
                                     .placeholder: "Search",
                                     .showsBookmarkButton: true,
-                                    .scopeButtonTitles: ["All", "Subject", "Paper"]
+                                    .scopeButtonTitles: ["All", "Subject", "Pastpaper"]
                                  ],
                                  actions: [
                                     .onCancelButtonClicked: {

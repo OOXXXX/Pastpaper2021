@@ -118,6 +118,8 @@
 		4B890525277B75BF003A2445 /* IalEdxMaths2017JuneList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B890523277B75BF003A2445 /* IalEdxMaths2017JuneList.swift */; };
 		4B890527277B7974003A2445 /* IalEdxMaths2017OctList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B890526277B7974003A2445 /* IalEdxMaths2017OctList.swift */; };
 		4B890528277B7974003A2445 /* IalEdxMaths2017OctList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B890526277B7974003A2445 /* IalEdxMaths2017OctList.swift */; };
+		4B89052A277B8BC0003A2445 /* IalEdxMaths2016JuneList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B890529277B8BC0003A2445 /* IalEdxMaths2016JuneList.swift */; };
+		4B89052B277B8BC0003A2445 /* IalEdxMaths2016JuneList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B890529277B8BC0003A2445 /* IalEdxMaths2016JuneList.swift */; };
 		4BBB2FB8275CAB5A002588C3 /* IalMaths2019Jan1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BBB2FB7275CAB5A002588C3 /* IalMaths2019Jan1.json */; };
 		4BBB2FB9275CAB5A002588C3 /* IalMaths2019Jan1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BBB2FB7275CAB5A002588C3 /* IalMaths2019Jan1.json */; };
 		4BBDF563276BA758009F71C0 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBDF562276BA758009F71C0 /* MonthView.swift */; };
@@ -230,6 +232,7 @@
 		4B890520277B6F07003A2445 /* IalMaths2016Oct3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2016Oct3.json; sourceTree = "<group>"; };
 		4B890523277B75BF003A2445 /* IalEdxMaths2017JuneList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMaths2017JuneList.swift; sourceTree = "<group>"; };
 		4B890526277B7974003A2445 /* IalEdxMaths2017OctList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMaths2017OctList.swift; sourceTree = "<group>"; };
+		4B890529277B8BC0003A2445 /* IalEdxMaths2016JuneList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMaths2016JuneList.swift; sourceTree = "<group>"; };
 		4BBB2FB7275CAB5A002588C3 /* IalMaths2019Jan1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2019Jan1.json; sourceTree = "<group>"; };
 		4BBDF562276BA758009F71C0 /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
 		4BBDF566276CE206009F71C0 /* IalMaths2019Jan2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2019Jan2.json; sourceTree = "<group>"; };
@@ -377,6 +380,7 @@
 				4B890526277B7974003A2445 /* IalEdxMaths2017OctList.swift */,
 				4B890523277B75BF003A2445 /* IalEdxMaths2017JuneList.swift */,
 				4BCC06B32777865300E50FD8 /* IalEdxMaths2017JanList.swift */,
+				4B890529277B8BC0003A2445 /* IalEdxMaths2016JuneList.swift */,
 				4B8904FC277B6B4F003A2445 /* IalEdxMaths2016JanList.swift */,
 				4B5D43BB275A81D60092865C /* IndicatorTitleLabel.swift */,
 				4B5D4376275927440092865C /* Modifier.swift */,
@@ -633,6 +637,7 @@
 				4BBDF58627724645009F71C0 /* SettingView.swift in Sources */,
 				4B5D436E2758A1A30092865C /* IALView.swift in Sources */,
 				4BCC06B42777865300E50FD8 /* IalEdxMaths2017JanList.swift in Sources */,
+				4B89052A277B8BC0003A2445 /* IalEdxMaths2016JuneList.swift in Sources */,
 				4B5D4377275927440092865C /* Modifier.swift in Sources */,
 				4B8904FD277B6B4F003A2445 /* IalEdxMaths2016JanList.swift in Sources */,
 				4BFBFDFB275BA2B700401100 /* CAIEView.swift in Sources */,
@@ -672,6 +677,7 @@
 				4BBDF58727724645009F71C0 /* SettingView.swift in Sources */,
 				4B5D436F2758A1A30092865C /* IALView.swift in Sources */,
 				4BCC06B52777865300E50FD8 /* IalEdxMaths2017JanList.swift in Sources */,
+				4B89052B277B8BC0003A2445 /* IalEdxMaths2016JuneList.swift in Sources */,
 				4B5D4378275927440092865C /* Modifier.swift in Sources */,
 				4B8904FE277B6B4F003A2445 /* IalEdxMaths2016JanList.swift in Sources */,
 				4BFBFDFC275BA2B700401100 /* CAIEView.swift in Sources */,
