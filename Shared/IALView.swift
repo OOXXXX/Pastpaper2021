@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct IALView: View {
-    //@State private var showTraditionStack = true
-    
+   
     var body: some View {
          List {
                 Section(header: Text("Edexcel")) {

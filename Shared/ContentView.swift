@@ -33,7 +33,9 @@ struct ContentView: View {
     @State private var showingAlert = false
     @State private var showingSettingSheet = false
     @State private var showingInfoSheet = false
-    @State private var showTraditionStack = false
+    //@State private var showTraditionStack = false
+    @State private var showTraditionStack1 = false
+    @AppStorage("showTraditionStack") var showTraditionStack: Bool = false
     
     var qualiList = [
         Quali(image: "i.square.fill", name: "IGCSE", color: .blue),

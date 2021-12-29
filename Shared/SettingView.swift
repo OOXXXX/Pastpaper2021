@@ -36,7 +36,7 @@ struct SettingView: View {
                             self.showingAlert = true
                             
                             deleteCache()
-                        }.alert("All cache being cleared", isPresented: $showingAlert) {
+                        }.alert("All cache being removed", isPresented: $showingAlert) {
                             
                         }
                         NavigationLink(destination: EmptyView()) {
