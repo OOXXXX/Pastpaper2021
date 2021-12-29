@@ -33,6 +33,40 @@ struct IalEdxMaths2021JuneView: View {
     }
 }
 
+struct IalEdxMaths2021JuneView1: View {
+
+    @State var selected = 1
+    var body: some View {
+        VStack{
+            Picker(selection: $selected, label: Text("")){
+                Text("Question Paper").tag(1)
+                Text("Mark Scheme").tag(2)
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            .padding(.horizontal, 10)
+            .padding(.vertical, 6.5)
+            
+            if selected == 1{
+                IalEdxMaths2021JuneList1()
+            }
+            if selected == 2{
+                IalEdxMaths2021JuneList2()
+            }
+        }
+        .navigationBarTitle("21 Summer", displayMode: .inline)
+        .listStyle(.plain)
+        .toolbar {
+            ToolbarItem(placement: .primaryAction){
+                Menu() {
+                    ToolBarView()
+                } label: {
+                    Image(systemName: "ellipsis.circle")
+                }
+            }
+        }
+    }
+}
+
 struct IalEdxMaths2021JuneList1: View {
     var  body: some View {
         List {

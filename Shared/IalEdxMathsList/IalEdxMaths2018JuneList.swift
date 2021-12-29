@@ -9,8 +9,7 @@ import SwiftUI
 import WebKit
 
 struct IalEdxMaths2018JuneView: View {
-    
-    @State private var showNew2 = false
+
     @State var selected = 1
     var body: some View {
         VStack{
@@ -35,6 +34,44 @@ struct IalEdxMaths2018JuneView: View {
         }
         .navigationBarTitle("18 Summer", displayMode: .inline)
         .listStyle(.plain)
+    }
+}
+
+struct IalEdxMaths2018JuneView1: View {
+
+    @State var selected = 1
+    var body: some View {
+        VStack{
+            Picker(selection: $selected, label: Text("")){
+                Text("Question Paper").tag(1)
+                Text("Mark Scheme").tag(2)
+                Text("Examiner Report").tag(3)
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            .padding(.horizontal, 10)
+            .padding(.vertical, 6.5)
+            
+            if selected == 1{
+                IalEdxMaths2018JuneList1()
+            }
+            if selected == 2{
+                IalEdxMaths2018JuneList2()
+            }
+            if selected == 3{
+                IalEdxMaths2018JuneList3()
+            }
+        }
+        .navigationBarTitle("18 Summer", displayMode: .inline)
+        .listStyle(.plain)
+        .toolbar {
+            ToolbarItem(placement: .primaryAction){
+                Menu() {
+                    ToolBarView()
+                } label: {
+                    Image(systemName: "ellipsis.circle")
+                }
+            }
+        }
     }
 }
 

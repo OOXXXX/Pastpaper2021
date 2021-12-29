@@ -30,17 +30,10 @@ struct Contest {
 struct ContentView: View {
     @State var text: String = ""
     @State var scopeSelection: Int = 0
-    @State var searchString = ""
     @State private var showingAlert = false
-    
-    @State private var presentingSafariView1 = false
-    @State private var presentingSafariView2 = false
-    @State private var presentingSafariView3 = false
-    @State private var presentingSafariView4 = false
-    @State private var presentingSafariView5 = false
-    @State private var showSafari = false
     @State private var showingSettingSheet = false
     @State private var showingInfoSheet = false
+    @State private var showTraditionStack = false
     
     var qualiList = [
         Quali(image: "i.square.fill", name: "IGCSE", color: .blue),
@@ -67,11 +60,8 @@ struct ContentView: View {
     let bureaus = ["CAIE", "Edexcel", "AQA"]
     let extraTests = ["Oxford admissions", "Cambridge admissions", "MAA AMC", "UKMT"]
     let websites = ["Oxford", "Cambridge", "Imperial London", "London School of Economics", "University College London"]
-    @State private var searchText = ""
-    @State private var showTraditionStack = false
-    
+
     var body: some View {
-        //SearchNavigation(text: $searchString, search: search, cancel: cancel) {
         NavigationView {
             List {
                 Section(header: Text("Qualifications")) {
@@ -335,11 +325,7 @@ struct ContentView: View {
                                  })
         }
         .edgesIgnoringSafeArea(.all)
-        //.navigationViewStyle(.stack)
-        
     }
-    
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

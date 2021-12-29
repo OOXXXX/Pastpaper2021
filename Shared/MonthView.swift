@@ -11,14 +11,11 @@ struct MonthView1: View {
     var body: some View {
         List {
             Section(header: Text("Select Month")) {
-                NavigationLink(destination: IalEdxMaths2019JanView1()) {
+                NavigationLink(destination: IalEdxMaths2021JanView1()) {
                     Text("Jan/Feb")
                 }
-                NavigationLink(destination: IalEdxMaths2019JuneView1()) {
+                NavigationLink(destination: IalEdxMaths2021JuneView1()) {
                     Text("May/June")
-                }
-                NavigationLink(destination: IalEdxMaths2019OctView1()) {
-                    Text("Oct/Nov")
                 }
             }
         }
@@ -31,13 +28,10 @@ struct MonthView2: View {
     var body: some View {
         List {
             Section(header: Text("Select Month")) {
-                NavigationLink(destination: IalEdxMaths2019JanView1()) {
+                NavigationLink(destination: IalEdxMaths2020JanView1()) {
                     Text("Jan/Feb")
                 }
-                NavigationLink(destination: IalEdxMaths2019JuneView1()) {
-                    Text("May/June")
-                }
-                NavigationLink(destination: IalEdxMaths2019OctView1()) {
+                NavigationLink(destination: IalEdxMaths2020OctView1()) {
                     Text("Oct/Nov")
                 }
             }
@@ -71,13 +65,13 @@ struct MonthView4: View {
     var body: some View {
         List {
             Section(header: Text("Select Month")) {
-                NavigationLink(destination: IalEdxMaths2019JanView1()) {
+                NavigationLink(destination: IalEdxMaths2018JanView1()) {
                     Text("Jan/Feb")
                 }
-                NavigationLink(destination: IalEdxMaths2019JuneView1()) {
+                NavigationLink(destination: IalEdxMaths2018JuneView1()) {
                     Text("May/June")
                 }
-                NavigationLink(destination: IalEdxMaths2019OctView1()) {
+                NavigationLink(destination: IalEdxMaths2018OctView1()) {
                     Text("Oct/Nov")
                 }
             }
@@ -91,13 +85,13 @@ struct MonthView5: View {
     var body: some View {
         List {
             Section(header: Text("Select Month")) {
-                NavigationLink(destination: IalEdxMaths2019JanView1()) {
+                NavigationLink(destination: IalEdxMaths2017JanView1()) {
                     Text("Jan/Feb")
                 }
-                NavigationLink(destination: IalEdxMaths2019JuneView1()) {
+                NavigationLink(destination: IalEdxMaths2017JuneView1()) {
                     Text("May/June")
                 }
-                NavigationLink(destination: IalEdxMaths2019OctView1()) {
+                NavigationLink(destination: IalEdxMaths2017OctView1()) {
                     Text("Oct/Nov")
                 }
             }
@@ -111,13 +105,13 @@ struct MonthView6: View {
     var body: some View {
         List {
             Section(header: Text("Select Month")) {
-                NavigationLink(destination: IalEdxMaths2019JanView1()) {
+                NavigationLink(destination: IalEdxMaths2016JanView1()) {
                     Text("Jan/Feb")
                 }
-                NavigationLink(destination: IalEdxMaths2019JuneView1()) {
+                NavigationLink(destination: IalEdxMaths2016JuneView1()) {
                     Text("May/June")
                 }
-                NavigationLink(destination: IalEdxMaths2019OctView1()) {
+                NavigationLink(destination: IalEdxMaths2016OctView1()) {
                     Text("Oct/Nov")
                 }
             }

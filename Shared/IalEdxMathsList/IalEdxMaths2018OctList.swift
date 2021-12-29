@@ -34,6 +34,44 @@ struct IalEdxMaths2018OctView: View {
         }
         .navigationBarTitle("18 Winter", displayMode: .inline)
         .listStyle(.plain)
+        .toolbar {
+            ToolbarItem(placement: .primaryAction){
+                Menu() {
+                    ToolBarView()
+                } label: {
+                    Image(systemName: "ellipsis.circle")
+                }
+            }
+        }
+    }
+}
+
+struct IalEdxMaths2018OctView1: View {
+    
+    @State var selected = 1
+    var body: some View {
+        VStack{
+            Picker(selection: $selected, label: Text("")){
+                Text("Question Paper").tag(1)
+                Text("Mark Scheme").tag(2)
+                Text("Examiner Report").tag(3)
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            .padding(.horizontal, 10)
+            .padding(.vertical, 6.5)
+            
+            if selected == 1{
+                IalEdxMaths2018OctList1()
+            }
+            if selected == 2{
+                IalEdxMaths2018OctList2()
+            }
+            if selected == 3{
+                IalEdxMaths2018OctList3()
+            }
+        }
+        .navigationBarTitle("18 Winter", displayMode: .inline)
+        .listStyle(.plain)
     }
 }
 
