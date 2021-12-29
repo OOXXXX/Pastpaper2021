@@ -122,6 +122,8 @@
 		4B89052B277B8BC0003A2445 /* IalEdxMaths2016JuneList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B890529277B8BC0003A2445 /* IalEdxMaths2016JuneList.swift */; };
 		4B89052D277B907B003A2445 /* IalEdxMaths2016OctList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B89052C277B907B003A2445 /* IalEdxMaths2016OctList.swift */; };
 		4B89052E277B907B003A2445 /* IalEdxMaths2016OctList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B89052C277B907B003A2445 /* IalEdxMaths2016OctList.swift */; };
+		4B890537277CB9BE003A2445 /* IalViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B890536277CB9BE003A2445 /* IalViewNew.swift */; };
+		4B890538277CB9BE003A2445 /* IalViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B890536277CB9BE003A2445 /* IalViewNew.swift */; };
 		4BBB2FB8275CAB5A002588C3 /* IalMaths2019Jan1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BBB2FB7275CAB5A002588C3 /* IalMaths2019Jan1.json */; };
 		4BBB2FB9275CAB5A002588C3 /* IalMaths2019Jan1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BBB2FB7275CAB5A002588C3 /* IalMaths2019Jan1.json */; };
 		4BBDF563276BA758009F71C0 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBDF562276BA758009F71C0 /* MonthView.swift */; };
@@ -236,6 +238,7 @@
 		4B890526277B7974003A2445 /* IalEdxMaths2017OctList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMaths2017OctList.swift; sourceTree = "<group>"; };
 		4B890529277B8BC0003A2445 /* IalEdxMaths2016JuneList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMaths2016JuneList.swift; sourceTree = "<group>"; };
 		4B89052C277B907B003A2445 /* IalEdxMaths2016OctList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMaths2016OctList.swift; sourceTree = "<group>"; };
+		4B890536277CB9BE003A2445 /* IalViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalViewNew.swift; sourceTree = "<group>"; };
 		4BBB2FB7275CAB5A002588C3 /* IalMaths2019Jan1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2019Jan1.json; sourceTree = "<group>"; };
 		4BBDF562276BA758009F71C0 /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
 		4BBDF566276CE206009F71C0 /* IalMaths2019Jan2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IalMaths2019Jan2.json; sourceTree = "<group>"; };
@@ -383,16 +386,17 @@
 				4BBDF58527724645009F71C0 /* SettingView.swift */,
 				4BBDF582277221CD009F71C0 /* OfficialWebsitesView.swift */,
 				4B5D43A6275A15670092865C /* IGCSEView.swift */,
+				4B5D436D2758A1A30092865C /* IALView.swift */,
+				4B890536277CB9BE003A2445 /* IalViewNew.swift */,
 				4B5D43A9275A1FE80092865C /* ALView.swift */,
 				4B5D43AC275A25990092865C /* OLView.swift */,
 				4BFBFDFA275BA2B700401100 /* CAIEView.swift */,
 				4BFBFE00275BC67E00401100 /* AqaView.swift */,
 				4BFBFDFD275BC09300401100 /* EdexcelView.swift */,
-				4B5D436D2758A1A30092865C /* IALView.swift */,
 				4B5D43702758C2E30092865C /* IalEdxMathsViewOld.swift */,
 				4BBDF562276BA758009F71C0 /* MonthView.swift */,
-				4BD35BD427786C4C0009B2F9 /* ToolBarView.swift */,
 				4BBDF56F2771030A009F71C0 /* IalEdxMathsViewNew.swift */,
+				4BD35BD427786C4C0009B2F9 /* ToolBarView.swift */,
 				4B89052F277B91B0003A2445 /* IalEdxMathsList */,
 				4B5D43BB275A81D60092865C /* IndicatorTitleLabel.swift */,
 				4B5D4376275927440092865C /* Modifier.swift */,
@@ -663,6 +667,7 @@
 				4B1B1F9C27746C1100563CFA /* IalEdxMaths2018JuneList.swift in Sources */,
 				4B1B1FF327763FCD00563CFA /* IalEdxMaths2020OctList.swift in Sources */,
 				4B5D43AA275A1FE80092865C /* ALView.swift in Sources */,
+				4B890537277CB9BE003A2445 /* IalViewNew.swift in Sources */,
 				4BBDF563276BA758009F71C0 /* MonthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -704,6 +709,7 @@
 				4B1B1F9D27746C1100563CFA /* IalEdxMaths2018JuneList.swift in Sources */,
 				4B1B1FF427763FCD00563CFA /* IalEdxMaths2020OctList.swift in Sources */,
 				4B5D43AB275A1FE80092865C /* ALView.swift in Sources */,
+				4B890538277CB9BE003A2445 /* IalViewNew.swift in Sources */,
 				4BBDF564276BA758009F71C0 /* MonthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

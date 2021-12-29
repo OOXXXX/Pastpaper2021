@@ -12,8 +12,8 @@ import UIKit
 
 struct SettingView: View {
     @State private var showFeedback = true
-    @State private var showTraditional = false
     @State private var showingAlert = false
+    @Binding var showTraditionStack: Bool
     
     var body: some View {
         NavigationView {
@@ -28,7 +28,7 @@ struct SettingView: View {
                         }
                         Toggle("Taptic Engine Feedback", isOn: $showFeedback)
                         
-                        Toggle("Traditional Stack Mode", isOn: $showTraditional)
+                        Toggle("Simple Stack Mode", isOn: $showTraditionStack)
                     }
                     
                     Section(header: Text("MISC")) {
@@ -92,8 +92,3 @@ struct SettingView: View {
 }
 
 
-struct SettingView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingView()
-    }
-}

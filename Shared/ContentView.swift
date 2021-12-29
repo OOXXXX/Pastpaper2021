@@ -68,12 +68,85 @@ struct ContentView: View {
     let extraTests = ["Oxford admissions", "Cambridge admissions", "MAA AMC", "UKMT"]
     let websites = ["Oxford", "Cambridge", "Imperial London", "London School of Economics", "University College London"]
     @State private var searchText = ""
+    @State private var showTraditionStack = false
     
     var body: some View {
         //SearchNavigation(text: $searchString, search: search, cancel: cancel) {
         NavigationView {
             List {
-                QualiView()
+                Section(header: Text("Qualifications")) {
+                    NavigationLink(destination: ALView()) {
+                        HStack {
+                            Image(systemName: "a.square.fill")
+                                .font(Font.system(.title))
+                                .foregroundColor(.green)
+                            Text("AS & A Levels")
+                        }
+                        .offset(x: -8)
+                    }
+                    if showTraditionStack {
+                        NavigationLink(destination: IalViewNew()) {
+                            HStack {
+                                Image(systemName: "i.square.fill")
+                                    .font(Font.system(.title))
+                                    .foregroundColor(.indigo)
+                                Text("International AS & A Levels")
+                            }
+                            .offset(x: -8)
+                        }
+                    } else {
+                        NavigationLink(destination: IALView()) {
+                            HStack {
+                                Image(systemName: "i.square.fill")
+                                    .font(Font.system(.title))
+                                    .foregroundColor(.indigo)
+                                Text("International AS & A Levels")
+                            }
+                            .offset(x: -8)
+                        }
+                    }
+                    NavigationLink(destination: IGCSEView()) {
+                        HStack {
+                            Image(systemName: "i.square.fill")
+                                .font(Font.system(.title))
+                                .foregroundColor(.blue)
+                            Text("International GCSE")
+                        }
+                        .offset(x: -8)
+                    }
+                    
+                    Button(action: {
+                        self.showingAlert = true
+                    }) {
+                        HStack {
+                            Group {
+                                Image(systemName: "i.square.fill")
+                                    .font(Font.system(.title))
+                                    .foregroundColor(.yellow)
+                                Text("IBDP")
+                                    .foregroundColor(Color("Color2"))
+                            }
+                            .offset(x: -8)
+                            
+                            Spacer()
+                            DisclosureIndicator()
+                        }
+                        .alert("Still under development 🚴", isPresented: $showingAlert) {
+                            
+                        }
+                    }
+                    
+                    NavigationLink(destination: OLView()) {
+                        HStack {
+                            Image(systemName: "o.square.fill")
+                                .font(Font.system(.title))
+                                .foregroundColor(.purple)
+                            Text("O Level")
+                        }
+                        .offset(x: -8)
+                    }
+                }
+                .headerProminence(.increased)
 
                 Section(header: Text("Examination Bureau")) {
                     NavigationLink(destination: CAIEView()) {
@@ -219,7 +292,7 @@ struct ContentView: View {
                             Image(systemName: "gearshape")
                         }
                         .sheet(isPresented: $showingSettingSheet) {
-                            SettingView()
+                            SettingView(showTraditionStack: $showTraditionStack)
                         }
                     }
                 }
@@ -268,6 +341,7 @@ struct ContentView: View {
     
     
 }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

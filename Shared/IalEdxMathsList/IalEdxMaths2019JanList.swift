@@ -37,6 +37,44 @@ struct IalEdxMaths2019JanView: View {
     }
 }
 
+struct IalEdxMaths2019JanView1: View {
+
+    @State var selected = 1
+    var body: some View {
+        VStack{
+            Picker(selection: $selected, label: Text("")){
+                Text("Question Paper").tag(1)
+                Text("Mark Scheme").tag(2)
+                Text("Examiner Report").tag(3)
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            .padding(.horizontal, 10)
+            .padding(.vertical, 6.5)
+            
+            if selected == 1{
+                IalEdxMaths2019JanList1()
+            }
+            if selected == 2{
+                IalEdxMaths2019JanList2()
+            }
+            if selected == 3{
+                IalEdxMaths2019JanList3()
+            }
+        }
+        .navigationBarTitle("19 Spring", displayMode: .inline)
+        .listStyle(.plain)
+        .toolbar {
+            ToolbarItem(placement: .primaryAction){
+                Menu() {
+                    ToolBarView()
+                } label: {
+                    Image(systemName: "ellipsis.circle")
+                }
+            }
+        }
+    }
+}
+
 struct IalEdxMaths2019JanList1: View {
     var  body: some View {
         List {

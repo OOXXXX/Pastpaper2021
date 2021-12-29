@@ -7,132 +7,163 @@
 
 import SwiftUI
 
-struct MonthView: View {
-    @State private var showNew1 = false
+struct MonthView1: View {
     var body: some View {
         List {
             Section(header: Text("Select Month")) {
-                NavigationLink(destination: IalEdxMathsViewTest()) {
+                NavigationLink(destination: IalEdxMaths2019JanView1()) {
                     Text("Jan/Feb")
                 }
-                NavigationLink(destination: Text("quali")) {
+                NavigationLink(destination: IalEdxMaths2019JuneView1()) {
                     Text("May/June")
                 }
-                NavigationLink(destination: Text("quali")) {
+                NavigationLink(destination: IalEdxMaths2019OctView1()) {
                     Text("Oct/Nov")
                 }
             }
         }
-        .toolbar {
-            ToolbarItem(placement: .primaryAction) {
-                Menu() {
-                    Menu("2021") {
-                        Button("Spring") {
-                            //self.showNew1 = true
-                        }
-                        Button("Summer") {
-                            //self.showNew2 = true
-                        }
-                        Button("Winter") {
-                            //self.showNew1 = true
-                        }
-                    }
-                    Menu("2020") {
-                        Button("Spring") {
-                            //self.showNew1 = true
-                        }
-                        Button("Summer") {
-                            //self.showNew2 = true
-                        }
-                        Button("Winter") {
-                            //self.showNew1 = true
-                        }
-                    }
-                    Menu("2019") {
-                        Button("Spring") {
-                            self.showNew1 = true
-                        }
-                        Button("Summer") {
-                            //self.showNew2 = true
-                        }
-                        Button("Winter") {
-                            //self.showNew1 = true
-                        }
-                    }
-                    Menu("2018") {
-                        Button("Spring") {
-                            //self.showNew1 = true
-                        }
-                        Button("Summer") {
-                            //self.showNew2 = true
-                        }
-                        Button("Winter") {
-                            //self.showNew1 = true
-                        }
-                    }
-                    Menu("2017") {
-                        Button("Spring") {
-                            //self.showNew1 = true
-                        }
-                        Button("Summer") {
-                            //self.showNew2 = true
-                        }
-                        Button("Winter") {
-                            //self.showNew1 = true
-                        }
-                    }
-                    Menu("2016") {
-                        Button("Spring") {
-                            //self.showNew1 = true
-                        }
-                        Button("Summer") {
-                            //self.showNew2 = true
-                        }
-                        Button("Winter") {
-                            //self.showNew1 = true
-                        }
-                    }
-                    Menu("2015") {
-                        Button("Spring") {
-                            //self.showNew1 = true
-                        }
-                        Button("Summer") {
-                            //self.showNew2 = true
-                        }
-                        Button("Winter") {
-                            //self.showNew1 = true
-                        }
-                    }
-                    Menu("2014") {
-                        Button("Spring") {
-                            //self.showNew1 = true
-                        }
-                        Button("Summer") {
-                            //self.showNew2 = true
-                        }
-                        Button("Winter") {
-                            //self.showNew1 = true
-                        }
-                    }
-                }
-                label: {
-                    Label("Quick List", systemImage: "list.bullet.circle")
-                }
-            }
-        }
-        .background(
-            NavigationLink(destination: IalEdxMaths2019JanView(), isActive: $showNew1) {
-            }
-        )
         .listStyle(.plain)
         .navigationBarTitle("Months", displayMode: .inline)
     }
-    func placeOrder() { }
-    func adjustOrder() { }
 }
 
-struct MonthView_Previews: PreviewProvider {
-    static var previews: some View {
-        MonthView()
+struct MonthView2: View {
+    var body: some View {
+        List {
+            Section(header: Text("Select Month")) {
+                NavigationLink(destination: IalEdxMaths2019JanView1()) {
+                    Text("Jan/Feb")
+                }
+                NavigationLink(destination: IalEdxMaths2019JuneView1()) {
+                    Text("May/June")
+                }
+                NavigationLink(destination: IalEdxMaths2019OctView1()) {
+                    Text("Oct/Nov")
+                }
+            }
+        }
+        .listStyle(.plain)
+        .navigationBarTitle("Months", displayMode: .inline)
     }
 }
+
+struct MonthView3: View {
+    var body: some View {
+        List {
+            Section(header: Text("Select Month")) {
+                NavigationLink(destination: IalEdxMaths2019JanView1()) {
+                    Text("Jan/Feb")
+                }
+                NavigationLink(destination: IalEdxMaths2019JuneView1()) {
+                    Text("May/June")
+                }
+                NavigationLink(destination: IalEdxMaths2019OctView1()) {
+                    Text("Oct/Nov")
+                }
+            }
+        }
+        .listStyle(.plain)
+        .navigationBarTitle("Months", displayMode: .inline)
+    }
+}
+
+struct MonthView4: View {
+    var body: some View {
+        List {
+            Section(header: Text("Select Month")) {
+                NavigationLink(destination: IalEdxMaths2019JanView1()) {
+                    Text("Jan/Feb")
+                }
+                NavigationLink(destination: IalEdxMaths2019JuneView1()) {
+                    Text("May/June")
+                }
+                NavigationLink(destination: IalEdxMaths2019OctView1()) {
+                    Text("Oct/Nov")
+                }
+            }
+        }
+        .listStyle(.plain)
+        .navigationBarTitle("Months", displayMode: .inline)
+    }
+}
+
+struct MonthView5: View {
+    var body: some View {
+        List {
+            Section(header: Text("Select Month")) {
+                NavigationLink(destination: IalEdxMaths2019JanView1()) {
+                    Text("Jan/Feb")
+                }
+                NavigationLink(destination: IalEdxMaths2019JuneView1()) {
+                    Text("May/June")
+                }
+                NavigationLink(destination: IalEdxMaths2019OctView1()) {
+                    Text("Oct/Nov")
+                }
+            }
+        }
+        .listStyle(.plain)
+        .navigationBarTitle("Months", displayMode: .inline)
+    }
+}
+
+struct MonthView6: View {
+    var body: some View {
+        List {
+            Section(header: Text("Select Month")) {
+                NavigationLink(destination: IalEdxMaths2019JanView1()) {
+                    Text("Jan/Feb")
+                }
+                NavigationLink(destination: IalEdxMaths2019JuneView1()) {
+                    Text("May/June")
+                }
+                NavigationLink(destination: IalEdxMaths2019OctView1()) {
+                    Text("Oct/Nov")
+                }
+            }
+        }
+        .listStyle(.plain)
+        .navigationBarTitle("Months", displayMode: .inline)
+    }
+}
+
+struct MonthView7: View {
+    var body: some View {
+        List {
+            Section(header: Text("Select Month")) {
+                NavigationLink(destination: IalEdxMaths2019JanView1()) {
+                    Text("Jan/Feb")
+                }
+                NavigationLink(destination: IalEdxMaths2019JuneView1()) {
+                    Text("May/June")
+                }
+                NavigationLink(destination: IalEdxMaths2019OctView1()) {
+                    Text("Oct/Nov")
+                }
+            }
+        }
+        .listStyle(.plain)
+        .navigationBarTitle("Months", displayMode: .inline)
+    }
+}
+
+struct MonthView8: View {
+    var body: some View {
+        List {
+            Section(header: Text("Select Month")) {
+                NavigationLink(destination: IalEdxMaths2019JanView1()) {
+                    Text("Jan/Feb")
+                }
+                NavigationLink(destination: IalEdxMaths2019JuneView1()) {
+                    Text("May/June")
+                }
+                NavigationLink(destination: IalEdxMaths2019OctView1()) {
+                    Text("Oct/Nov")
+                }
+            }
+        }
+        .listStyle(.plain)
+        .navigationBarTitle("Months", displayMode: .inline)
+    }
+}
+
