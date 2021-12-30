@@ -125,14 +125,11 @@ struct MonthView7: View {
     var body: some View {
         List {
             Section(header: Text("Select Month")) {
-                NavigationLink(destination: IalEdxMaths2019JanView1()) {
+                NavigationLink(destination: IalEdxMaths2015JanView1()) {
                     Text("Jan/Feb")
                 }
-                NavigationLink(destination: IalEdxMaths2019JuneView1()) {
+                NavigationLink(destination: IalEdxMaths2015JuneView1()) {
                     Text("May/June")
-                }
-                NavigationLink(destination: IalEdxMaths2019OctView1()) {
-                    Text("Oct/Nov")
                 }
             }
         }
@@ -150,9 +147,6 @@ struct MonthView8: View {
                 }
                 NavigationLink(destination: IalEdxMaths2019JuneView1()) {
                     Text("May/June")
-                }
-                NavigationLink(destination: IalEdxMaths2019OctView1()) {
-                    Text("Oct/Nov")
                 }
             }
         }
