@@ -69,14 +69,12 @@ struct IalEdxMathsViewTest: View {
                                     Picker(selection: $selected, label: Text("")){
                                         Text("Spring").tag(19)
                                         Text("Summer").tag(20)
-                                        Text("Winter").tag(21)
                                     }
                                 }
                                 Menu("2014") {
                                     Picker(selection: $selected, label: Text("")){
                                         Text("Spring").tag(22)
                                         Text("Summer").tag(23)
-                                        Text("Winter").tag(24)
                                     }
                                 }
                             }) {
@@ -146,14 +144,12 @@ struct IalEdxMathsViewTest: View {
                                     Picker(selection: $selected, label: Text("")){
                                         Text("Spring").tag(19)
                                         Text("Summer").tag(20)
-                                        Text("Winter").tag(21)
                                     }
                                 }
                                 Menu("2014") {
                                     Picker(selection: $selected, label: Text("")){
                                         Text("Spring").tag(22)
                                         Text("Summer").tag(23)
-                                        Text("Winter").tag(24)
                                     }
                                 }
                             }) {
@@ -223,14 +219,12 @@ struct IalEdxMathsViewTest: View {
                                     Picker(selection: $selected, label: Text("")){
                                         Text("Spring").tag(19)
                                         Text("Summer").tag(20)
-                                        Text("Winter").tag(21)
                                     }
                                 }
                                 Menu("2014") {
                                     Picker(selection: $selected, label: Text("")){
                                         Text("Spring").tag(22)
                                         Text("Summer").tag(23)
-                                        Text("Winter").tag(24)
                                     }
                                 }
                             }) {
@@ -300,14 +294,12 @@ struct IalEdxMathsViewTest: View {
                                     Picker(selection: $selected, label: Text("")){
                                         Text("Spring").tag(19)
                                         Text("Summer").tag(20)
-                                        Text("Winter").tag(21)
                                     }
                                 }
                                 Menu("2014") {
                                     Picker(selection: $selected, label: Text("")){
                                         Text("Spring").tag(22)
                                         Text("Summer").tag(23)
-                                        Text("Winter").tag(24)
                                     }
                                 }
                             }) {
@@ -376,14 +368,12 @@ struct IalEdxMathsViewTest: View {
                                     Picker(selection: $selected, label: Text("")){
                                         Text("Spring").tag(19)
                                         Text("Summer").tag(20)
-                                        Text("Winter").tag(21)
                                     }
                                 }
                                 Menu("2014") {
                                     Picker(selection: $selected, label: Text("")){
                                         Text("Spring").tag(22)
                                         Text("Summer").tag(23)
-                                        Text("Winter").tag(24)
                                     }
                                 }
                             }) {
@@ -452,14 +442,12 @@ struct IalEdxMathsViewTest: View {
                                     Picker(selection: $selected, label: Text("")){
                                         Text("Spring").tag(19)
                                         Text("Summer").tag(20)
-                                        Text("Winter").tag(21)
                                     }
                                 }
                                 Menu("2014") {
                                     Picker(selection: $selected, label: Text("")){
                                         Text("Spring").tag(22)
                                         Text("Summer").tag(23)
-                                        Text("Winter").tag(24)
                                     }
                                 }
                             }) {
@@ -528,14 +516,12 @@ struct IalEdxMathsViewTest: View {
                                     Picker(selection: $selected, label: Text("")){
                                         Text("Spring").tag(19)
                                         Text("Summer").tag(20)
-                                        Text("Winter").tag(21)
                                     }
                                 }
                                 Menu("2014") {
                                     Picker(selection: $selected, label: Text("")){
                                         Text("Spring").tag(22)
                                         Text("Summer").tag(23)
-                                        Text("Winter").tag(24)
                                     }
                                 }
                             }) {
@@ -604,14 +590,12 @@ struct IalEdxMathsViewTest: View {
                                     Picker(selection: $selected, label: Text("")){
                                         Text("Spring").tag(19)
                                         Text("Summer").tag(20)
-                                        Text("Winter").tag(21)
                                     }
                                 }
                                 Menu("2014") {
                                     Picker(selection: $selected, label: Text("")){
                                         Text("Spring").tag(22)
                                         Text("Summer").tag(23)
-                                        Text("Winter").tag(24)
                                     }
                                 }
                             }) {
@@ -680,14 +664,12 @@ struct IalEdxMathsViewTest: View {
                                     Picker(selection: $selected, label: Text("")){
                                         Text("Spring").tag(19)
                                         Text("Summer").tag(20)
-                                        Text("Winter").tag(21)
                                     }
                                 }
                                 Menu("2014") {
                                     Picker(selection: $selected, label: Text("")){
                                         Text("Spring").tag(22)
                                         Text("Summer").tag(23)
-                                        Text("Winter").tag(24)
                                     }
                                 }
                             }) {
@@ -759,14 +741,12 @@ struct IalEdxMathsViewTest: View {
                                         Picker(selection: $selected, label: Text("")){
                                             Text("Spring").tag(19)
                                             Text("Summer").tag(20)
-                                            Text("Winter").tag(21)
                                         }
                                     }
                                     Menu("2014") {
                                         Picker(selection: $selected, label: Text("")){
                                             Text("Spring").tag(22)
                                             Text("Summer").tag(23)
-                                            Text("Winter").tag(24)
                                         }
                                     }
                                 }) {
@@ -836,14 +816,12 @@ struct IalEdxMathsViewTest: View {
                                         Picker(selection: $selected, label: Text("")){
                                             Text("Spring").tag(19)
                                             Text("Summer").tag(20)
-                                            Text("Winter").tag(21)
                                         }
                                     }
                                     Menu("2014") {
                                         Picker(selection: $selected, label: Text("")){
                                             Text("Spring").tag(22)
                                             Text("Summer").tag(23)
-                                            Text("Winter").tag(24)
                                         }
                                     }
                                 }) {
@@ -912,14 +890,12 @@ struct IalEdxMathsViewTest: View {
                                         Picker(selection: $selected, label: Text("")){
                                             Text("Spring").tag(19)
                                             Text("Summer").tag(20)
-                                            Text("Winter").tag(21)
                                         }
                                     }
                                     Menu("2014") {
                                         Picker(selection: $selected, label: Text("")){
                                             Text("Spring").tag(22)
                                             Text("Summer").tag(23)
-                                            Text("Winter").tag(24)
                                         }
                                     }
                                 }) {
@@ -988,14 +964,12 @@ struct IalEdxMathsViewTest: View {
                                         Picker(selection: $selected, label: Text("")){
                                             Text("Spring").tag(19)
                                             Text("Summer").tag(20)
-                                            Text("Winter").tag(21)
                                         }
                                     }
                                     Menu("2014") {
                                         Picker(selection: $selected, label: Text("")){
                                             Text("Spring").tag(22)
                                             Text("Summer").tag(23)
-                                            Text("Winter").tag(24)
                                         }
                                     }
                                 }) {
@@ -1064,14 +1038,12 @@ struct IalEdxMathsViewTest: View {
                                         Picker(selection: $selected, label: Text("")){
                                             Text("Spring").tag(19)
                                             Text("Summer").tag(20)
-                                            Text("Winter").tag(21)
                                         }
                                     }
                                     Menu("2014") {
                                         Picker(selection: $selected, label: Text("")){
                                             Text("Spring").tag(22)
                                             Text("Summer").tag(23)
-                                            Text("Winter").tag(24)
                                         }
                                     }
                                 }) {
@@ -1140,14 +1112,12 @@ struct IalEdxMathsViewTest: View {
                                         Picker(selection: $selected, label: Text("")){
                                             Text("Spring").tag(19)
                                             Text("Summer").tag(20)
-                                            Text("Winter").tag(21)
                                         }
                                     }
                                     Menu("2014") {
                                         Picker(selection: $selected, label: Text("")){
                                             Text("Spring").tag(22)
                                             Text("Summer").tag(23)
-                                            Text("Winter").tag(24)
                                         }
                                     }
                                 }) {
@@ -1216,14 +1186,12 @@ struct IalEdxMathsViewTest: View {
                                         Picker(selection: $selected, label: Text("")){
                                             Text("Spring").tag(19)
                                             Text("Summer").tag(20)
-                                            Text("Winter").tag(21)
                                         }
                                     }
                                     Menu("2014") {
                                         Picker(selection: $selected, label: Text("")){
                                             Text("Spring").tag(22)
                                             Text("Summer").tag(23)
-                                            Text("Winter").tag(24)
                                         }
                                     }
                                 }) {
@@ -1292,14 +1260,12 @@ struct IalEdxMathsViewTest: View {
                                         Picker(selection: $selected, label: Text("")){
                                             Text("Spring").tag(19)
                                             Text("Summer").tag(20)
-                                            Text("Winter").tag(21)
                                         }
                                     }
                                     Menu("2014") {
                                         Picker(selection: $selected, label: Text("")){
                                             Text("Spring").tag(22)
                                             Text("Summer").tag(23)
-                                            Text("Winter").tag(24)
                                         }
                                     }
                                 }) {
@@ -1368,14 +1334,12 @@ struct IalEdxMathsViewTest: View {
                                         Picker(selection: $selected, label: Text("")){
                                             Text("Spring").tag(19)
                                             Text("Summer").tag(20)
-                                            Text("Winter").tag(21)
                                         }
                                     }
                                     Menu("2014") {
                                         Picker(selection: $selected, label: Text("")){
                                             Text("Spring").tag(22)
                                             Text("Summer").tag(23)
-                                            Text("Winter").tag(24)
                                         }
                                     }
                                 }) {
