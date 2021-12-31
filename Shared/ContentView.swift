@@ -262,7 +262,7 @@ struct ContentView: View {
             //.padding(.vertical, -10)
             .listStyle(.automatic)
             //.searchable(text: $searchText, placement: .navigationBarDrawer)
-            .navigationBarTitle("PaperClub", displayMode: .large)
+            .navigationBarTitle("PaperHub", displayMode: .large)
             //.navigationBarHidden(false)
             .toolbar(content: {
                 ToolbarItem(placement: .primaryAction){
