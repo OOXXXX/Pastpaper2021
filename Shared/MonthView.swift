@@ -145,7 +145,7 @@ struct MonthView8: View {
                 NavigationLink(destination: IalEdxMaths2014JanView1()) {
                     Text("Jan/Feb")
                 }
-                NavigationLink(destination: IalEdxMaths2019JuneView1()) {
+                NavigationLink(destination: IalEdxMaths2014JuneView1()) {
                     Text("May/June")
                 }
             }
