@@ -62,7 +62,7 @@ struct SettingView: View {
                 .navigationTitle("Settings")
                 .navigationBarTitleDisplayMode(.inline)
                 
-                Text("Version 0.0.1(101)\n © 2021 Patrick Zhu")
+                Text("Version 0.0.5(114)\n © 2022 Patrick Zhu")
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.secondary)
                     .padding(.bottom, 5)

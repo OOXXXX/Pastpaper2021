@@ -72,6 +72,15 @@ struct IalEdxMaths2018OctView1: View {
         }
         .navigationBarTitle("18 Winter", displayMode: .inline)
         .listStyle(.plain)
+        .toolbar {
+            ToolbarItem(placement: .primaryAction){
+                Menu() {
+                    ToolBarView()
+                } label: {
+                    Image(systemName: "ellipsis.circle")
+                }
+            }
+        }
     }
 }
 
