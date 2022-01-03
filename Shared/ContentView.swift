@@ -9,24 +9,6 @@ import SwiftUI
 import BetterSafariView
 import NavigationSearchBar
 
-struct Quali {
-    let image: String
-    let name: String
-    let color: Color
-}
-
-struct Exam {
-    let image: String
-    let name: String
-    let color: Color
-}
-
-struct Contest {
-    let image: String
-    let name: String
-    let color: Color
-}
-
 struct ContentView: View {
     @State var text: String = ""
     @State var scopeSelection: Int = 0
@@ -36,33 +18,7 @@ struct ContentView: View {
     //@State private var showTraditionStack = false
     @State private var showTraditionStack1 = false
     @AppStorage("showTraditionStack") var showTraditionStack: Bool = false
-    
-    var qualiList = [
-        Quali(image: "i.square.fill", name: "IGCSE", color: .blue),
-        Quali(image: "a.square.fill", name: "Advanced Level", color: .green),
-        Quali(image: "i.square.fill", name: "International Advanced Level", color: .indigo),
-        Quali(image: "o.square.fill", name: "OLevel", color: .purple),
-        Quali(image: "i.square.fill", name: "IBDP", color: .yellow),
-    ]
-    
-    var examList = [
-        Exam(image: "c.square.fill", name: "CAIE", color: .brown),
-        Exam(image: "e.square.fill", name: "Edexcel", color: .mint),
-        Exam(image: "a.square.fill", name: "AQA", color: .red),
-    ]
-    
-    var contestList = [
-        Contest(image: "c.square.fill", name: "Cambridge admissions", color: .orange),
-        Contest(image: "o.square.fill", name: "Oxford admissions", color: .gray),
-        Contest(image: "m.square.fill", name: "MAA AMC", color: .cyan),
-        Contest(image: "u.square.fill", name: "UKMT", color: .black),
-    ]
-    
-    let qualifications = ["IGCSE", "Advanced Level", "International Advanced Level", "OLevel", "IBDP"]
-    let bureaus = ["CAIE", "Edexcel", "AQA"]
-    let extraTests = ["Oxford admissions", "Cambridge admissions", "MAA AMC", "UKMT"]
-    let websites = ["Oxford", "Cambridge", "Imperial London", "London School of Economics", "University College London"]
-
+   
     var body: some View {
         NavigationView {
             List {
