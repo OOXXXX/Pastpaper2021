@@ -138,8 +138,6 @@
 		4BBDF584277221CD009F71C0 /* OfficialWebsitesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBDF582277221CD009F71C0 /* OfficialWebsitesView.swift */; };
 		4BBDF58627724645009F71C0 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBDF58527724645009F71C0 /* SettingView.swift */; };
 		4BBDF58727724645009F71C0 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBDF58527724645009F71C0 /* SettingView.swift */; };
-		4BBDF58C27732106009F71C0 /* QualiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBDF58B27732106009F71C0 /* QualiView.swift */; };
-		4BBDF58D27732106009F71C0 /* QualiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBDF58B27732106009F71C0 /* QualiView.swift */; };
 		4BC9678C2750B71D007DE392 /* Pastpaper2021App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */; };
 		4BC9678D2750B71D007DE392 /* Pastpaper2021App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */; };
 		4BC9678E2750B71D007DE392 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9677D2750B71C007DE392 /* ContentView.swift */; };
@@ -278,7 +276,6 @@
 		4BBDF56F2771030A009F71C0 /* IalEdxMathsViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IalEdxMathsViewNew.swift; sourceTree = "<group>"; };
 		4BBDF582277221CD009F71C0 /* OfficialWebsitesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialWebsitesView.swift; sourceTree = "<group>"; };
 		4BBDF58527724645009F71C0 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		4BBDF58B27732106009F71C0 /* QualiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualiView.swift; sourceTree = "<group>"; };
 		4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pastpaper2021App.swift; sourceTree = "<group>"; };
 		4BC9677D2750B71C007DE392 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4BC9677E2750B71D007DE392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -446,7 +443,6 @@
 			children = (
 				4BC9677C2750B71C007DE392 /* Pastpaper2021App.swift */,
 				4BC9677D2750B71C007DE392 /* ContentView.swift */,
-				4BBDF58B27732106009F71C0 /* QualiView.swift */,
 				4BBDF58527724645009F71C0 /* SettingView.swift */,
 				4BBDF582277221CD009F71C0 /* OfficialWebsitesView.swift */,
 				4B5D43A6275A15670092865C /* IGCSEView.swift */,
@@ -726,7 +722,6 @@
 				4BBDF5702771030A009F71C0 /* IalEdxMathsViewNew.swift in Sources */,
 				4B5D43BC275A81D60092865C /* IndicatorTitleLabel.swift in Sources */,
 				4BCC06C027785DED00E50FD8 /* IalEdxMaths2021JanList.swift in Sources */,
-				4BBDF58C27732106009F71C0 /* QualiView.swift in Sources */,
 				4BBDF583277221CD009F71C0 /* OfficialWebsitesView.swift in Sources */,
 				4B5D43A7275A15670092865C /* IGCSEView.swift in Sources */,
 				4B890524277B75BF003A2445 /* IalEdxMaths2017JuneList.swift in Sources */,
@@ -772,7 +767,6 @@
 				4BBDF5712771030A009F71C0 /* IalEdxMathsViewNew.swift in Sources */,
 				4B5D43BD275A81D60092865C /* IndicatorTitleLabel.swift in Sources */,
 				4BCC06C127785DED00E50FD8 /* IalEdxMaths2021JanList.swift in Sources */,
-				4BBDF58D27732106009F71C0 /* QualiView.swift in Sources */,
 				4BBDF584277221CD009F71C0 /* OfficialWebsitesView.swift in Sources */,
 				4B5D43A8275A15670092865C /* IGCSEView.swift in Sources */,
 				4B890525277B75BF003A2445 /* IalEdxMaths2017JuneList.swift in Sources */,

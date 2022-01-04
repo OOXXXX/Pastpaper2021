@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import BetterSafariView
 import NavigationSearchBar
 
 struct ContentView: View {
@@ -15,7 +14,6 @@ struct ContentView: View {
     @State private var showingAlert = false
     @State private var showingSettingSheet = false
     @State private var showingInfoSheet = false
-    //@State private var showTraditionStack = false
     @State private var showTraditionStack1 = false
     @AppStorage("showTraditionStack") var showTraditionStack: Bool = false
    
@@ -204,15 +202,12 @@ struct ContentView: View {
                             Spacer()
                             DisclosureIndicator()
                         }
-                        .alert("Still under development 🚴", isPresented: $showingAlert) {
-                            
+                        .alert("Still under development 🚴", isPresented: $showingAlert) {                            
                         }
                     }
                 }
                 .listSectionSeparator(.visible)
                 .headerProminence(.increased)
-                
-                //OfficialWebsitesView()
             }
             //.listRowInsets(EdgeInsets())
             //.padding(.vertical, -10)
