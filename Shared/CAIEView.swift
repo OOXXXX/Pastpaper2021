@@ -19,6 +19,7 @@ struct CAIEView: View {
                     }
                 }
                 NavigationLink(destination: CaieOLView()) {
+                    HStack {
                        Text("O Level")
                     }
                 }
