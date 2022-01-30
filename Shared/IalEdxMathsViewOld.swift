@@ -12,28 +12,28 @@ struct IalEdxMathsView: View {
         List {            
             Section(header: Text("Select Year")) {
                 
-                NavigationLink(destination: MonthView1()) {
+                NavigationLink(destination: SeasonView1()) {
                     Text("2021")
                 }
-                NavigationLink(destination: MonthView2()) {
+                NavigationLink(destination: SeasonView2()) {
                     Text("2020")
                 }
-                NavigationLink(destination: MonthView3()) {
+                NavigationLink(destination: SeasonView3()) {
                     Text("2019")
                 }
-                NavigationLink(destination: MonthView4()) {
+                NavigationLink(destination: SeasonView4()) {
                     Text("2018")
                 }
-                NavigationLink(destination: MonthView5()) {
+                NavigationLink(destination: SeasonView5()) {
                     Text("2017")
                 }
-                NavigationLink(destination: MonthView6()) {
+                NavigationLink(destination: SeasonView6()) {
                     Text("2016")
                 }
-                NavigationLink(destination: MonthView7()) {
+                NavigationLink(destination: SeasonView7()) {
                     Text("2015")
                 }
-                NavigationLink(destination: MonthView8()) {
+                NavigationLink(destination: SeasonView8()) {
                     Text("2014")
                 }
             }
