@@ -154,3 +154,20 @@ struct SeasonView8: View {
         .navigationBarTitle("Exam Seasons", displayMode: .inline)
     }
 }
+
+struct SeasonView9: View {
+    var body: some View {
+        List {
+            Section(header: Text("Select Season")) {
+                NavigationLink(destination: AlCaieMaths2021JuneView1()) {
+                    Text("Spring")
+                }
+                NavigationLink(destination: AlCaieMaths2021JuneView2()) {
+                    Text("Summer")
+                }
+            }
+        }
+        .listStyle(.plain)
+        .navigationBarTitle("Exam Seasons", displayMode: .inline)
+    }
+}

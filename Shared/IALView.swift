@@ -18,7 +18,7 @@ struct IALView: View {
                     NavigationLink(destination: Text("quali")) {
                         Text("Economics")
                     }
-                    NavigationLink(destination: IalEdxMathsView()) {
+                    NavigationLink(destination: IalEdxMathsYearView()) {
                         Text("Mathematics")
                     }
                     

@@ -11,9 +11,7 @@ struct ALView: View {
     var body: some View {
         List {
             Section(header: Text("CAIE")) {
-                
-                
-                NavigationLink(destination: Text("quali")) {
+               NavigationLink(destination: Text("quali")) {
                     //Text("Art & Design (9479)")
                     TitleLabel("Art & Design", subtitle: "9479")
                 }
@@ -54,7 +52,7 @@ struct ALView: View {
                         //Text("History (9389)")
                         TitleLabel("History", subtitle: "9389")
                     }
-                    NavigationLink(destination: Text("quali")) {
+                    NavigationLink(destination: AlCaieMathsYearView()) {
                         //Text("Mathematics (9709)")
                         TitleLabel("Mathematics", subtitle: "9709")
                     }
