@@ -29,9 +29,6 @@ struct CAIEView: View {
             Section(header: Text("Cambridge Advanced")) {
                 NavigationLink(destination: CaieALView()) {
                     HStack {
-//                        Image(systemName: "a.square")
-//                             .font(Font.system(.title))
-//                             .foregroundColor(.green)
                         Text("AS & A Levels")
                     }
                     //.offset(x: -8)
@@ -55,11 +52,5 @@ struct CAIEView: View {
         }
         .listStyle(.plain)
         .navigationBarTitle("Qualifications", displayMode: .inline)
-    }
-}
-
-struct CAIEView_Previews: PreviewProvider {
-    static var previews: some View {
-        CAIEView()
     }
 }
