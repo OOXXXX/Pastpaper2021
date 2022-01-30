@@ -34,6 +34,15 @@ struct AlCaieMaths2021JuneView1: View {
         }
         .navigationBarTitle("21 Summer", displayMode: .inline)
         .listStyle(.plain)
+        .toolbar {
+            ToolbarItem(placement: .primaryAction){
+                Menu() {
+                    ToolBarView()
+                } label: {
+                    Image(systemName: "ellipsis.circle")
+                }
+            }
+        }
     }
 }
 

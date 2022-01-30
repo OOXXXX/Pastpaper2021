@@ -159,10 +159,10 @@ struct SeasonView9: View {
     var body: some View {
         List {
             Section(header: Text("Select Season")) {
-                NavigationLink(destination: AlCaieMaths2021JuneView1()) {
+                NavigationLink(destination: EmptyView()) {
                     Text("Spring")
                 }
-                NavigationLink(destination: AlCaieMaths2021JuneView2()) {
+                NavigationLink(destination: AlCaieMaths2021JuneView1()) {
                     Text("Summer")
                 }
             }
